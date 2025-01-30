@@ -9,6 +9,11 @@ public class PlayerController : MonoBehaviour
     PlayerInput playerInput;
     PlayerInput.OnFootActions input;
 
+    [SerializeField]
+    ParticleSystem shortParticleOnHit;
+    [SerializeField]
+    ParticleSystem longParticleOnHit;
+
     CharacterController controller;
     Animator animator;
     AudioSource audioSource;
@@ -148,7 +153,6 @@ public class PlayerController : MonoBehaviour
     public int attackDamage = 1;
     public LayerMask attackLayer;
 
-    public GameObject hitEffect;
     public AudioClip swordSwing;
     public AudioClip hitSound;
 
@@ -179,6 +183,9 @@ public class PlayerController : MonoBehaviour
             ChangeAnimationState(ATTACK2);
             attackCount = 0;
         }
+
+        shortParticleOnHit.Play();
+        longParticleOnHit.Play();
     }
 
     void ResetAttack()
@@ -203,7 +210,7 @@ public class PlayerController : MonoBehaviour
         audioSource.pitch = Random.Range(0.9f, 1.1f);
         audioSource.PlayOneShot(hitSound);
 
-        GameObject GO = Instantiate(hitEffect, pos, Quaternion.identity);
-        Destroy(GO, 20);
+
+
     }
 }
