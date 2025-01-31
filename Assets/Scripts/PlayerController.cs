@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -10,9 +7,9 @@ public class PlayerController : MonoBehaviour
     PlayerInput.OnFootActions input;
 
     [SerializeField]
-    ParticleSystem shortParticleOnHit;
+    GameObject shortParticleOnHit;
     [SerializeField]
-    ParticleSystem longParticleOnHit;
+    GameObject longParticleOnHit;
 
     CharacterController controller;
     Animator animator;
@@ -184,8 +181,6 @@ public class PlayerController : MonoBehaviour
             attackCount = 0;
         }
 
-        shortParticleOnHit.Play();
-        longParticleOnHit.Play();
     }
 
     void ResetAttack()
@@ -210,7 +205,8 @@ public class PlayerController : MonoBehaviour
         audioSource.pitch = Random.Range(0.9f, 1.1f);
         audioSource.PlayOneShot(hitSound);
 
-
+        Instantiate(shortParticleOnHit, pos, Quaternion.identity);
+        Instantiate(longParticleOnHit, pos, Quaternion.identity);
 
     }
 }
