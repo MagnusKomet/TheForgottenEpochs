@@ -1172,4 +1172,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/TrialScene.unity
-  playerPath: C:/Users/ernes/Desktop/build/TheForgottenEpochs.exe
+  playerPath: C:/Users/ernes/Desktop/Buildy/TheForgottenEpochs.exe
