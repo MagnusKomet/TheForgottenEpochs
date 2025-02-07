@@ -62,7 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\CanvasSpawner.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IGameModeService.cs" />
-    <Compile Include="Assets\Mimic\Scripts\CylinderMesh.cs" />
+    <Compile Include="Assets\Packages\Mimic\Scripts\CylinderMesh.cs" />
+    <Compile Include="Assets\Stylized 3D Tools\Scripts\Rotator.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ProjectileScript.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\RLoops.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\PlaySoundBehaviour.cs" />
@@ -72,9 +73,8 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IGameService.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\Loops.cs" />
     <Compile Include="Assets\Inputs\PlayerInput.cs" />
-    <Compile Include="Assets\Mimic\Scripts\Movement.cs" />
-    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Muzzle.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\GameModeService.cs" />
+    <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Muzzle.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextTimescale.cs" />
     <Compile Include="Assets\Scripts\DummyController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\AnimationReceiver.cs" />
@@ -88,9 +88,9 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Weapon.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\DebrisScript.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Demo\DisplayMaterialName.cs" />
+    <Compile Include="Assets\Packages\Mimic\Scripts\Leg.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\AudioManagerService.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\TargetScript.cs" />
-    <Compile Include="Assets\Mimic\Scripts\Mimic.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\MovementBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Movement.cs" />
     <Compile Include="Assets\Infima Games\Tools\Log.cs" />
@@ -118,6 +118,7 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\ScopeBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Camera\CameraLook.cs" />
+    <Compile Include="Assets\Packages\Mimic\Scripts\Mimic.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\InventoryBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\MuzzleBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ExplosiveBarrelScript.cs" />
@@ -126,9 +127,9 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\ImageWeapon.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ImpactScript.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\Bootstraper.cs" />
+    <Compile Include="Assets\Packages\Mimic\Scripts\Movement.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Character.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\AudioSettings.cs" />
-    <Compile Include="Assets\Mimic\Scripts\Leg.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -147,10 +148,11 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Packages\TriForge Assets\ReadMe.txt" />
-    <None Include="Assets\Mimic\README.txt" />
+    <None Include="Assets\Packages\Mimic\README.txt" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Mimic\Materials\Shaders\SimplexNoise3D.hlsl" />
-    <None Include="Assets\Mimic\Materials\Shaders\NoiseUtils.hlsl" />
+    <None Include="Assets\Packages\Mimic\Materials\Shaders\SimplexNoise3D.hlsl" />
+    <None Include="Assets\Stylized 3D Tools\Read Me.txt" />
+    <None Include="Assets\Packages\Mimic\Materials\Shaders\NoiseUtils.hlsl" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-VertexLitTransparentCutout.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -186,6 +188,7 @@
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess-Accurate.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\3D Items - Wand Pack\Read Me.txt" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-UnlitTransparent.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

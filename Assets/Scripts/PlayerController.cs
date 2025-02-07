@@ -114,6 +114,7 @@ public class PlayerController : MonoBehaviour
     public const string WALK = "Walk";
     public const string ATTACK1 = "Attack 1";
     public const string ATTACK2 = "Attack 2";
+    public const string ATTACKORB = "Attack Orb";
 
     string currentAnimationState;
 
@@ -148,7 +149,6 @@ public class PlayerController : MonoBehaviour
     public float attackDelay = 0.4f;
     public float attackSpeed = 1f;
     public int attackDamage = 1;
-    public LayerMask attackLayer;
 
     public AudioClip swordSwing;
     public AudioClip hitSound;
@@ -175,6 +175,11 @@ public class PlayerController : MonoBehaviour
             ChangeAnimationState(ATTACK1);
             attackCount++;
         }
+        else if(attackCount == 1)
+        {
+            ChangeAnimationState(ATTACKORB);
+            attackCount++;
+        }
         else
         {
             ChangeAnimationState(ATTACK2);
@@ -191,7 +196,7 @@ public class PlayerController : MonoBehaviour
 
     void AttackRaycast()
     {
-        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit, attackDistance, attackLayer))
+        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit, attackDistance))
         { 
             HitTarget(hit.point);
 

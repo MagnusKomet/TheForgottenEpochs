@@ -331,6 +331,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ForUI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ref.dll"
@@ -418,15 +419,16 @@
 "Assets/Infima Games/Tools/Looping/LoopUtilities.cs"
 "Assets/Infima Games/Tools/Looping/RLoops.cs"
 "Assets/Inputs/PlayerInput.cs"
-"Assets/Mimic/Scripts/CylinderMesh.cs"
-"Assets/Mimic/Scripts/Leg.cs"
-"Assets/Mimic/Scripts/Mimic.cs"
-"Assets/Mimic/Scripts/Movement.cs"
+"Assets/Packages/Mimic/Scripts/CylinderMesh.cs"
+"Assets/Packages/Mimic/Scripts/Leg.cs"
+"Assets/Packages/Mimic/Scripts/Mimic.cs"
+"Assets/Packages/Mimic/Scripts/Movement.cs"
 "Assets/Packages/PSXShaderKit/Scripts/PSXPostProcessEffect.cs"
 "Assets/Packages/PSXShaderKit/Scripts/PSXShaderManager.cs"
 "Assets/Packages/TriForge Assets/Fantasy Worlds - DEMO Common Files/Scripts/TF_FW_WindController.cs"
 "Assets/Scripts/DummyController.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Stylized 3D Tools/Scripts/Rotator.cs"
 -langversion:9.0
 /deterministic
 /optimize+

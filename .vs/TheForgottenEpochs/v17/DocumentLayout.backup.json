@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\desktop\\insti\\projecte\\theforgottenepochs\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\desktop\\insti\\projecte\\theforgottenepochs\\assets\\packages\\mimic\\scripts\\mimic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\packages\\mimic\\scripts\\mimic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\packages\\mimic\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\packages\\mimic\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\packages\\mimic\\scripts\\leg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\packages\\mimic\\scripts\\leg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,13 +46,50 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Packages\\Mimic\\Scripts\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Packages\\Mimic\\Scripts\\Movement.cs",
+              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Packages\\Mimic\\Scripts\\Movement.cs",
+              "RelativeToolTip": "Assets\\Packages\\Mimic\\Scripts\\Movement.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T16:40:11.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Leg.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Packages\\Mimic\\Scripts\\Leg.cs",
+              "RelativeDocumentMoniker": "Assets\\Packages\\Mimic\\Scripts\\Leg.cs",
+              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Packages\\Mimic\\Scripts\\Leg.cs",
+              "RelativeToolTip": "Assets\\Packages\\Mimic\\Scripts\\Leg.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwEkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:42:27.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mimic.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Packages\\Mimic\\Scripts\\Mimic.cs",
+              "RelativeDocumentMoniker": "Assets\\Packages\\Mimic\\Scripts\\Mimic.cs",
+              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Packages\\Mimic\\Scripts\\Mimic.cs",
+              "RelativeToolTip": "Assets\\Packages\\Mimic\\Scripts\\Mimic.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAADwv5UAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T14:41:11.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAuwLMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T11:13:52.264Z",
               "EditorCaption": ""
