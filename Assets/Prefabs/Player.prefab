@@ -132,13 +132,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _TextureWarpingFactor: 1
   _TextureWarpingMode: 0
-  _VertexGridResolution: 50
+  _VertexGridResolution: 25
   _VertexWobbleMode: 1
   _UseRetroVertexLighting: 1
-  _RetroLightingNormalFactor: 0.5
-  _RetroLightFalloffStart: 0.75
+  _RetroLightingNormalFactor: 1
+  _RetroLightFalloffStart: 0.9999
   _FlatShadingMode: 0
-  _TriangleSortMode: 0
+  _TriangleSortMode: 1
   _DepthDebugView: 0
 --- !u!1 &6816843259406738505
 GameObject:
@@ -316,7 +316,7 @@ MonoBehaviour:
   jumpHeight: 1.5
   cam: {fileID: 1593019297686687297}
   sensitivity: 30
-  attackDistance: 20
+  attackDistance: 100
   attackDelay: 0.4
   attackSpeed: 1
   attackDamage: 1

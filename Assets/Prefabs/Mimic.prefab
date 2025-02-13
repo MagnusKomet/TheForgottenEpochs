@@ -63,7 +63,7 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
-  velocity: {x: -0.0380857, y: 0, z: -0.31253666}
+  velocity: {x: 0.023803059, y: 0, z: 0.18326753}
 --- !u!114 &1547845888156502223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ba22986a1af554791e80503075c599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  height: 0.8
+  height: 1.5
   speed: 5
   velocityLerpCoef: 4
 --- !u!1 &8956082262340888402
@@ -108,8 +108,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.4, z: 0.4}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1361550438602663263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
