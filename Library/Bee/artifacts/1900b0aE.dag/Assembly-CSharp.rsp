@@ -430,9 +430,10 @@
 "Assets/Packages/PSXShaderKit/Scripts/PSXPostProcessEffect.cs"
 "Assets/Packages/PSXShaderKit/Scripts/PSXShaderManager.cs"
 "Assets/Packages/TriForge Assets/Fantasy Worlds - DEMO Common Files/Scripts/TF_FW_WindController.cs"
-"Assets/Scripts/DummyController.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/FireballController.cs"
+"Assets/Scripts/HealthController.cs"
+"Assets/Scripts/MimicController.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Stylized 3D Tools/Scripts/Rotator.cs"
 -langversion:9.0

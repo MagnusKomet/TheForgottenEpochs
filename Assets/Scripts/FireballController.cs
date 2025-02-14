@@ -4,24 +4,35 @@ using UnityEngine;
 
 public class FireballController : MonoBehaviour
 {
-    [SerializeField] private float _explosionRadius = 5;
-    [SerializeField] private float _explosionForce = 500;
-    [SerializeField] private GameObject _particles;
+    private float explosionRadius = 5f;
+    private float explosionForce = 500f;
+    private int damage = 25;
+    [SerializeField] 
+    private GameObject particles;
 
     private void OnCollisionEnter(Collision collision)
     {
-        var surroundingObjects = Physics.OverlapSphere(transform.position, _explosionRadius);
+        // Generar una esfera para detectar objetos cercanos
+        var surroundingObjects = Physics.OverlapSphere(transform.position, explosionRadius);
 
         foreach (var obj in surroundingObjects)
         {
+            // Aplicar fuerza de explosión
             var rb = obj.GetComponent<Rigidbody>();
-            if (rb == null) continue;
+            if (rb != null)
+            {
+                rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, 1f);
+            }
 
-            rb.AddExplosionForce(_explosionForce, transform.position, _explosionRadius, 1);
+            // Aplicar daño si el objeto tiene un script de salud
+            var health = obj.GetComponent<HealthController>();
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+            }
         }
 
-        Instantiate(_particles, transform.position, Quaternion.identity);
-
+        Instantiate(particles, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

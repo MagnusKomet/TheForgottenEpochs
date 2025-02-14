@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Portal
+  - GasTank
+  - Metal
+  - Concrete
+  - Mimic
   layers:
   - Default
   - TransparentFX

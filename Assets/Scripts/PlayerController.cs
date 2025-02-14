@@ -213,7 +213,7 @@ public class PlayerController : MonoBehaviour
         Destroy(ball, 30f); // Destroy the fireball after 30 seconds
     }
 
-    
+    /*
     void AttackRaycast()
     {
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit, attackDistance))
@@ -234,7 +234,7 @@ public class PlayerController : MonoBehaviour
         Instantiate(longParticleOnHit, pos, Quaternion.identity);
 
     }
-    
+    */
 
     // ------------------- //
     //      COLLISIONS     //

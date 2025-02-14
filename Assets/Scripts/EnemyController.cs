@@ -5,31 +5,36 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
+    [Header("IA")]
+    public Transform player;
     public NavMeshAgent agent;
 
-    public Transform player;
+    [Header("Rangos")]
+    public float sightRange = 10f;
+    public float attackRange = 5f;
+    public LayerMask whatIsPlayer;
+    public LayerMask whatIsGround;
 
-    public LayerMask whatIsGround, whatIsPlayer;
+    public bool playerInSightRange;
+    public bool playerInAttackRange;
 
-    [SerializeField]
-    private GameObject fireball;
-
-    public float health;
-
-    // Patroling
-    public Vector3 walkPoint;
-    bool walkPointSet;
+    [Header("Patrullaje")]
     public float walkPointRange;
+    public Vector3 walkPoint;
+    public bool walkPointSet;
 
-    // Attacking
+    [Header("Ataque")]
+    public GameObject fireball;
     public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    public bool alreadyAttacked;
 
-    // States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
+    [Header("Estado de Persecución Forzada")]
+    public float forcedChaseDuration;
+    public bool isForcedChaseActive;
+    public float forcedChaseTimer;
 
-    private void Awake()
+
+    public void Awake()
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
@@ -38,17 +43,38 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
-
+        IAMovement();
     }
 
-    private void Patroling()
+    public void IAMovement()
     {
+        if (isForcedChaseActive)
+        {
+            Debug.Log("Picao");
+            forcedChaseTimer -= Time.deltaTime;
+            if (forcedChaseTimer <= 0)
+            {
+                isForcedChaseActive = false;
+            }
+            else
+            {
+                ChasePlayer();
+            }
+        }
+        else
+        {
+            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+
+            if (!playerInSightRange && !playerInAttackRange) Patroling();
+            if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+            if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        }
+    }
+
+    public void Patroling()
+    {
+        Debug.Log("Patrullando");
         if (!walkPointSet)
         {
             SearchWalkPoint();
@@ -66,7 +92,7 @@ public class EnemyController : MonoBehaviour
             walkPointSet = false;
     }
 
-    private void SearchWalkPoint()
+    public void SearchWalkPoint()
     {
         // Calculate random point in range
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
@@ -74,19 +100,27 @@ public class EnemyController : MonoBehaviour
 
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
+        if (Physics.Raycast(walkPoint, -transform.up, 3f, whatIsGround))
         {
             walkPointSet = true;
         }
     }
 
-    private void ChasePlayer()
+    public void ChasePlayer()
     {
+        Debug.Log("Persiguiendo");
         agent.SetDestination(player.position);
     }
 
-    private void AttackPlayer()
+    public void ForceChaseOnDamage()
     {
+        isForcedChaseActive = true;
+        forcedChaseTimer = forcedChaseDuration;
+    }
+
+    public void AttackPlayer()
+    {
+        Debug.Log("Atacando");
         // Enemy doesn't move   
         agent.SetDestination(transform.position);
 
@@ -108,22 +142,12 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void ResetAttack()
+    public void ResetAttack()
     {
         alreadyAttacked = false;
     }
 
-
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnDrawGizmosSelected()
+    public void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, attackRange);
