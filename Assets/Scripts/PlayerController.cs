@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -150,6 +151,12 @@ public class PlayerController : MonoBehaviour
     public float attackSpeed = 1f;
     public int attackDamage = 1;
 
+    [SerializeField]
+    private GameObject fireball;
+
+    [SerializeField]
+    private Transform SpellsSpawnPoint;
+
     public AudioClip swordSwing;
     public AudioClip hitSound;
 
@@ -165,7 +172,8 @@ public class PlayerController : MonoBehaviour
         attacking = true;
 
         Invoke(nameof(ResetAttack), attackSpeed);
-        Invoke(nameof(AttackRaycast), attackDelay);
+        //Invoke(nameof(AttackRaycast), attackDelay);
+        Invoke(nameof(ShootFireball), attackDelay);
 
         audioSource.pitch = Random.Range(0.9f, 1.1f);
         audioSource.PlayOneShot(swordSwing);
@@ -194,6 +202,18 @@ public class PlayerController : MonoBehaviour
         readyToAttack = true;
     }
 
+    void ShootFireball()
+    {
+        var ball = Instantiate(fireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
+        Rigidbody rb = ball.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = cam.transform.forward * 50f;
+        }
+        Destroy(ball, 30f); // Destroy the fireball after 30 seconds
+    }
+
+    
     void AttackRaycast()
     {
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit, attackDistance))
@@ -213,5 +233,25 @@ public class PlayerController : MonoBehaviour
         Instantiate(shortParticleOnHit, pos, Quaternion.identity);
         Instantiate(longParticleOnHit, pos, Quaternion.identity);
 
+    }
+    
+
+    // ------------------- //
+    //      COLLISIONS     //
+    // ------------------- //
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Portal")
+        {
+            if (other.gameObject.name == "PortalMuseo")
+            {
+                SceneManager.LoadScene("MuseoScene");
+            }
+            else if (other.gameObject.name == "PortalBosque")
+            {
+                SceneManager.LoadScene("BosqueScene");
+            }
+        }
     }
 }

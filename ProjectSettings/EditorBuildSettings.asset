@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TrialScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/MuseoScene.unity
+    guid: 80deba33f96faac40aa95c28ebcec594
+  - enabled: 1
+    path: Assets/Scenes/BosqueScene.unity
+    guid: 4e5eaac25dadc7f4ab8a115987f43619
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 7afa4a20a399e8f42a3a28de5a7ecbc5, type: 3}
