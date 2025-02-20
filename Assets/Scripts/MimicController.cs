@@ -29,11 +29,9 @@ namespace MimicSpace
             MovimientoMimico();
             IAMovement();
         }
-
-        // Movimiento básico del Mimic
+                
         private void MovimientoMimico()
         {
-            // Asignar velocidad al Mimic para un correcto posicionamiento de piernas
             myMimic.velocity = velocity;
 
             transform.position += velocity * Time.deltaTime;

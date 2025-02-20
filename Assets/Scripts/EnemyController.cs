@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
     public Transform player;
     public NavMeshAgent agent;
 
-    [Header("Rangos")]
+    [Header("Ranges")]
     public float sightRange = 10f;
     public float attackRange = 5f;
     public LayerMask whatIsPlayer;
@@ -18,17 +18,17 @@ public class EnemyController : MonoBehaviour
     public bool playerInSightRange;
     public bool playerInAttackRange;
 
-    [Header("Patrullaje")]
+    [Header("Patrol")]
     public float walkPointRange;
     public Vector3 walkPoint;
     public bool walkPointSet;
 
-    [Header("Ataque")]
+    [Header("Atacks")]
     public GameObject fireball;
     public float timeBetweenAttacks;
     public bool alreadyAttacked;
 
-    [Header("Estado de Persecución Forzada")]
+    [Header("Forced Chase")]
     public float forcedChaseDuration;
     public bool isForcedChaseActive;
     public float forcedChaseTimer;
@@ -50,7 +50,6 @@ public class EnemyController : MonoBehaviour
     {
         if (isForcedChaseActive)
         {
-            Debug.Log("Picao");
             forcedChaseTimer -= Time.deltaTime;
             if (forcedChaseTimer <= 0)
             {
@@ -74,7 +73,6 @@ public class EnemyController : MonoBehaviour
 
     public void Patroling()
     {
-        Debug.Log("Patrullando");
         if (!walkPointSet)
         {
             SearchWalkPoint();
@@ -108,7 +106,6 @@ public class EnemyController : MonoBehaviour
 
     public void ChasePlayer()
     {
-        Debug.Log("Persiguiendo");
         agent.SetDestination(player.position);
     }
 
@@ -120,8 +117,6 @@ public class EnemyController : MonoBehaviour
 
     public void AttackPlayer()
     {
-        Debug.Log("Atacando");
-        // Enemy doesn't move   
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
@@ -134,9 +129,8 @@ public class EnemyController : MonoBehaviour
             {
                 rb.velocity = transform.forward * 50f;
             }
-            Destroy(ball, 30f); // Destroy the fireball after 30 seconds
+            Destroy(ball, 30f);
 
-            // Attack code here
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }

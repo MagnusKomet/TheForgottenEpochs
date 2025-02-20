@@ -37,8 +37,6 @@ public class HealthController : MonoBehaviour
             whoDies.GetComponent<EnemyController>().ForceChaseOnDamage();
         }
 
-        Debug.Log($"{gameObject.name} recibió {damage} puntos de daño. Salud restante: {currentHealth}");
-
         if (currentHealth <= 0)
         {
             Die();
@@ -52,13 +50,10 @@ public class HealthController : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-
-        Debug.Log($"{gameObject.name} se curó {amount} puntos de salud. Salud actual: {currentHealth}");
     }
 
     private void Die()
     {
-        Debug.Log($"{gameObject.name} ha muerto.");
         Destroy(whoDies);
     }
 }

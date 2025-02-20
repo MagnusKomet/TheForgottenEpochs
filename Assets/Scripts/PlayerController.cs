@@ -3,7 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    
+
+    // ---------- //
+    //   General  //
+    // ---------- //
+
+    #region General
+
     PlayerInput playerInput;
     PlayerInput.OnFootActions input;
 
@@ -31,6 +37,8 @@ public class PlayerController : MonoBehaviour
 
     float xRotation = 0f;
 
+    private string combo = "";
+
     void Awake()
     { 
         controller = GetComponent<CharacterController>();
@@ -49,8 +57,26 @@ public class PlayerController : MonoBehaviour
     {
         isGrounded = controller.isGrounded;
 
+
+        if (input.Earth.WasReleasedThisFrame())
+        {
+            combo += "T";
+        }
+        else if (input.Wind.WasReleasedThisFrame())
+        {
+            combo += "A";
+        }
+        else if (input.Fire.WasReleasedThisFrame())
+        {
+            combo += "Z";
+        }
+        else if (input.Water.WasReleasedThisFrame())
+        {
+            combo += "K";
+        }
+
         // Repeat Inputs
-        if(input.Attack.IsPressed())
+        if (input.Attack.IsPressed())
         { Attack(); }
 
         SetAnimations();
@@ -107,10 +133,13 @@ public class PlayerController : MonoBehaviour
         input.Attack.started += ctx => Attack();
     }
 
+    #endregion
+
     // ---------- //
     // ANIMATIONS //
     // ---------- //
 
+    #region Animations
     public const string IDLE = "Idle";
     public const string WALK = "Walk";
     public const string ATTACK1 = "Attack 1";
@@ -141,9 +170,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    #endregion
+
     // ------------------- //
     // ATTACKING BEHAVIOUR //
     // ------------------- //
+
+    #region Attacks
 
     [Header("Attacking")]
     public float attackDistance = 3f;
@@ -153,6 +186,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     private GameObject fireball;
+    [SerializeField]
+    private GameObject secondFireball;
 
     [SerializeField]
     private Transform SpellsSpawnPoint;
@@ -166,14 +201,21 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        if(!readyToAttack || attacking) return;
+        if (!readyToAttack || attacking) return;
 
         readyToAttack = false;
         attacking = true;
 
         Invoke(nameof(ResetAttack), attackSpeed);
-        //Invoke(nameof(AttackRaycast), attackDelay);
-        Invoke(nameof(ShootFireball), attackDelay);
+
+        if (combo.Length > 0)
+        {
+            Invoke(nameof(ShootSpell), attackDelay);
+        }
+        else
+        {
+            Invoke(nameof(ShootFireball), attackDelay);
+        }
 
         audioSource.pitch = Random.Range(0.9f, 1.1f);
         audioSource.PlayOneShot(swordSwing);
@@ -213,32 +255,33 @@ public class PlayerController : MonoBehaviour
         Destroy(ball, 30f); // Destroy the fireball after 30 seconds
     }
 
-    /*
-    void AttackRaycast()
+    void ShootSpell()
     {
-        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out RaycastHit hit, attackDistance))
-        { 
-            HitTarget(hit.point);
-
-            if(hit.transform.TryGetComponent<Actor>(out Actor T))
-            { T.TakeDamage(attackDamage); }
-        } 
+        if(combo == "ZZA")
+        {
+            Debug.Log("Fireball");
+            var ball = Instantiate(secondFireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
+            Rigidbody rb = ball.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.velocity = cam.transform.forward * 50f;
+            }
+            Destroy(ball, 30f);
+        }
+        else
+        {
+            Debug.Log("Combo failed: " + combo);
+        }
+        combo = "";
     }
 
-    void HitTarget(Vector3 pos)
-    {
-        audioSource.pitch = Random.Range(0.9f, 1.1f);
-        audioSource.PlayOneShot(hitSound);
-
-        Instantiate(shortParticleOnHit, pos, Quaternion.identity);
-        Instantiate(longParticleOnHit, pos, Quaternion.identity);
-
-    }
-    */
+    #endregion
 
     // ------------------- //
     //      COLLISIONS     //
     // ------------------- //
+
+    #region Collisions
 
     private void OnTriggerEnter(Collider other)
     {
@@ -254,4 +297,6 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+    #endregion
+
 }

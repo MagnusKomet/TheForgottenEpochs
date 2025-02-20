@@ -62,6 +62,42 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Earth"",
+                    ""type"": ""Button"",
+                    ""id"": ""5c325769-0588-4fc1-bf07-47326fd07ec3"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Wind"",
+                    ""type"": ""Button"",
+                    ""id"": ""31eb174d-c051-4c02-a9f0-493f1e28b93d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Fire"",
+                    ""type"": ""Button"",
+                    ""id"": ""d10e2f4b-79aa-483d-b091-5579c7709c2a"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Water"",
+                    ""type"": ""Button"",
+                    ""id"": ""c5d4c4ed-0891-4c32-b37a-ea9623dedb12"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -152,6 +188,50 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7834ffc4-2b2a-4722-96c0-3e80e16504ee"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Earth"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b5377519-2252-468f-8951-de80dd35c35f"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Wind"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""03e306b7-fcea-4cc6-abd1-0b45088124e3"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e17e7dab-4b1a-4e51-941f-573d6177ca3b"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Water"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -164,6 +244,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_OnFoot_Jump = m_OnFoot.FindAction("Jump", throwIfNotFound: true);
         m_OnFoot_Look = m_OnFoot.FindAction("Look", throwIfNotFound: true);
         m_OnFoot_Attack = m_OnFoot.FindAction("Attack", throwIfNotFound: true);
+        m_OnFoot_Earth = m_OnFoot.FindAction("Earth", throwIfNotFound: true);
+        m_OnFoot_Wind = m_OnFoot.FindAction("Wind", throwIfNotFound: true);
+        m_OnFoot_Fire = m_OnFoot.FindAction("Fire", throwIfNotFound: true);
+        m_OnFoot_Water = m_OnFoot.FindAction("Water", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
@@ -234,6 +318,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_OnFoot_Jump;
     private readonly InputAction m_OnFoot_Look;
     private readonly InputAction m_OnFoot_Attack;
+    private readonly InputAction m_OnFoot_Earth;
+    private readonly InputAction m_OnFoot_Wind;
+    private readonly InputAction m_OnFoot_Fire;
+    private readonly InputAction m_OnFoot_Water;
     public struct OnFootActions
     {
         private @PlayerInput m_Wrapper;
@@ -242,6 +330,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_OnFoot_Jump;
         public InputAction @Look => m_Wrapper.m_OnFoot_Look;
         public InputAction @Attack => m_Wrapper.m_OnFoot_Attack;
+        public InputAction @Earth => m_Wrapper.m_OnFoot_Earth;
+        public InputAction @Wind => m_Wrapper.m_OnFoot_Wind;
+        public InputAction @Fire => m_Wrapper.m_OnFoot_Fire;
+        public InputAction @Water => m_Wrapper.m_OnFoot_Water;
         public InputActionMap Get() { return m_Wrapper.m_OnFoot; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -263,6 +355,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Attack.started += instance.OnAttack;
             @Attack.performed += instance.OnAttack;
             @Attack.canceled += instance.OnAttack;
+            @Earth.started += instance.OnEarth;
+            @Earth.performed += instance.OnEarth;
+            @Earth.canceled += instance.OnEarth;
+            @Wind.started += instance.OnWind;
+            @Wind.performed += instance.OnWind;
+            @Wind.canceled += instance.OnWind;
+            @Fire.started += instance.OnFire;
+            @Fire.performed += instance.OnFire;
+            @Fire.canceled += instance.OnFire;
+            @Water.started += instance.OnWater;
+            @Water.performed += instance.OnWater;
+            @Water.canceled += instance.OnWater;
         }
 
         private void UnregisterCallbacks(IOnFootActions instance)
@@ -279,6 +383,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Attack.started -= instance.OnAttack;
             @Attack.performed -= instance.OnAttack;
             @Attack.canceled -= instance.OnAttack;
+            @Earth.started -= instance.OnEarth;
+            @Earth.performed -= instance.OnEarth;
+            @Earth.canceled -= instance.OnEarth;
+            @Wind.started -= instance.OnWind;
+            @Wind.performed -= instance.OnWind;
+            @Wind.canceled -= instance.OnWind;
+            @Fire.started -= instance.OnFire;
+            @Fire.performed -= instance.OnFire;
+            @Fire.canceled -= instance.OnFire;
+            @Water.started -= instance.OnWater;
+            @Water.performed -= instance.OnWater;
+            @Water.canceled -= instance.OnWater;
         }
 
         public void RemoveCallbacks(IOnFootActions instance)
@@ -302,5 +418,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+        void OnEarth(InputAction.CallbackContext context);
+        void OnWind(InputAction.CallbackContext context);
+        void OnFire(InputAction.CallbackContext context);
+        void OnWater(InputAction.CallbackContext context);
     }
 }
