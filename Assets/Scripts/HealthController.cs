@@ -54,6 +54,7 @@ public class HealthController : MonoBehaviour
 
     private void Die()
     {
+
         Destroy(whoDies);
     }
 }

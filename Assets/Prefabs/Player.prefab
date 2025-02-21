@@ -343,7 +343,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shortParticleOnHit: {fileID: 1126181125208960, guid: ca26d7307564ff848b29e32bbe6279ef, type: 3}
   longParticleOnHit: {fileID: 1924146031275744, guid: a50b888ceca3dca4eab49f79ed67390a, type: 3}
-  moveSpeed: 5
+  ComboHud: {fileID: 0}
+  Earth: {fileID: 2368369716680940278, guid: 2e6aadd33b7da864483e81a7f52d0d1c, type: 3}
+  Fire: {fileID: 360401561620727141, guid: 6466db6c11d7cea4da6329620683a539, type: 3}
+  Wind: {fileID: 5073125103903471179, guid: 4da77000a0dff224ba0f67ed8a027fd8, type: 3}
+  Water: {fileID: 4429227453154285928, guid: c68dfb7187743084596460968ae10670, type: 3}
+  moveSpeed: 8
   gravity: -29.4
   jumpHeight: 1.5
   cam: {fileID: 1593019297686687297}

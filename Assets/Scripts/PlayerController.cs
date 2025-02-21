@@ -1,3 +1,5 @@
+using InfimaGames.LowPolyShooterPack;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,7 +23,20 @@ namespace PlayerSpace
         GameObject longParticleOnHit;
 
         [SerializeField]
+        GameObject ComboHud;
+        [SerializeField]
+        GameObject Earth;
+        [SerializeField]
+        GameObject Fire;
+        [SerializeField]
+        GameObject Wind;
+        [SerializeField]
+        GameObject Water;
+
+        /* comentao
+        [SerializeField]
         ManaMeterScript FireManaMeter;
+        */
 
         CharacterController controller;
         Animator animator;
@@ -46,6 +61,7 @@ namespace PlayerSpace
 
         void Awake()
         {
+            ComboHud = GameObject.Find("ComboHUD");
             controller = GetComponent<CharacterController>();
             animator = GetComponentInChildren<Animator>();
             audioSource = GetComponent<AudioSource>();
@@ -55,33 +71,41 @@ namespace PlayerSpace
             AssignInputs();
 
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            Cursor.visible = false;            
         }
 
         void Update()
         {
             isGrounded = controller.isGrounded;
 
-
             if (input.Earth.WasReleasedThisFrame())
             {
                 combo += "T";
+                Instantiate(Earth).transform.SetParent(ComboHud.transform);                
             }
             else if (input.Wind.WasReleasedThisFrame())
             {
                 combo += "A";
+                Instantiate(Wind).transform.SetParent(ComboHud.transform);
             }
             else if (input.Fire.WasReleasedThisFrame())
             {
+                /* comentao
                 if (FireManaMeter.ReduceMana())
                 {
                     combo += "Z";
                 }
+                */
+
+                combo += "Z";
+                Instantiate(Fire).transform.SetParent(ComboHud.transform);
             }
             else if (input.Water.WasReleasedThisFrame())
             {
                 combo += "K";
+                Instantiate(Water).transform.SetParent(ComboHud.transform);
             }
+
 
             // Repeat Inputs
             if (input.Attack.IsPressed())
@@ -267,7 +291,6 @@ namespace PlayerSpace
         {
             if (combo == "ZZA")
             {
-                Debug.Log("Fireball");
                 var ball = Instantiate(secondFireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
                 Rigidbody rb = ball.GetComponent<Rigidbody>();
                 if (rb != null)
@@ -276,9 +299,10 @@ namespace PlayerSpace
                 }
                 Destroy(ball, 30f);
             }
-            else
+
+            foreach (Transform child in ComboHud.transform)
             {
-                Debug.Log("Combo failed: " + combo);
+                Destroy(child.gameObject);
             }
             combo = "";
         }
