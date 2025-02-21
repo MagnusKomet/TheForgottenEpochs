@@ -74,7 +74,6 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IGameService.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\Loops.cs" />
     <Compile Include="Assets\Inputs\PlayerInput.cs" />
-    <Compile Include="Assets\ElementalMeters\Scripts\MeterScript.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\GameModeService.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Muzzle.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextTimescale.cs" />
@@ -101,6 +100,7 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Utilities\UtilitiesArrays.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IAudioManagerService.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextTutorial.cs" />
+    <Compile Include="Assets\Scripts\ManaMeterScript.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\GasTankScript.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\CharacterAnimationEventHandler.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\UtilitiesWeapons.cs" />
@@ -108,7 +108,6 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\Element.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\CharacterBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Scope.cs" />
-    <Compile Include="Assets\ElementalMeters\Scripts\PlayerControllerMeters.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\WeaponAnimationEventHandler.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\WeaponAttachmentManager.cs" />
     <Compile Include="Assets\Scripts\GameManagerController.cs" />
@@ -117,7 +116,6 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextAmmunitionCurrent.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\WeaponAttachmentManagerBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\Crosshair.cs" />
-    <Compile Include="Assets\ElementalMeters\Scripts\MeterButtons.cs" />
     <Compile Include="Assets\Packages\TriForge Assets\Fantasy Worlds - DEMO Common Files\Scripts\TF_FW_WindController.cs" />
     <Compile Include="Assets\Packages\PSXShaderKit\Scripts\PSXShaderManager.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextAmmunitionTotal.cs" />
