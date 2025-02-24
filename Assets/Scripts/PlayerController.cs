@@ -59,8 +59,11 @@ namespace PlayerSpace
 
         private string combo = "";
 
+        InventoryController inventory;
+
         void Awake()
         {
+            inventory = GameManager.Instance.inventory;
             ComboHud = GameObject.Find("ComboHUD");
             controller = GetComponent<CharacterController>();
             animator = GetComponentInChildren<Animator>();
@@ -328,7 +331,15 @@ namespace PlayerSpace
                     SceneManager.LoadScene("BosqueScene");
                 }
             }
+            else if (other.gameObject.tag == "Loot")
+            {
+                inventory.AddObject(other.gameObject.name);
+                Destroy(other.gameObject);
+            }
         }
+           
+
+
         #endregion
 
     }

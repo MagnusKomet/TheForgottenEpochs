@@ -10,6 +10,7 @@ TagManager:
   - Metal
   - Concrete
   - Mimic
+  - Loot
   layers:
   - Default
   - TransparentFX
