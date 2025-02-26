@@ -63,7 +63,7 @@ namespace PlayerSpace
 
         void Awake()
         {
-            inventory = GameManager.Instance.inventory;
+            
             ComboHud = GameObject.Find("ComboHUD");
             controller = GetComponent<CharacterController>();
             animator = GetComponentInChildren<Animator>();
@@ -75,6 +75,11 @@ namespace PlayerSpace
 
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;            
+        }
+
+        private void Start()
+        {
+            inventory = GameManager.Instance.inventory;
         }
 
         void Update()
