@@ -331,7 +331,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_OnFoot_Look;
         public InputAction @Attack => m_Wrapper.m_OnFoot_Attack;
         public InputAction @Earth => m_Wrapper.m_OnFoot_Earth;
-        public InputAction @Wind => m_Wrapper.m_OnFoot_Wind;
+        public InputAction Air => m_Wrapper.m_OnFoot_Wind;
         public InputAction @Fire => m_Wrapper.m_OnFoot_Fire;
         public InputAction @Water => m_Wrapper.m_OnFoot_Water;
         public InputActionMap Get() { return m_Wrapper.m_OnFoot; }
@@ -358,9 +358,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Earth.started += instance.OnEarth;
             @Earth.performed += instance.OnEarth;
             @Earth.canceled += instance.OnEarth;
-            @Wind.started += instance.OnWind;
-            @Wind.performed += instance.OnWind;
-            @Wind.canceled += instance.OnWind;
+            Air.started += instance.OnWind;
+            Air.performed += instance.OnWind;
+            Air.canceled += instance.OnWind;
             @Fire.started += instance.OnFire;
             @Fire.performed += instance.OnFire;
             @Fire.canceled += instance.OnFire;
@@ -386,9 +386,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Earth.started -= instance.OnEarth;
             @Earth.performed -= instance.OnEarth;
             @Earth.canceled -= instance.OnEarth;
-            @Wind.started -= instance.OnWind;
-            @Wind.performed -= instance.OnWind;
-            @Wind.canceled -= instance.OnWind;
+            Air.started -= instance.OnWind;
+            Air.performed -= instance.OnWind;
+            Air.canceled -= instance.OnWind;
             @Fire.started -= instance.OnFire;
             @Fire.performed -= instance.OnFire;
             @Fire.canceled -= instance.OnFire;

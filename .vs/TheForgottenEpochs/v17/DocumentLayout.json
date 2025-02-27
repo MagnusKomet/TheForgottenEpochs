@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\",
+  "WorkspaceRootPath": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\documents\\github\\theforgottenepochs\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\desktop\\insti\\projecte\\theforgottenepochs\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,30 +26,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T16:52:59.962Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T16:52:59.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "InventoryController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\InventoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\InventoryController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventoryController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\InventoryController.cs",
+              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\InventoryController.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventoryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T15:54:28.295Z"
             },
@@ -57,27 +72,36 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAswFEAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T11:13:52.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HealthController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\HealthController.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\HealthController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HealthController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\HealthController.cs",
+              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\HealthController.cs",
               "RelativeToolTip": "Assets\\Scripts\\HealthController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAA0wGEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwGEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T15:10:27.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-14T15:10:27.287Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1254,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

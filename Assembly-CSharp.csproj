@@ -197,7 +197,6 @@
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess-Accurate.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\3D Items - Wand Pack\Read Me.txt" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-UnlitTransparent.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

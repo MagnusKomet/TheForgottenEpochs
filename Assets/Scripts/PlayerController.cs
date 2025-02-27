@@ -29,7 +29,7 @@ namespace PlayerSpace
         [SerializeField]
         GameObject Fire;
         [SerializeField]
-        GameObject Wind;
+        GameObject Air;
         [SerializeField]
         GameObject Water;
 
@@ -88,13 +88,13 @@ namespace PlayerSpace
 
             if (input.Earth.WasReleasedThisFrame())
             {
-                combo += "T";
+                combo += "E";
                 Instantiate(Earth).transform.SetParent(ComboHud.transform);                
             }
-            else if (input.Wind.WasReleasedThisFrame())
+            else if (input.Air.WasReleasedThisFrame())
             {
                 combo += "A";
-                Instantiate(Wind).transform.SetParent(ComboHud.transform);
+                Instantiate(Air).transform.SetParent(ComboHud.transform);
             }
             else if (input.Fire.WasReleasedThisFrame())
             {
@@ -105,12 +105,12 @@ namespace PlayerSpace
                 }
                 */
 
-                combo += "Z";
+                combo += "F";
                 Instantiate(Fire).transform.SetParent(ComboHud.transform);
             }
             else if (input.Water.WasReleasedThisFrame())
             {
-                combo += "K";
+                combo += "W";
                 Instantiate(Water).transform.SetParent(ComboHud.transform);
             }
 
@@ -297,7 +297,7 @@ namespace PlayerSpace
 
         void ShootSpell()
         {
-            if (combo == "ZZA")
+            if (combo == "FFA")
             {
                 var ball = Instantiate(secondFireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
                 Rigidbody rb = ball.GetComponent<Rigidbody>();
