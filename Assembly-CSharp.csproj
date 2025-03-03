@@ -64,7 +64,6 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IGameModeService.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\CylinderMesh.cs" />
     <Compile Include="Assets\Scripts\HealthController.cs" />
-    <Compile Include="Assets\Stylized 3D Tools\Scripts\Rotator.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ProjectileScript.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\RLoops.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\PlaySoundBehaviour.cs" />
@@ -110,6 +109,8 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\Element.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\CharacterBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Scope.cs" />
+    <Compile Include="Assets\Scripts\VisualInventoryController.cs" />
+    <Compile Include="Assets\Scripts\ElementalCrystalsController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\WeaponAnimationEventHandler.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\WeaponAttachmentManager.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Inventory.cs" />
@@ -124,7 +125,6 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\ScopeBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Camera\CameraLook.cs" />
-    <Compile Include="Assets\Scripts\ManaMeterController.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\Mimic.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\InventoryBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\MuzzleBehaviour.cs" />
@@ -159,7 +159,6 @@
     <None Include="Assets\Packages\Mimic\README.txt" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Packages\Mimic\Materials\Shaders\SimplexNoise3D.hlsl" />
-    <None Include="Assets\Stylized 3D Tools\Read Me.txt" />
     <None Include="Assets\Packages\Mimic\Materials\Shaders\NoiseUtils.hlsl" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-VertexLitTransparentCutout.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

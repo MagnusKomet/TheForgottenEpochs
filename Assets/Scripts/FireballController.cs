@@ -6,7 +6,7 @@ public class FireballController : MonoBehaviour
 {
     private float explosionRadius = 5f;
     private float explosionForce = 500f;
-    private int damage = 25;
+    public int damage;
     [SerializeField] 
     private GameObject particles;
 

@@ -1,4 +1,5 @@
-using InfimaGames.LowPolyShooterPack;
+using System.Collections;
+using InfimaGames.LowPolyShooterPack.Interface;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -33,10 +34,8 @@ namespace PlayerSpace
         [SerializeField]
         GameObject Water;
 
-        /* comentao
         [SerializeField]
-        ManaMeterScript FireManaMeter;
-        */
+        ElementalCrystalsController CrystalsController;
 
         CharacterController controller;
         Animator animator;
@@ -88,38 +87,36 @@ namespace PlayerSpace
 
             if (input.Earth.WasReleasedThisFrame())
             {
-                combo += "E";
-                Instantiate(Earth).transform.SetParent(ComboHud.transform);                
+                AddToCombo('E', Earth);
             }
             else if (input.Air.WasReleasedThisFrame())
             {
-                combo += "A";
-                Instantiate(Air).transform.SetParent(ComboHud.transform);
+                AddToCombo('A', Air);
             }
             else if (input.Fire.WasReleasedThisFrame())
             {
-                /* comentao
-                if (FireManaMeter.ReduceMana())
-                {
-                    combo += "Z";
-                }
-                */
-
-                combo += "F";
-                Instantiate(Fire).transform.SetParent(ComboHud.transform);
+                AddToCombo('F', Fire);
             }
             else if (input.Water.WasReleasedThisFrame())
             {
-                combo += "W";
-                Instantiate(Water).transform.SetParent(ComboHud.transform);
+                AddToCombo('W', Water);
             }
 
-
-            // Repeat Inputs
-            if (input.Attack.IsPressed())
-            { Attack(); }
-
             SetAnimations();
+        }
+
+        void AddToCombo(char element, GameObject elementObject)
+        {
+            if(combo.Length >= 15)
+            {
+                DestroyCombo();
+            }
+            else
+            {
+                combo += element;
+                CrystalsController.ReduceCrystalMana(element);
+                Instantiate(elementObject).transform.SetParent(ComboHud.transform);
+            }
         }
 
         void FixedUpdate()
@@ -170,7 +167,7 @@ namespace PlayerSpace
         void AssignInputs()
         {
             input.Jump.performed += ctx => Jump();
-            input.Attack.started += ctx => Attack();
+            input.Attack.performed += ctx => Attack();
         }
 
         #endregion
@@ -222,7 +219,6 @@ namespace PlayerSpace
         public float attackDistance = 3f;
         public float attackDelay = 0.4f;
         public float attackSpeed = 1f;
-        public int attackDamage = 1;
 
         [SerializeField]
         private GameObject fireball;
@@ -250,11 +246,13 @@ namespace PlayerSpace
 
             if (combo.Length > 0)
             {
-                Invoke(nameof(ShootSpell), attackDelay);
+                StartCoroutine(WaitToShootSpell());
             }
             else
             {
-                Invoke(nameof(ShootFireball), attackDelay);
+
+                CrystalsController.ReduceCrystalMana('F');
+                ShootFireball("F", fireball);
             }
 
             audioSource.pitch = Random.Range(0.9f, 1.1f);
@@ -278,41 +276,57 @@ namespace PlayerSpace
 
         }
 
+        IEnumerator WaitToShootSpell()
+        {
+            yield return new WaitForSeconds(0.2f);
+            ShootSpell();
+        }
+
         void ResetAttack()
         {
             attacking = false;
             readyToAttack = true;
         }
 
-        void ShootFireball()
-        {
-            var ball = Instantiate(fireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
-            Rigidbody rb = ball.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                rb.velocity = cam.transform.forward * 50f;
-            }
-            Destroy(ball, 30f); // Destroy the fireball after 30 seconds
-        }
-
         void ShootSpell()
         {
             if (combo == "FFA")
             {
-                var ball = Instantiate(secondFireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
-                Rigidbody rb = ball.GetComponent<Rigidbody>();
-                if (rb != null)
-                {
-                    rb.velocity = cam.transform.forward * 50f;
-                }
-                Destroy(ball, 30f);
+                ShootFireball(combo,secondFireball);
             }
 
+            DestroyCombo();
+        }
+
+        void DestroyCombo()
+        {
             foreach (Transform child in ComboHud.transform)
             {
                 Destroy(child.gameObject);
             }
             combo = "";
+        }
+
+        #endregion
+
+        #region Spells
+
+        void ShootFireball(string combo, GameObject tmpFireball)
+        {
+            var ball = Instantiate(tmpFireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
+            Rigidbody rb = ball.GetComponent<Rigidbody>();
+            FireballController fireballController = ball.GetComponent<FireballController>();
+            if (fireballController != null)
+            {
+                float damageMultiplier = CrystalsController.GetDamageMultiplier(combo);
+                int damage = (int)(15 * damageMultiplier);
+                fireballController.damage = damage;
+            }
+            if (rb != null)
+            {
+                rb.velocity = cam.transform.forward * 50f;
+            }
+            Destroy(ball, 30f);
         }
 
         #endregion

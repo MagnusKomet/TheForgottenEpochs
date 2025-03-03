@@ -430,16 +430,16 @@
 "Assets/Packages/PSXShaderKit/Scripts/PSXPostProcessEffect.cs"
 "Assets/Packages/PSXShaderKit/Scripts/PSXShaderManager.cs"
 "Assets/Packages/TriForge Assets/Fantasy Worlds - DEMO Common Files/Scripts/TF_FW_WindController.cs"
+"Assets/Scripts/ElementalCrystalsController.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/FireballController.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/HealthController.cs"
 "Assets/Scripts/InventoryController.cs"
 "Assets/Scripts/ItemController.cs"
-"Assets/Scripts/ManaMeterController.cs"
 "Assets/Scripts/MimicController.cs"
 "Assets/Scripts/PlayerController.cs"
-"Assets/Stylized 3D Tools/Scripts/Rotator.cs"
+"Assets/Scripts/VisualInventoryController.cs"
 -langversion:9.0
 /deterministic
 /optimize+

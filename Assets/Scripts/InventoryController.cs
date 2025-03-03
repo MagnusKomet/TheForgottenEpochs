@@ -7,7 +7,20 @@ namespace PlayerSpace
     [CreateAssetMenu(fileName = "InventoryData", menuName = "ScriptableObjects/InventoryData")]
     public class InventoryController : ScriptableObject
     {
-        private Dictionary<string, int> inventory = new Dictionary<string, int>();
+        [System.Serializable]
+        public class Item
+        {
+            public string itemName;
+            public int amount;
+
+            public Item(string itemName, int amount)
+            {
+                this.itemName = itemName;
+                this.amount = amount;
+            }
+        }
+
+        private List<Item> inventory = new List<Item>();
         private bool isInitialized = false;
 
         public void Initialize()
@@ -21,61 +34,57 @@ namespace PlayerSpace
 
         public void AddObject(string objectName, int amount = 1)
         {
-            if (inventory.ContainsKey(objectName))
+            Item item = inventory.Find(i => i.itemName == objectName);
+            if (item != null)
             {
-                inventory[objectName] += amount;
+                item.amount += amount;
             }
             else
             {
-                inventory[objectName] = amount;
+                inventory.Add(new Item(objectName, amount));
             }
-
         }
 
         public int GetObjectCount(string objectName)
         {
-            return inventory.ContainsKey(objectName) ? inventory[objectName] : 0;
+            Item item = inventory.Find(i => i.itemName == objectName);
+            return item != null ? item.amount : 0;
         }
 
         public bool RemoveObject(string objectName, int amount = 1)
         {
-            if (inventory.ContainsKey(objectName))
+            Item item = inventory.Find(i => i.itemName == objectName);
+            if (item != null)
             {
-                int newAmount = inventory[objectName] - amount;
-
-                if (newAmount < 0)
+                if (item.amount < amount)
                 {
                     return false;
                 }
                 else
                 {
-                    inventory[objectName] = newAmount;
-
+                    item.amount -= amount;
                     return true;
                 }
             }
-
             return false;
-
-
         }
 
         public void SaveData()
         {
             foreach (var item in inventory)
             {
-                PlayerPrefs.SetInt(item.Key, item.Value);
+                PlayerPrefs.SetInt(item.itemName, item.amount);
             }
             PlayerPrefs.Save();
         }
 
         private void LoadData()
         {
-            List<string> keys = new List<string>(inventory.Keys);
-            foreach (var key in keys)
+            foreach (var item in inventory)
             {
-                inventory[key] = PlayerPrefs.GetInt(key, 0);
+                item.amount = PlayerPrefs.GetInt(item.itemName, 0);
             }
         }
     }
+
 }
