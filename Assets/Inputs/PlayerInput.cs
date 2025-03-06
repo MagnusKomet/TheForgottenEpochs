@@ -73,7 +73,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Wind"",
+                    ""name"": ""Air"",
                     ""type"": ""Button"",
                     ""id"": ""31eb174d-c051-4c02-a9f0-493f1e28b93d"",
                     ""expectedControlType"": """",
@@ -94,6 +94,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""name"": ""Water"",
                     ""type"": ""Button"",
                     ""id"": ""c5d4c4ed-0891-4c32-b37a-ea9623dedb12"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Inventory"",
+                    ""type"": ""Button"",
+                    ""id"": ""35553022-824b-4792-9682-c461f1a371da"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -207,7 +216,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Wind"",
+                    ""action"": ""Air"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -232,6 +241,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""Water"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""01d793f1-18ce-4f6f-a6b9-e85ad75b7cee"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Inventory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -245,9 +265,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_OnFoot_Look = m_OnFoot.FindAction("Look", throwIfNotFound: true);
         m_OnFoot_Attack = m_OnFoot.FindAction("Attack", throwIfNotFound: true);
         m_OnFoot_Earth = m_OnFoot.FindAction("Earth", throwIfNotFound: true);
-        m_OnFoot_Wind = m_OnFoot.FindAction("Wind", throwIfNotFound: true);
+        m_OnFoot_Air = m_OnFoot.FindAction("Air", throwIfNotFound: true);
         m_OnFoot_Fire = m_OnFoot.FindAction("Fire", throwIfNotFound: true);
         m_OnFoot_Water = m_OnFoot.FindAction("Water", throwIfNotFound: true);
+        m_OnFoot_Inventory = m_OnFoot.FindAction("Inventory", throwIfNotFound: true);
     }
 
     ~@PlayerInput()
@@ -319,9 +340,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_OnFoot_Look;
     private readonly InputAction m_OnFoot_Attack;
     private readonly InputAction m_OnFoot_Earth;
-    private readonly InputAction m_OnFoot_Wind;
+    private readonly InputAction m_OnFoot_Air;
     private readonly InputAction m_OnFoot_Fire;
     private readonly InputAction m_OnFoot_Water;
+    private readonly InputAction m_OnFoot_Inventory;
     public struct OnFootActions
     {
         private @PlayerInput m_Wrapper;
@@ -331,9 +353,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Look => m_Wrapper.m_OnFoot_Look;
         public InputAction @Attack => m_Wrapper.m_OnFoot_Attack;
         public InputAction @Earth => m_Wrapper.m_OnFoot_Earth;
-        public InputAction Air => m_Wrapper.m_OnFoot_Wind;
+        public InputAction @Air => m_Wrapper.m_OnFoot_Air;
         public InputAction @Fire => m_Wrapper.m_OnFoot_Fire;
         public InputAction @Water => m_Wrapper.m_OnFoot_Water;
+        public InputAction @Inventory => m_Wrapper.m_OnFoot_Inventory;
         public InputActionMap Get() { return m_Wrapper.m_OnFoot; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -358,15 +381,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Earth.started += instance.OnEarth;
             @Earth.performed += instance.OnEarth;
             @Earth.canceled += instance.OnEarth;
-            Air.started += instance.OnWind;
-            Air.performed += instance.OnWind;
-            Air.canceled += instance.OnWind;
+            @Air.started += instance.OnAir;
+            @Air.performed += instance.OnAir;
+            @Air.canceled += instance.OnAir;
             @Fire.started += instance.OnFire;
             @Fire.performed += instance.OnFire;
             @Fire.canceled += instance.OnFire;
             @Water.started += instance.OnWater;
             @Water.performed += instance.OnWater;
             @Water.canceled += instance.OnWater;
+            @Inventory.started += instance.OnInventory;
+            @Inventory.performed += instance.OnInventory;
+            @Inventory.canceled += instance.OnInventory;
         }
 
         private void UnregisterCallbacks(IOnFootActions instance)
@@ -386,15 +412,18 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @Earth.started -= instance.OnEarth;
             @Earth.performed -= instance.OnEarth;
             @Earth.canceled -= instance.OnEarth;
-            Air.started -= instance.OnWind;
-            Air.performed -= instance.OnWind;
-            Air.canceled -= instance.OnWind;
+            @Air.started -= instance.OnAir;
+            @Air.performed -= instance.OnAir;
+            @Air.canceled -= instance.OnAir;
             @Fire.started -= instance.OnFire;
             @Fire.performed -= instance.OnFire;
             @Fire.canceled -= instance.OnFire;
             @Water.started -= instance.OnWater;
             @Water.performed -= instance.OnWater;
             @Water.canceled -= instance.OnWater;
+            @Inventory.started -= instance.OnInventory;
+            @Inventory.performed -= instance.OnInventory;
+            @Inventory.canceled -= instance.OnInventory;
         }
 
         public void RemoveCallbacks(IOnFootActions instance)
@@ -419,8 +448,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnLook(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnEarth(InputAction.CallbackContext context);
-        void OnWind(InputAction.CallbackContext context);
+        void OnAir(InputAction.CallbackContext context);
         void OnFire(InputAction.CallbackContext context);
         void OnWater(InputAction.CallbackContext context);
+        void OnInventory(InputAction.CallbackContext context);
     }
 }

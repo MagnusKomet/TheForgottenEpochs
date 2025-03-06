@@ -433,12 +433,12 @@
 "Assets/Scripts/ElementalCrystalsController.cs"
 "Assets/Scripts/EnemyController.cs"
 "Assets/Scripts/FireballController.cs"
-"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/HealthController.cs"
-"Assets/Scripts/InventoryController.cs"
+"Assets/Scripts/InventoryDataController.cs"
+"Assets/Scripts/InventoryManager.cs"
+"Assets/Scripts/ItemSlot.cs"
 "Assets/Scripts/MimicController.cs"
 "Assets/Scripts/PlayerController.cs"
-"Assets/Scripts/VisualInventoryController.cs"
 -langversion:9.0
 /deterministic
 /optimize+

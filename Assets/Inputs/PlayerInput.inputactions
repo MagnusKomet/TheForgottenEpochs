@@ -51,7 +51,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Wind",
+                    "name": "Air",
                     "type": "Button",
                     "id": "31eb174d-c051-4c02-a9f0-493f1e28b93d",
                     "expectedControlType": "",
@@ -72,6 +72,15 @@
                     "name": "Water",
                     "type": "Button",
                     "id": "c5d4c4ed-0891-4c32-b37a-ea9623dedb12",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Inventory",
+                    "type": "Button",
+                    "id": "35553022-824b-4792-9682-c461f1a371da",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -185,7 +194,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Wind",
+                    "action": "Air",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -208,6 +217,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Water",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "01d793f1-18ce-4f6f-a6b9-e85ad75b7cee",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Inventory",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

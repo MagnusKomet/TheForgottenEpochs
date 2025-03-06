@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using InfimaGames.LowPolyShooterPack.Interface;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -58,7 +61,7 @@ namespace PlayerSpace
 
         private string combo = "";
 
-        InventoryController inventory;
+        InventoryDataController inventory;
 
         void Awake()
         {
@@ -78,45 +81,49 @@ namespace PlayerSpace
 
         private void Start()
         {
-            inventory = GameManager.Instance.inventory;
+            inventory = InventoryManager.Instance.inventoryData;
         }
 
         void Update()
         {
             isGrounded = controller.isGrounded;
 
-            if (input.Earth.WasReleasedThisFrame())
+            if (input.Earth.WasPressedThisFrame())
             {
                 AddToCombo('E', Earth);
             }
-            else if (input.Air.WasReleasedThisFrame())
+            else if (input.Air.WasPressedThisFrame())
             {
                 AddToCombo('A', Air);
             }
-            else if (input.Fire.WasReleasedThisFrame())
+            else if (input.Fire.WasPressedThisFrame())
             {
                 AddToCombo('F', Fire);
             }
-            else if (input.Water.WasReleasedThisFrame())
+            else if (input.Water.WasPressedThisFrame())
             {
                 AddToCombo('W', Water);
             }
 
             SetAnimations();
+
         }
 
         void AddToCombo(char element, GameObject elementObject)
         {
-            if(combo.Length >= 15)
+            if (!InventoryManager.Instance.menuActivated)
             {
-                DestroyCombo();
-            }
-            else
-            {
-                combo += element;
-                CrystalsController.ReduceCrystalMana(element);
-                Instantiate(elementObject).transform.SetParent(ComboHud.transform);
-            }
+                if (combo.Length >= 15)
+                {
+                    DestroyCombo();
+                }
+                else
+                {
+                    combo += element;
+                    CrystalsController.ReduceCrystalMana(element);
+                    Instantiate(elementObject).transform.SetParent(ComboHud.transform);
+                }
+            }            
         }
 
         void FixedUpdate()
@@ -160,7 +167,7 @@ namespace PlayerSpace
         void Jump()
         {
             // Adds force to the player rigidbody to jump
-            if (isGrounded)
+            if (isGrounded && !InventoryManager.Instance.menuActivated)
                 _PlayerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
 
@@ -216,9 +223,7 @@ namespace PlayerSpace
         #region Attacks
 
         [Header("Attacking")]
-        public float attackDistance = 3f;
-        public float attackDelay = 0.4f;
-        public float attackSpeed = 1f;
+        private float attackSpeed = 0.8f;
 
         [SerializeField]
         private GameObject fireball;
@@ -235,51 +240,42 @@ namespace PlayerSpace
         bool readyToAttack = true;
         int attackCount;
 
+        // tmp
+        HashSet<string> unlockedSpells = new HashSet<string> { "FFA" };
+
         public void Attack()
         {
-            if (!readyToAttack || attacking) return;
-
-            readyToAttack = false;
-            attacking = true;
-
-            Invoke(nameof(ResetAttack), attackSpeed);
-
-            if (combo.Length > 0)
+            if (!InventoryManager.Instance.menuActivated)
             {
-                StartCoroutine(WaitToShootSpell());
-            }
-            else
-            {
+                if (!readyToAttack || attacking) return;
 
-                CrystalsController.ReduceCrystalMana('F');
-                ShootFireball("F", fireball);
-            }
+                readyToAttack = false;
+                attacking = true;
 
-            audioSource.pitch = Random.Range(0.9f, 1.1f);
-            audioSource.PlayOneShot(swordSwing);
+                Invoke(nameof(ResetAttack), attackSpeed);
 
-            if (attackCount == 0)
-            {
-                ChangeAnimationState(ATTACK1);
-                attackCount++;
-            }
-            else if (attackCount == 1)
-            {
-                ChangeAnimationState(ATTACKORB);
-                attackCount++;
-            }
-            else
-            {
-                ChangeAnimationState(ATTACK2);
-                attackCount = 0;
-            }
+                ShootSpell();
 
-        }
+                audioSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+                audioSource.PlayOneShot(swordSwing);
 
-        IEnumerator WaitToShootSpell()
-        {
-            yield return new WaitForSeconds(0.2f);
-            ShootSpell();
+                if (attackCount == 0)
+                {
+                    ChangeAnimationState(ATTACK1);
+                    attackCount++;
+                }
+                else if (attackCount == 1)
+                {
+                    ChangeAnimationState(ATTACKORB);
+                    attackCount++;
+                }
+                else
+                {
+                    ChangeAnimationState(ATTACK2);
+                    attackCount = 0;
+                }
+
+            }
         }
 
         void ResetAttack()
@@ -289,10 +285,20 @@ namespace PlayerSpace
         }
 
         void ShootSpell()
-        {
-            if (combo == "FFA")
+        {           
+
+            if (unlockedSpells.Contains(combo))
             {
-                ShootFireball(combo,secondFireball);
+                switch (combo)
+                {
+                    case "F":
+                        ShootFireball(combo, fireball);
+                        break;
+
+                    case "FFA":
+                        ShootFireball(combo, secondFireball);
+                        break;
+                }
             }
 
             DestroyCombo();
