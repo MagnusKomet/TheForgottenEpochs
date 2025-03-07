@@ -9,14 +9,14 @@ namespace PlayerSpace
     public class ItemSlot : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField]
-        private InventoryManager inventoryManager;
+        private InventoryVisualManager inventoryManager;
 
         // ------ITEM DATA------  //
 
         public string itemName;
         public int quantity;
         public Sprite itemSprite;
-        public Sprite emptySprite;
+        private Sprite emptySprite;
         public bool isFull;
         public string itemDescription;
 
@@ -39,6 +39,12 @@ namespace PlayerSpace
 
         public GameObject selectedShader;
         public bool thisItemSelected;
+
+        private void Start()
+        {
+            emptySprite = Resources.Load<Sprite>("emptySprite");
+            EmptySlot();
+        }
 
         public int AddItem(string itemName, int quantity, Sprite itemSprite, string itemDescription)
         {
@@ -99,20 +105,18 @@ namespace PlayerSpace
                 selectedShader.SetActive(true);
                 thisItemSelected = true;
 
+
                 itemDescriptionImage.sprite = itemSprite;
                 itemDescriptionText.text = itemDescription;
                 itemDescriptionNameText.text = itemName;
 
-                if (itemDescriptionImage.sprite == null)
-                {
-                    itemDescriptionImage.sprite = emptySprite;
-                }
             }
 
         }
 
         public void EmptySlot()
         {
+            itemSprite = emptySprite;
             quantityText.enabled = false;
             itemImage.sprite = emptySprite;
             itemDescriptionNameText.text = "";

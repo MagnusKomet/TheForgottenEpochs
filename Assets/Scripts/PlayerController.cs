@@ -81,7 +81,7 @@ namespace PlayerSpace
 
         private void Start()
         {
-            inventory = InventoryManager.Instance.inventoryData;
+            inventory = InventoryVisualManager.Instance.inventoryData;
         }
 
         void Update()
@@ -111,7 +111,7 @@ namespace PlayerSpace
 
         void AddToCombo(char element, GameObject elementObject)
         {
-            if (!InventoryManager.Instance.menuActivated)
+            if (!InventoryVisualManager.Instance.menuActivated)
             {
                 if (combo.Length >= 15)
                 {
@@ -167,7 +167,7 @@ namespace PlayerSpace
         void Jump()
         {
             // Adds force to the player rigidbody to jump
-            if (isGrounded && !InventoryManager.Instance.menuActivated)
+            if (isGrounded && !InventoryVisualManager.Instance.menuActivated)
                 _PlayerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
 
@@ -245,35 +245,43 @@ namespace PlayerSpace
 
         public void Attack()
         {
-            if (!InventoryManager.Instance.menuActivated)
+            if (!InventoryVisualManager.Instance.menuActivated)
             {
-                if (!readyToAttack || attacking) return;
-
-                readyToAttack = false;
-                attacking = true;
-
-                Invoke(nameof(ResetAttack), attackSpeed);
-
-                ShootSpell();
-
-                audioSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
-                audioSource.PlayOneShot(swordSwing);
-
-                if (attackCount == 0)
+                if(combo.Length > 0)
                 {
-                    ChangeAnimationState(ATTACK1);
-                    attackCount++;
-                }
-                else if (attackCount == 1)
-                {
-                    ChangeAnimationState(ATTACKORB);
-                    attackCount++;
+                    if (!readyToAttack || attacking) return;
+
+                    readyToAttack = false;
+                    attacking = true;
+
+                    Invoke(nameof(ResetAttack), attackSpeed);
+
+                    ShootSpell();
+
+                    audioSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+                    audioSource.PlayOneShot(swordSwing);
+
+                    if (attackCount == 0)
+                    {
+                        ChangeAnimationState(ATTACK1);
+                        attackCount++;
+                    }
+                    else if (attackCount == 1)
+                    {
+                        ChangeAnimationState(ATTACKORB);
+                        attackCount++;
+                    }
+                    else
+                    {
+                        ChangeAnimationState(ATTACK2);
+                        attackCount = 0;
+                    }
                 }
                 else
                 {
-                    ChangeAnimationState(ATTACK2);
-                    attackCount = 0;
+                    //Add bad spell animation
                 }
+                
 
             }
         }
@@ -355,11 +363,6 @@ namespace PlayerSpace
                 {
                     SceneManager.LoadScene("BosqueScene");
                 }
-            }
-            else if (other.gameObject.tag == "Loot")
-            {
-                inventory.AddObject(other.gameObject.name);
-                Destroy(other.gameObject);
             }
         }
            

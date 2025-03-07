@@ -315,7 +315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InventoryMenu: {fileID: 7662412046612942045}
-  GameplayHUD: {fileID: 0}
+  Crosshair: {fileID: 2799082658247858948}
+  menuActivated: 0
   itemSlots:
   - {fileID: 6999724035871840605}
   - {fileID: 1737405215862248107}
@@ -434,7 +435,7 @@ MonoBehaviour:
     m_Top: 25
     m_Bottom: 25
   m_ChildAlignment: 1
-  m_Spacing: 0
+  m_Spacing: 15
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -507,8 +508,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f4fd22a2c5e25694f8ae2d8d767aea35, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -689,8 +690,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f4fd22a2c5e25694f8ae2d8d767aea35, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1095,6 +1096,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (2)
@@ -1212,6 +1225,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (1)
@@ -1329,6 +1354,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (18)
@@ -1446,6 +1483,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (16)
@@ -1563,6 +1612,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (19)
@@ -1680,6 +1741,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (17)
@@ -1797,6 +1870,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (3)
@@ -1914,6 +1999,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (14)
@@ -2031,6 +2128,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (12)
@@ -2148,6 +2257,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (15)
@@ -2265,6 +2386,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (9)
@@ -2382,6 +2515,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (4)
@@ -2499,6 +2644,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (5)
@@ -2616,6 +2773,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (6)
@@ -2733,6 +2902,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (8)
@@ -2850,6 +3031,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (11)
@@ -2967,6 +3160,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (7)
@@ -3084,6 +3289,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (13)
@@ -3201,6 +3418,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot (10)
@@ -3318,6 +3547,18 @@ PrefabInstance:
       propertyPath: inventoryManager
       value: 
       objectReference: {fileID: 7858595015739398989}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionText
+      value: 
+      objectReference: {fileID: 5323456918345356024}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionImage
+      value: 
+      objectReference: {fileID: 7319488449753765561}
+    - target: {fileID: 1983831685159238463, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
+      propertyPath: itemDescriptionNameText
+      value: 
+      objectReference: {fileID: 5857560078665269493}
     - target: {fileID: 3747510998968928249, guid: 192e3d6ad2afda74cbdaba182f5df478, type: 3}
       propertyPath: m_Name
       value: ItemSlot

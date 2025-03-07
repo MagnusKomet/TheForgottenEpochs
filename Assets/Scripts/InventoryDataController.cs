@@ -1,44 +1,37 @@
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+
 
 namespace PlayerSpace
 {
     [CreateAssetMenu(fileName = "InventoryData", menuName = "ScriptableObjects/InventoryData")]
     public class InventoryDataController : ScriptableObject
     {
-        private List<Item> inventory = new List<Item>();
-        private bool isInitialized = false;
+        private List<InventoryItem> inventory;
 
-        public void Initialize()
+        public void AddItemData(InventoryItem addedItem)
         {
-            if (!isInitialized)
-            {
-                LoadData();
-                isInitialized = true;
-            }
-        }
-
-        public void AddObject(string objectName, int amount = 1)
-        {
-            Item item = inventory.Find(i => i.itemName == objectName);
+            InventoryItem item = inventory.Find(i => i.itemName == addedItem.name);
             if (item != null)
             {
-                item.amount += amount;
+                item.quantity += addedItem.quantity;
             }
             else
             {
-                inventory.Add(new Item(objectName, amount));
+                inventory.Add(addedItem);
             }
         }
 
         public int GetObjectCount(string objectName)
         {
-            Item item = inventory.Find(i => i.itemName == objectName);
+            InventoryItem item = inventory.Find(i => i.itemName == objectName);
 
             if (item != null)
             {
-                return item.amount;
+                return item.quantity;
             }
             else
             {
@@ -46,18 +39,18 @@ namespace PlayerSpace
             }
         }
 
-        public bool RemoveObject(string objectName, int amount = 1)
+        public bool RemoveItem(string objectName, int amount = 1)
         {
-            Item item = inventory.Find(i => i.itemName == objectName);
+            InventoryItem item = inventory.Find(i => i.itemName == objectName);
             if (item != null)
             {
-                if (item.amount < amount)
+                if (item.quantity < amount)
                 {
                     return false;
                 }
                 else
                 {
-                    item.amount -= amount;
+                    item.quantity -= amount;
                     return true;
                 }
             }
@@ -66,32 +59,45 @@ namespace PlayerSpace
 
         public void SaveData()
         {
-            foreach (var item in inventory)
-            {
-                PlayerPrefs.SetInt(item.itemName, item.amount);
-            }
+            string json = JsonHelper.ToJson<InventoryItem>(inventory.ToArray());
+            PlayerPrefs.SetString("InventoryData", json);
             PlayerPrefs.Save();
         }
 
-        private void LoadData()
+        public void LoadData()
         {
-            foreach (var item in inventory)
+            if (PlayerPrefs.HasKey("InventoryData"))
             {
-                item.amount = PlayerPrefs.GetInt(item.itemName, 0);
+                string json = PlayerPrefs.GetString("InventoryData");
+                inventory = JsonHelper.FromJson<InventoryItem>(json).ToList();
+                Debug.Log("Inventory data loaded successfully.");
+            }
+            else
+            {
+                inventory = new List<InventoryItem>();
+                Debug.Log("No inventory data found.");
             }
         }
     }
 
-    [System.Serializable]
-    public class Item
+    public static class JsonHelper
     {
-        public string itemName;
-        public int amount;
-
-        public Item(string itemName, int amount)
+        public static string ToJson<T>(T[] array, bool prettyPrint = false)
         {
-            this.itemName = itemName;
-            this.amount = amount;
+            Wrapper<T> wrapper = new Wrapper<T> { Items = array };
+            return JsonUtility.ToJson(wrapper, prettyPrint);
+        }
+
+        public static T[] FromJson<T>(string json)
+        {
+            Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(json);
+            return wrapper.Items;
+        }
+
+        [System.Serializable]
+        private class Wrapper<T>
+        {
+            public T[] Items;
         }
     }
 
