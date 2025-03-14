@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class FireballController : MonoBehaviour
@@ -9,6 +10,12 @@ public class FireballController : MonoBehaviour
     public int damage;
     [SerializeField] 
     private GameObject particles;
+    private EnemyHealthController health;
+
+    private void Start()
+    {
+        Destroy(this, 30f);
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -17,15 +24,22 @@ public class FireballController : MonoBehaviour
 
         foreach (var obj in surroundingObjects)
         {
-            // Aplicar fuerza de explosión
-            var rb = obj.GetComponent<Rigidbody>();
-            if (rb != null)
+
+            if(obj.gameObject.tag == "Player")
             {
-                rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, 1f);
+                health = obj.GetComponent<PlayerHealthController>();
+            }
+            else
+            {
+                health = obj.GetComponent<EnemyHealthController>();
+
+                var rb = obj.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, 1f);
+                }
             }
 
-            // Aplicar daño si el objeto tiene un script de salud
-            var health = obj.GetComponent<HealthController>();
             if (health != null)
             {
                 health.TakeDamage(damage);

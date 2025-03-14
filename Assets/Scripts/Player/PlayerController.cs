@@ -59,7 +59,7 @@ namespace PlayerSpace
 
         float xRotation = 0f;
 
-        private string combo = "";
+        private static string combo = "";
 
         InventoryDataController inventory;
 
@@ -120,8 +120,6 @@ namespace PlayerSpace
 
         }
 
-        //////////////////////////// tuto
-
         private void CheckInteraction()
         {
             RaycastHit hit;
@@ -175,8 +173,6 @@ namespace PlayerSpace
                 currentInteractable = null;
             }
         }
-
-        //////////////////////////// tuto
 
         void AddToCombo(char element, GameObject elementObject)
         {
@@ -246,6 +242,8 @@ namespace PlayerSpace
             input.Attack.performed += ctx => Attack();
         }
 
+        
+
         #endregion
 
         // ---------- //
@@ -294,13 +292,6 @@ namespace PlayerSpace
         [Header("Attacking")]
         private float attackSpeed = 0.8f;
 
-        [SerializeField]
-        private GameObject fireball;
-        [SerializeField]
-        private GameObject secondFireball;
-
-        [SerializeField]
-        private Transform SpellsSpawnPoint;
 
         public AudioClip swordSwing;
         public AudioClip hitSound;
@@ -309,8 +300,6 @@ namespace PlayerSpace
         bool readyToAttack = true;
         int attackCount;
 
-        // tmp
-        HashSet<string> unlockedSpells = new HashSet<string> { "FFA", "F" };
 
         public void Attack()
         {
@@ -361,25 +350,7 @@ namespace PlayerSpace
             readyToAttack = true;
         }
 
-        void ShootSpell()
-        {           
 
-            if (unlockedSpells.Contains(combo))
-            {
-                switch (combo)
-                {
-                    case "F":
-                        ShootFireball(combo, fireball);
-                        break;
-
-                    case "FFA":
-                        ShootFireball(combo, secondFireball);
-                        break;
-                }
-            }
-
-            DestroyCombo();
-        }
 
         void DestroyCombo()
         {
@@ -394,22 +365,79 @@ namespace PlayerSpace
 
         #region Spells
 
-        void ShootFireball(string combo, GameObject tmpFireball)
+        // tmp
+        HashSet<string> unlockedSpells = new HashSet<string> { "FFA", "F", "AAE" };
+
+
+        [SerializeField]
+        private GameObject fireball;
+        [SerializeField]
+        private GameObject secondFireball;
+        [SerializeField]
+        private GameObject windBlade;
+
+        [SerializeField]
+        private Transform SpellsSpawnPoint;
+
+        void ShootSpell()
         {
-            var ball = Instantiate(tmpFireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
-            Rigidbody rb = ball.GetComponent<Rigidbody>();
-            FireballController fireballController = ball.GetComponent<FireballController>();
-            if (fireballController != null)
+
+            if (unlockedSpells.Contains(combo))
+            {
+                switch (combo)
+                {
+                    case "F":
+                        ShootFireball(fireball);
+                        break;
+
+                    case "FFA":
+                        ShootFireball(secondFireball);
+                        break;
+
+                    case "AAE":
+                        ShootWindBlade();
+                        break;
+                }
+            }
+
+            DestroyCombo();
+        }
+
+        void ShootFireball(GameObject tmpFireball)
+        {
+            var spell = Instantiate(tmpFireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
+            Rigidbody rb = spell.GetComponent<Rigidbody>();
+            FireballController controller = spell.GetComponent<FireballController>();
+            if (controller != null)
             {
                 float damageMultiplier = CrystalsController.GetDamageMultiplier(combo);
                 int damage = (int)(15 * damageMultiplier);
-                fireballController.damage = damage;
+                controller.damage = damage;
             }
+
             if (rb != null)
             {
                 rb.velocity = cam.transform.forward * 50f;
             }
-            Destroy(ball, 30f);
+        }
+
+        void ShootWindBlade()
+        {
+            var spell = Instantiate(windBlade, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
+            Rigidbody rb = spell.GetComponent<Rigidbody>();
+            WindBladeController controller = spell.GetComponent<WindBladeController>();
+            if (controller != null)
+            {
+                float damageMultiplier = CrystalsController.GetDamageMultiplier(combo);
+                int damage = (int)(50 * damageMultiplier);
+                controller.damage = damage;
+            }
+
+            if (rb != null)
+            {
+                rb.velocity = cam.transform.forward * 50f;
+            }
+            
         }
 
         #endregion

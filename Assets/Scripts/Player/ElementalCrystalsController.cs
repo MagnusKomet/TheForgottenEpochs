@@ -6,9 +6,7 @@ namespace PlayerSpace
     public class ElementalCrystalsController : MonoBehaviour
     {
         [SerializeField]
-        private Renderer targetRenderer;
-        [SerializeField]
-        private GameObject Weapon;
+        private GameObject weapon;
         [SerializeField]
         private Renderer earthCrystal;
         [SerializeField]
@@ -17,16 +15,20 @@ namespace PlayerSpace
         private Renderer fireCrystal;
         [SerializeField]
         private Renderer waterCrystal;
+        [SerializeField]
+        private Renderer lifeCrystal;
 
         Color earthColor = new Color(0, 191, 0, 1);
         Color airColor = new Color(1, 1, 191, 1);
         Color fireColor = new Color(191, 1, 0, 1);
         Color waterColor = new Color(0, 1, 191, 1);
+        Color lifeColor = new Color(191, 1, 191, 1);
 
         float earthMana = 10;
         float airMana = 10;
         float fireMana = 10;
         float waterMana = 10;
+        float lifeMana = 10;
 
         float reducedMana = 0.5f;
         float augmentedMana = 0.005f;
@@ -37,16 +39,18 @@ namespace PlayerSpace
             SetEmission(airMana, airCrystal, airColor);
             SetEmission(fireMana, fireCrystal, fireColor);
             SetEmission(waterMana, waterCrystal, waterColor);
+            SetEmission(lifeMana, lifeCrystal, lifeColor);
         }
 
         void FixedUpdate()
         {
-            Weapon.transform.Rotate(0, 0, 1);
+            weapon.transform.Rotate(0, 0, 1);
 
             AugmentCrystalMana('E');
             AugmentCrystalMana('A');
             AugmentCrystalMana('F');
             AugmentCrystalMana('W');
+
         }
 
         public void ReduceCrystalMana(char crystalName)
@@ -170,7 +174,7 @@ namespace PlayerSpace
             crystal.material.SetColor("_EmissionColor", finalColor);
 
             // Hacer que la propiedad de emisión se actualice en tiempo real
-            DynamicGI.SetEmissive(targetRenderer, finalColor);
+            DynamicGI.SetEmissive(crystal, finalColor);
         }
 
     }
