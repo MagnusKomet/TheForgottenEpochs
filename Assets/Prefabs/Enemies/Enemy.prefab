@@ -159,8 +159,9 @@ MonoBehaviour:
   walkPointRange: 5
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
-  fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
-  timeBetweenAttacks: 1
+  fireball: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
+  fireballDamage: 25
+  timeBetweenAttacks: 5
   alreadyAttacked: 0
   forcedChaseDuration: 5
   isForcedChaseActive: 0

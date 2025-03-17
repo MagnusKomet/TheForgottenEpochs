@@ -446,6 +446,7 @@
 "Assets/Scripts/Player/ElementalCrystalsController.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/PlayerHealthController.cs"
+"Assets/Scripts/Spells/BasicSpellController.cs"
 "Assets/Scripts/Spells/FireballController.cs"
 "Assets/Scripts/Spells/WindBladeController.cs"
 "Assets/SlimUI/Modern Menu 1/Scripts/Audio/CheckMusicVolume.cs"

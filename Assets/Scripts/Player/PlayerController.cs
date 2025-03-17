@@ -242,7 +242,6 @@ namespace PlayerSpace
             input.Attack.performed += ctx => Attack();
         }
 
-        
 
         #endregion
 
@@ -366,7 +365,7 @@ namespace PlayerSpace
         #region Spells
 
         // tmp
-        HashSet<string> unlockedSpells = new HashSet<string> { "FFA", "F", "AAE" };
+        HashSet<string> unlockedSpells = new HashSet<string> { "FFA", "F", "AAAE" };
 
 
         [SerializeField]
@@ -394,7 +393,7 @@ namespace PlayerSpace
                         ShootFireball(secondFireball);
                         break;
 
-                    case "AAE":
+                    case "AAAE":
                         ShootWindBlade();
                         break;
                 }
@@ -413,6 +412,7 @@ namespace PlayerSpace
                 float damageMultiplier = CrystalsController.GetDamageMultiplier(combo);
                 int damage = (int)(15 * damageMultiplier);
                 controller.damage = damage;
+                controller.shootFromTag = gameObject.tag;
             }
 
             if (rb != null)
@@ -431,6 +431,7 @@ namespace PlayerSpace
                 float damageMultiplier = CrystalsController.GetDamageMultiplier(combo);
                 int damage = (int)(50 * damageMultiplier);
                 controller.damage = damage;
+                controller.shootFromTag = gameObject.tag;
             }
 
             if (rb != null)
@@ -466,6 +467,7 @@ namespace PlayerSpace
 
 
         #endregion
+
 
     }
 }

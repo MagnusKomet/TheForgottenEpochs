@@ -23,8 +23,9 @@ public class EnemyController : MonoBehaviour
     public Vector3 walkPoint;
     public bool walkPointSet;
 
-    [Header("Atacks")]
+    [Header("Attacks")]
     public GameObject fireball;
+    public int fireballDamage;
     public float timeBetweenAttacks;
     public bool alreadyAttacked;
 
@@ -124,6 +125,11 @@ public class EnemyController : MonoBehaviour
         if (!alreadyAttacked)
         {
             var ball = Instantiate(fireball, transform.position + transform.forward, Quaternion.identity);
+
+            FireballController fireballController = ball.GetComponent<FireballController>();
+            fireballController.damage = fireballDamage;
+            fireballController.shootFromTag = gameObject.tag;
+
             Rigidbody rb = ball.GetComponent<Rigidbody>();
             if (rb != null)
             {

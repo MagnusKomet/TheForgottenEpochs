@@ -15,5 +15,23 @@ public class PlayerHealthController : EnemyHealthController
         }
     }
 
+    public new void Die()
+    {
+        
+        // Create a new camera
+        GameObject cameraObject = new GameObject("DeathCamera");
+        Camera deathCamera = cameraObject.AddComponent<Camera>();
+
+        Instantiate(deathCamera, cameraObject.transform);
+
+        // Position the camera above the player
+        cameraObject.transform.position = new Vector3(transform.position.x, transform.position.y + 10, transform.position.z);
+        cameraObject.transform.rotation = Quaternion.Euler(90, 0, 0);
+
+
+        // Destroy the player game object
+        Destroy(gameObject);
+    }
+
 
 }

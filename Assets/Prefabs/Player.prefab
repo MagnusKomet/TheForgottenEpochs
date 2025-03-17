@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 7881742556450714833}
   - component: {fileID: 1960066882962087107}
   - component: {fileID: 1724571163528880646}
+  - component: {fileID: 6488219911713767130}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -354,15 +355,29 @@ MonoBehaviour:
   jumpHeight: 1.5
   cam: {fileID: 1593019297686687297}
   sensitivity: 30
-  attackDistance: 100
-  attackDelay: 0.4
-  attackSpeed: 1
-  attackDamage: 1
-  fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
-  secondFireball: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
-  SpellsSpawnPoint: {fileID: 316116817463063823}
+  playerReach: 3
   swordSwing: {fileID: 8300000, guid: 7923190c5e80b4d4d9396acc5d0b48cf, type: 3}
   hitSound: {fileID: 8300000, guid: 11245d3945c564b45a1bafad5ecb70e5, type: 3}
+  fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
+  secondFireball: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
+  windBlade: {fileID: 6054753705526747894, guid: e56c8528052e2204bb1fd401795448b8, type: 3}
+  SpellsSpawnPoint: {fileID: 316116817463063823}
+--- !u!114 &6488219911713767130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816843259406738505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e6fc5b3866c1645b69ad6cf1346592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  whoDies: {fileID: 0}
+  itemPrefabs: []
 --- !u!1001 &2873678860705152320
 PrefabInstance:
   m_ObjectHideFlags: 0

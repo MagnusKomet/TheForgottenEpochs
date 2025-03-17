@@ -2,22 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WindBladeController : MonoBehaviour
+public class WindBladeController : BasicSpellController
 {
-    public int damage;
 
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(this, 30f);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        var health = collision.gameObject.GetComponent<EnemyHealthController>();
-        if (health != null)
-        {
-            health.TakeDamage(damage);
-        }
-        Destroy(gameObject);
+        DamageOnHitTrigger(other);
     }
 }

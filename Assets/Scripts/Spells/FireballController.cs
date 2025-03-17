@@ -3,49 +3,15 @@ using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class FireballController : MonoBehaviour
+public class FireballController : BasicSpellController
 {
-    private float explosionRadius = 5f;
-    private float explosionForce = 500f;
-    public int damage;
-    [SerializeField] 
-    private GameObject particles;
-    private EnemyHealthController health;
 
-    private void Start()
-    {
-        Destroy(this, 30f);
-    }
+    [SerializeField]
+    private GameObject particles;
 
     private void OnCollisionEnter(Collision collision)
     {
-        // Generar una esfera para detectar objetos cercanos
-        var surroundingObjects = Physics.OverlapSphere(transform.position, explosionRadius);
-
-        foreach (var obj in surroundingObjects)
-        {
-
-            if(obj.gameObject.tag == "Player")
-            {
-                health = obj.GetComponent<PlayerHealthController>();
-            }
-            else
-            {
-                health = obj.GetComponent<EnemyHealthController>();
-
-                var rb = obj.GetComponent<Rigidbody>();
-                if (rb != null)
-                {
-                    rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, 1f);
-                }
-            }
-
-            if (health != null)
-            {
-                health.TakeDamage(damage);
-            }
-        }
-
+        DamageAoeCollider(collision);
         Instantiate(particles, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

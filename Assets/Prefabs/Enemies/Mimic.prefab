@@ -64,7 +64,7 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
-  velocity: {x: -0.36730075, y: 0, z: -0.8658743}
+  velocity: {x: -0.098923996, y: 0, z: -0.0075599956}
 --- !u!114 &8649345389762647525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,12 +93,13 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
+  fireballDamage: 25
   timeBetweenAttacks: 1
   alreadyAttacked: 0
   forcedChaseDuration: 20
   isForcedChaseActive: 0
   forcedChaseTimer: 0
-  height: 0.8
+  height: 5
   speed: 5
   velocityLerpCoef: 4
 --- !u!195 &8073393217677310552
@@ -244,3 +245,4 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   whoDies: {fileID: 2000334542312664406}
+  itemPrefabs: []
