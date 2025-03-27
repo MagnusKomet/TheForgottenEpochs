@@ -206,6 +206,7 @@
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Materials\ToonShader.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
