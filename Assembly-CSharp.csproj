@@ -63,6 +63,8 @@
     <Compile Include="Assets\Scripts\Inventory\InventoryDataController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\CanvasSpawner.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IGameModeService.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyHealthController.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUIElement.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\CylinderMesh.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ProjectileScript.cs" />
@@ -70,13 +72,16 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\PlaySoundBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\ElementText.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextMouseLock.cs" />
+    <Compile Include="Assets\Free Slash VFX\Demo\Scripts\CameraOrbit.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\ServiceLocator.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Managers\UISettingsManager.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IGameService.cs" />
+    <Compile Include="Assets\Free Slash VFX\Demo\Scripts\AttackerController.cs" />
     <Compile Include="Assets\Infima Games\Tools\Looping\Loops.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Managers\UIMenuManager.cs" />
     <Compile Include="Assets\Inputs\PlayerInput.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Misc\ResetDemo.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUIElement.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Misc\ResetDemo.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUIData.cs" />
+    <Compile Include="Assets\Free Slash VFX\Demo\Scripts\Projectile.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\GameModeService.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Muzzle.cs" />
     <Compile Include="Assets\Scripts\Inventory\DropItem.cs" />
@@ -93,45 +98,47 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Weapon.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\DebrisScript.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Demo\DisplayMaterialName.cs" />
+    <Compile Include="Assets\Scripts\Spells\SpellsCreatorController.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\Leg.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Audio\CheckSFXVolume.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\AudioManagerService.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\TargetScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerHealthController.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Misc\ExtraLinks.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Managers\UIMenuManager.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\MovementBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Movement.cs" />
     <Compile Include="Assets\Infima Games\Tools\Log.cs" />
+    <Compile Include="Assets\Free Slash VFX\Demo\Scripts\ElementsShowCase.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Utilities\UtilitiesArrays.cs" />
+    <Compile Include="Assets\Free Slash VFX\Demo\Scripts\ParticleAnimationEvent.cs" />
     <Compile Include="Assets\Scripts\Spells\WindBladeController.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Managers\UISettingsManager.cs" />
     <Compile Include="Assets\Scripts\Player\ElementalCrystalsController.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Audio\CheckSFXVolume.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\IAudioManagerService.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUI.cs" />
     <Compile Include="Assets\Scripts\Inventory\ItemSlot.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextTutorial.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\GasTankScript.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\CharacterAnimationEventHandler.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\ApiManager.cs" />
+    <Compile Include="Assets\Free Slash VFX\Demo\Scripts\SlashDecal.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\UtilitiesWeapons.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\CharacterKinematics.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\Element.cs" />
     <Compile Include="Assets\Scripts\Spells\BasicSpellController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\CharacterBehaviour.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\Scope.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUIData.cs" />
+    <Compile Include="Assets\Free Slash VFX\Demo\Scripts\PlayerInput.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUI.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Animation\WeaponAnimationEventHandler.cs" />
     <Compile Include="Assets\Scripts\Spells\FireballController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\WeaponAttachmentManager.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Inventory.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\PlayParticles.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Audio\CheckMusicVolume.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\TextAmmunitionCurrent.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Weapons\WeaponAttachmentManagerBehaviour.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryVisualManager.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\Crosshair.cs" />
-    <Compile Include="Assets\SlimUI\Modern Menu 1\Scripts\Audio\CheckMusicVolume.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Packages\TriForge Assets\Fantasy Worlds - DEMO Common Files\Scripts\TF_FW_WindController.cs" />
     <Compile Include="Assets\Packages\PSXShaderKit\Scripts\PSXShaderManager.cs" />
@@ -147,21 +154,25 @@
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\CasingScript.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Interface\ImageWeapon.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Legacy\ImpactScript.cs" />
-    <Compile Include="Assets\Scripts\EnemyHealthController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\Bootstraper.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\Movement.cs" />
+    <Compile Include="Assets\Free Slash VFX\Demo\Scripts\FPSCounter.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Misc\ExtraLinks.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Character\Character.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHealthController.cs" />
     <Compile Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Code\Services\AudioSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\ImageEffects\PSX-Dithering.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Unlit Transparent.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-VertexLitTransparent.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess.shader" />
+    <None Include="Assets\Free Slash VFX\Shaders\Particle Distortion.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-UnlitTransparentCutout.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-Unlit.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
@@ -179,7 +190,9 @@
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Unlit.shader" />
+    <None Include="Assets\Free Slash VFX\Model\Katana\Katana License.txt" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Packages\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
     <None Include="Assets\Packages\TriForge Assets\Fantasy Worlds - DEMO Common Files\Shaders\FWGrass.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-UnlitTransparentCutout.shader" />
     <None Include="Assets\LiteFireEffect\Shader\ParticleBlendEffect.shader" />
@@ -211,6 +224,7 @@
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess-Accurate.shader" />
+    <None Include="Assets\Free Slash VFX\Model\Rock\Stylized Rock Credits.txt" />
     <None Include="Assets\Infima Games\Low Poly Shooter Pack - Free Sample\Art\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-UnlitTransparent.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -1068,8 +1082,16 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.51f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
@@ -1086,6 +1108,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
@@ -1114,6 +1140,10 @@
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
@@ -1148,6 +1178,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1178,6 +1212,10 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Searcher.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor">

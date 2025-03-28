@@ -1,0 +1,662 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.51f1 (9f9d16c45e54) revision 10460438'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'es' Physical Memory: 16205 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.51f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/ernes/Desktop/Insti/Projecte/TheForgottenEpochs
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+50204
+Successfully changed project path to: C:/Users/ernes/Desktop/Insti/Projecte/TheForgottenEpochs
+C:/Users/ernes/Desktop/Insti/Projecte/TheForgottenEpochs
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [25364]  Target information:
+
+Player connection [25364]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 747021018 [EditorId] 747021018 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FQ78H30) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25364]  * "[IP] 192.168.170.233 [Port] 0 [Flags] 2 [Guid] 747021018 [EditorId] 747021018 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FQ78H30) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25364] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25364] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 9.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.51f1 (9f9d16c45e54)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ernes/Desktop/Insti/Projecte/TheForgottenEpochs/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     5996 MB
+    Driver:   32.0.15.7283
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56360
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014181 seconds.
+- Loaded All Assemblies, in  0.419 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 357 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.719 seconds
+Domain Reload Profiling: 1135ms
+	BeginReloadAssembly (127ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (170ms)
+		LoadAssemblies (125ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (167ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (149ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (719ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (670ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (461ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (152ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.782 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.995 seconds
+Domain Reload Profiling: 1773ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (530ms)
+		LoadAssemblies (344ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (275ms)
+			TypeCache.Refresh (241ms)
+				TypeCache.ScanAssembly (218ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (996ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (816ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (646ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 6.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4961 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (2.1 MB). Loaded Objects now: 5457.
+Memory consumption went from 287.6 MB to 285.5 MB.
+Total: 4.495700 ms (FindLiveObjects: 0.380700 ms CreateObjectMapping: 0.434300 ms MarkObjects: 3.269100 ms  DeleteObjects: 0.410800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/CheckSFXVolume.cs: 0031632dcd762e0d5d1000ba189b345d -> eee54ca0ca6a506ae949112461467222
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ExtraLinks.cs: 1adcedf3fa8313d2cdb79b28eea806f4 -> 3aacf089bb936eeb41d6c4944ad6b53d
+  custom:scripting/monoscript/fileName/ThemedUIData.cs: a7c5267c0a28058e8d89ee09ef2e955e -> 4f890ea9b03dedc0c327cd74cecc037d
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/CheckMusicVolume.cs: 7cd0c9f5f947d20ee9b9f68c06338612 -> 35420266a0dc9971e1d62d8f22b5825c
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PlayerHealthController.cs: 8053051df558e7e7af6c35569a6779f8 -> 5b38ac3fa318083412142441d13d5f07
+  custom:scripting/monoscript/fileName/ThemedUI.cs: 55f73259b7b7902f31f56a19de7a32d6 -> 2b032e5ab0a1b31148ae4fce15aa3be3
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/UISettingsManager.cs: bbe65d6b88b6a85690ef76887f75b3bc -> 658c237d11fe42068651cf384f19ab5b
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/UIMenuManager.cs: 03a514df3da008682da3f660f898a503 -> d3a34efdfcbc28c1ba27a4d292ec7869
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/SlimUIWindow.cs: 96f93942c0bddaa19f070c220bda5711 -> 98218d34930a09c0ffdee48076194cfb
+  custom:scripting/monoscript/fileName/EnemyHealthController.cs: 75c2a473ad6bf96b118da05ab91484a4 -> 9c43a2727e1c879d49b2506b200ce60d
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ResetDemo.cs: 18e9dda52e5da0c092cd058eda8e35ca -> dcbbf29fcacd951d216c30b8221cf60c
+  custom:scripting/monoscript/fileName/ThemedUIElement.cs: 701071ca36cc3a9667ed9adea14eb2f0 -> a720a39cc31196dc6427cc937fbe4f10
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.744 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 14.764 seconds
+Domain Reload Profiling: 17504ms
+	BeginReloadAssembly (166ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (2483ms)
+		LoadAssemblies (2549ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (14765ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (885ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (690ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 5.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (2.0 MB). Loaded Objects now: 5460.
+Memory consumption went from 264.1 MB to 262.1 MB.
+Total: 4.311700 ms (FindLiveObjects: 0.404200 ms CreateObjectMapping: 0.379100 ms MarkObjects: 3.199100 ms  DeleteObjects: 0.328400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/CheckSFXVolume.cs: 0031632dcd762e0d5d1000ba189b345d -> eee54ca0ca6a506ae949112461467222
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ExtraLinks.cs: 1adcedf3fa8313d2cdb79b28eea806f4 -> 3aacf089bb936eeb41d6c4944ad6b53d
+  custom:scripting/monoscript/fileName/ThemedUIData.cs: a7c5267c0a28058e8d89ee09ef2e955e -> 4f890ea9b03dedc0c327cd74cecc037d
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/CheckMusicVolume.cs: 7cd0c9f5f947d20ee9b9f68c06338612 -> 35420266a0dc9971e1d62d8f22b5825c
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PlayerHealthController.cs: 8053051df558e7e7af6c35569a6779f8 -> 5b38ac3fa318083412142441d13d5f07
+  custom:scripting/monoscript/fileName/ThemedUI.cs: 55f73259b7b7902f31f56a19de7a32d6 -> 2b032e5ab0a1b31148ae4fce15aa3be3
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/UISettingsManager.cs: bbe65d6b88b6a85690ef76887f75b3bc -> 658c237d11fe42068651cf384f19ab5b
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/UIMenuManager.cs: 03a514df3da008682da3f660f898a503 -> d3a34efdfcbc28c1ba27a4d292ec7869
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/SlimUIWindow.cs: 96f93942c0bddaa19f070c220bda5711 -> 98218d34930a09c0ffdee48076194cfb
+  custom:scripting/monoscript/fileName/EnemyHealthController.cs: 75c2a473ad6bf96b118da05ab91484a4 -> 9c43a2727e1c879d49b2506b200ce60d
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ResetDemo.cs: 18e9dda52e5da0c092cd058eda8e35ca -> dcbbf29fcacd951d216c30b8221cf60c
+  custom:scripting/monoscript/fileName/ThemedUIElement.cs: 701071ca36cc3a9667ed9adea14eb2f0 -> a720a39cc31196dc6427cc937fbe4f10
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.454 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.542 seconds
+Domain Reload Profiling: 1992ms
+	BeginReloadAssembly (148ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (230ms)
+		LoadAssemblies (294ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1542ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (855ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (662ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 6.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (2.0 MB). Loaded Objects now: 5463.
+Memory consumption went from 264.1 MB to 262.1 MB.
+Total: 7.328700 ms (FindLiveObjects: 0.573800 ms CreateObjectMapping: 0.510700 ms MarkObjects: 5.738700 ms  DeleteObjects: 0.504100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/CheckSFXVolume.cs: 0031632dcd762e0d5d1000ba189b345d -> eee54ca0ca6a506ae949112461467222
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ExtraLinks.cs: 1adcedf3fa8313d2cdb79b28eea806f4 -> 3aacf089bb936eeb41d6c4944ad6b53d
+  custom:scripting/monoscript/fileName/ThemedUIData.cs: a7c5267c0a28058e8d89ee09ef2e955e -> 4f890ea9b03dedc0c327cd74cecc037d
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/CheckMusicVolume.cs: 7cd0c9f5f947d20ee9b9f68c06338612 -> 35420266a0dc9971e1d62d8f22b5825c
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PlayerHealthController.cs: 8053051df558e7e7af6c35569a6779f8 -> 5b38ac3fa318083412142441d13d5f07
+  custom:scripting/monoscript/fileName/ThemedUI.cs: 55f73259b7b7902f31f56a19de7a32d6 -> 2b032e5ab0a1b31148ae4fce15aa3be3
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/UISettingsManager.cs: bbe65d6b88b6a85690ef76887f75b3bc -> 658c237d11fe42068651cf384f19ab5b
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/UIMenuManager.cs: 03a514df3da008682da3f660f898a503 -> d3a34efdfcbc28c1ba27a4d292ec7869
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/SlimUIWindow.cs: 96f93942c0bddaa19f070c220bda5711 -> 98218d34930a09c0ffdee48076194cfb
+  custom:scripting/monoscript/fileName/EnemyHealthController.cs: 75c2a473ad6bf96b118da05ab91484a4 -> 9c43a2727e1c879d49b2506b200ce60d
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ResetDemo.cs: 18e9dda52e5da0c092cd058eda8e35ca -> dcbbf29fcacd951d216c30b8221cf60c
+  custom:scripting/monoscript/fileName/ThemedUIElement.cs: 701071ca36cc3a9667ed9adea14eb2f0 -> a720a39cc31196dc6427cc937fbe4f10
+========================================================================
+Received Import Request.
+  Time since last request: 7891.589330 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/02.png
+  artifactKey: Guid(4eeea4f9222f0074e8f3b40d0abd5f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/02.png using Guid(4eeea4f9222f0074e8f3b40d0abd5f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '145dce7172213e987daddce03782b2da') in 0.136388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/15.png
+  artifactKey: Guid(919680c240f368f4e9a34e9b1d5d55ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/15.png using Guid(919680c240f368f4e9a34e9b1d5d55ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '215d2b5aaf7a0e91256c2ce935c398f8') in 0.033087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/09.png
+  artifactKey: Guid(611d05e9585616b4ba561c398c636ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/09.png using Guid(611d05e9585616b4ba561c398c636ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7c545ae5a6b674f85bc540a22a316ae1') in 0.025900 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/28.png
+  artifactKey: Guid(4803d7f6f6926ac4daa2e13dacc6c450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/28.png using Guid(4803d7f6f6926ac4daa2e13dacc6c450) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '86856b9c42e8970a478b9bc6ae9936c8') in 0.030549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/20.png
+  artifactKey: Guid(8420aa49346c32948a016ff38caa1ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/20.png using Guid(8420aa49346c32948a016ff38caa1ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '45d5ade5e64cf89ba33d1d8b97e85061') in 0.029824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/03.png
+  artifactKey: Guid(bdcaeec5459b7314781414725fab72cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/03.png using Guid(bdcaeec5459b7314781414725fab72cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ae0987b0ac8b96f99d87d54043139831') in 0.028451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/23.png
+  artifactKey: Guid(d0d4e9fabd57a964dba379056cd10526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/23.png using Guid(d0d4e9fabd57a964dba379056cd10526) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5084e21f31045ace43beb54225832d1a') in 0.018031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/24.png
+  artifactKey: Guid(7eeff564ba2fbbc449f275098713f210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/24.png using Guid(7eeff564ba2fbbc449f275098713f210) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4d4f483b8141599b35220884c8eeaa10') in 0.022142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/07.png
+  artifactKey: Guid(2b1448c2a32f5d647b8ec3ad2b8d8783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/07.png using Guid(2b1448c2a32f5d647b8ec3ad2b8d8783) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b7675db806c856694efc2ee39ccc7e82') in 0.023201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/14.png
+  artifactKey: Guid(c91964070eb03794b8c033b1bda877fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/14.png using Guid(c91964070eb03794b8c033b1bda877fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '86c911dfa44e0b3fa62e6f4d618961ad') in 0.024988 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/05.png
+  artifactKey: Guid(51b074d951245534f960d6072fd93757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/05.png using Guid(51b074d951245534f960d6072fd93757) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9a6ef3fe4939e2af4999d58b2eedf6f1') in 0.027520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/25.png
+  artifactKey: Guid(40a2ede3eaf8d934a88b224c1e23f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/25.png using Guid(40a2ede3eaf8d934a88b224c1e23f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ac7cb0780dd46e5b34bd6b6cc2dcb365') in 0.033284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/04.png
+  artifactKey: Guid(b44da608b8fa6e54e8c274aff6339e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/04.png using Guid(b44da608b8fa6e54e8c274aff6339e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bbd94dd274bb9b6a472b2f583ca04c33') in 0.018408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.155742 seconds.
+  path: Assets/The Legend of Slim/05 The Ocean/Lanternfish/02.png
+  artifactKey: Guid(406df3289929e064eb4ab14e3c74bf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/05 The Ocean/Lanternfish/02.png using Guid(406df3289929e064eb4ab14e3c74bf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ad790960ca1ff3e969a8b23da8c4c9f0') in 0.028140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/The Legend of Slim/05 The Ocean/Lanternfish/04.png
+  artifactKey: Guid(0c71e31dc2ddbb2468b5c2fe468e7867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/05 The Ocean/Lanternfish/04.png using Guid(0c71e31dc2ddbb2468b5c2fe468e7867) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4a2dd1151b61875283ce1930d874d69b') in 0.014792 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 15.869797 seconds.
+  path: Assets/The Legend of Slim/05 The Ocean/Crab/03.png
+  artifactKey: Guid(348c0074a04867843b52b61797e5b6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/05 The Ocean/Crab/03.png using Guid(348c0074a04867843b52b61797e5b6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f9a04c3de66d717ce3d80c9a780e40ee') in 0.028117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.881313 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/31.png
+  artifactKey: Guid(7e25a46768c3ae647b70741016da4287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/31.png using Guid(7e25a46768c3ae647b70741016da4287) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8ebf8630d6aacb4f1f4a5c81901064b8') in 0.021148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/35.png
+  artifactKey: Guid(19d3503c1669f624ba73c4a29e6df122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/35.png using Guid(19d3503c1669f624ba73c4a29e6df122) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'eaac6a4dcd3179a2420d36fe09cb30d1') in 0.028597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/32.png
+  artifactKey: Guid(b640176d052c50943a6f38597d46d559) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/32.png using Guid(b640176d052c50943a6f38597d46d559) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4a6acb25f3bb63eaec13be87000a3600') in 0.019100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.255607 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/40.png
+  artifactKey: Guid(6437999de2b906d4491d8169a08bd7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/40.png using Guid(6437999de2b906d4491d8169a08bd7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6e06799845ac139a9c9d5579cc22f808') in 0.037470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/45.png
+  artifactKey: Guid(dde015792022a914e990508ac19aab08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/45.png using Guid(dde015792022a914e990508ac19aab08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b7fa6cc8a8eec82f855954f37a885d22') in 0.028410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/44.png
+  artifactKey: Guid(d5d6a87da9d33f24b908798578be3581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/44.png using Guid(d5d6a87da9d33f24b908798578be3581) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '61474670abbef99bf38e3af019ac0cd2') in 0.018566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.555168 seconds.
+  path: Assets/The Legend of Slim/00 Preview all/49.png
+  artifactKey: Guid(cd7598bd50dab5f41b63ad6a5adf2b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/The Legend of Slim/00 Preview all/49.png using Guid(cd7598bd50dab5f41b63ad6a5adf2b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '56858f8070e8176366d52256761863d0') in 0.017453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.504 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.598 seconds
+Domain Reload Profiling: 2097ms
+	BeginReloadAssembly (168ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (256ms)
+		LoadAssemblies (326ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1599ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (884ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (688ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 6.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4858 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (2.0 MB). Loaded Objects now: 5472.
+Memory consumption went from 268.0 MB to 266.0 MB.
+Total: 6.514600 ms (FindLiveObjects: 0.559900 ms CreateObjectMapping: 0.523900 ms MarkObjects: 4.960900 ms  DeleteObjects: 0.468600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/CheckSFXVolume.cs: 0031632dcd762e0d5d1000ba189b345d -> eee54ca0ca6a506ae949112461467222
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/ExtraLinks.cs: 1adcedf3fa8313d2cdb79b28eea806f4 -> 3aacf089bb936eeb41d6c4944ad6b53d
+  custom:scripting/monoscript/fileName/ThemedUIData.cs: a7c5267c0a28058e8d89ee09ef2e955e -> 4f890ea9b03dedc0c327cd74cecc037d
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/CheckMusicVolume.cs: 7cd0c9f5f947d20ee9b9f68c06338612 -> 35420266a0dc9971e1d62d8f22b5825c
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PlayerHealthController.cs: 8053051df558e7e7af6c35569a6779f8 -> 5b38ac3fa318083412142441d13d5f07
+  custom:scripting/monoscript/fileName/ThemedUI.cs: 55f73259b7b7902f31f56a19de7a32d6 -> 2b032e5ab0a1b31148ae4fce15aa3be3
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/UISettingsManager.cs: bbe65d6b88b6a85690ef76887f75b3bc -> 658c237d11fe42068651cf384f19ab5b
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/UIMenuManager.cs: 03a514df3da008682da3f660f898a503 -> d3a34efdfcbc28c1ba27a4d292ec7869
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/SlimUIWindow.cs: 96f93942c0bddaa19f070c220bda5711 -> 98218d34930a09c0ffdee48076194cfb
+  custom:scripting/monoscript/fileName/EnemyHealthController.cs: 75c2a473ad6bf96b118da05ab91484a4 -> 9c43a2727e1c879d49b2506b200ce60d
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ResetDemo.cs: 18e9dda52e5da0c092cd058eda8e35ca -> dcbbf29fcacd951d216c30b8221cf60c
+  custom:scripting/monoscript/fileName/ThemedUIElement.cs: 701071ca36cc3a9667ed9adea14eb2f0 -> a720a39cc31196dc6427cc937fbe4f10
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

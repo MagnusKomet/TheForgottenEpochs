@@ -141,6 +141,37 @@ MonoBehaviour:
   _FlatShadingMode: 0
   _TriangleSortMode: 1
   _DepthDebugView: 0
+--- !u!1 &2182703442525696248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8783884431233236634}
+  m_Layer: 6
+  m_Name: DeathCameraSpawnPoint
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8783884431233236634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2182703442525696248}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.19756514, y: 0.042857338, z: 0.04966891, w: 0.9780922}
+  m_LocalPosition: {x: 0, y: -0.6, z: -0.067}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5474971094339391789}
+  m_LocalEulerAnglesHint: {x: -23, y: 4, z: 5}
 --- !u!1 &3199909423145574295
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +237,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3123964814589484877}
+  - {fileID: 8783884431233236634}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &7881742556450714833
@@ -378,6 +410,8 @@ MonoBehaviour:
   currentHealth: 0
   whoDies: {fileID: 0}
   itemPrefabs: []
+  deathCamera: {fileID: 2864178902019536406, guid: 3a7d49491fad71c46a2277beba14b887, type: 3}
+  deathCameraSpawnPoint: {fileID: 8783884431233236634}
 --- !u!1001 &2873678860705152320
 PrefabInstance:
   m_ObjectHideFlags: 0
