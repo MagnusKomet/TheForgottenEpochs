@@ -40,6 +40,9 @@ namespace PlayerSpace
         [SerializeField]
         ElementalCrystalsController CrystalsController;
 
+        [SerializeField]
+        InventoryVisualManager inventoryVisualManager;
+
         CharacterController controller;
         Animator animator;
         AudioSource audioSource;
@@ -68,7 +71,7 @@ namespace PlayerSpace
 
         void Awake()
         {
-            
+            inventoryVisualManager = GameObject.Find("GameManager").GetComponent<InventoryVisualManager>();
             ComboHud = GameObject.Find("ComboHUD");
             controller = GetComponent<CharacterController>();
             animator = GetComponentInChildren<Animator>();
@@ -84,7 +87,7 @@ namespace PlayerSpace
 
         private void Start()
         {
-            inventory = InventoryVisualManager.Instance.inventoryData;
+            inventory = inventoryVisualManager.inventoryData;
         }
 
         void Update()
@@ -130,19 +133,10 @@ namespace PlayerSpace
                 if(hit.collider.tag == "Interactable")
                 {
                     Interactable interactable = hit.collider.GetComponent<Interactable>();
-                    
-                    if(currentInteractable != null && interactable != currentInteractable)
-                    {
-                        currentInteractable.DisableOutline();
-                    }
 
-                    if (interactable.enabled)
+                    if (interactable.enabled && interactable != currentInteractable)
                     {
                         SetCurrentInteractable(interactable);
-                    }
-                    else
-                    {
-                        DisableCurrentInteractable();
                     }
                 }
                 else
@@ -160,23 +154,21 @@ namespace PlayerSpace
         private void SetCurrentInteractable(Interactable interactable)
         {
             currentInteractable = interactable;
-            currentInteractable.EnableOutline();
-            InventoryVisualManager.Instance.EnableInteractionText(interactable.message);
+            inventoryVisualManager.EnableInteractionText(interactable.message);
         }
 
         private void DisableCurrentInteractable()
         {            
             if (currentInteractable != null)
             {
-                InventoryVisualManager.Instance.DisableInteractionText();
-                currentInteractable.DisableOutline();
+                inventoryVisualManager.DisableInteractionText();
                 currentInteractable = null;
             }
         }
 
         void AddToCombo(char element, GameObject elementObject)
         {
-            if (!InventoryVisualManager.Instance.menuActivated)
+            if (!inventoryVisualManager.menuActivated)
             {
                 if (combo.Length >= 15)
                 {
@@ -232,7 +224,7 @@ namespace PlayerSpace
         void Jump()
         {
             // Adds force to the player rigidbody to jump
-            if (isGrounded && !InventoryVisualManager.Instance.menuActivated)
+            if (isGrounded && !inventoryVisualManager.menuActivated)
                 _PlayerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
 
@@ -302,7 +294,7 @@ namespace PlayerSpace
 
         public void Attack()
         {
-            if (!InventoryVisualManager.Instance.menuActivated)
+            if (!inventoryVisualManager.menuActivated)
             {
                 if(combo.Length > 0)
                 {

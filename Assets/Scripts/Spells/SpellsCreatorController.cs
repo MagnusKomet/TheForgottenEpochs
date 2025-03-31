@@ -4,15 +4,49 @@ using UnityEngine;
 
 public class SpellsCreatorController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    GameObject fireball;
+    GameObject windblade;
+
+    bool panelActivated = false;
+
+    string combo = "";
+
+
+    public void AddToCombo(char element)
     {
-        
+        combo += element;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CastSpell()
     {
-        
+        if (combo == "FF")
+        {
+            Instantiate(fireball, transform.position, transform.rotation);
+        }
+        else if (combo == "WW")
+        {
+            Instantiate(windblade, transform.position, transform.rotation);
+        }
+        else if (combo == "FW" || combo == "WF")
+        {
+            Instantiate(fireball, transform.position, transform.rotation);
+            Instantiate(windblade, transform.position, transform.rotation);
+        }
+        else
+        {
+            Debug.Log("Invalid combo");
+        }
+
+        combo = "";
+    }
+
+    public void ActivatePanel()
+    {
+        panelActivated = !panelActivated;
+
+        Time.timeScale = panelActivated ? 0 : 1;
+        Cursor.visible = panelActivated;
+        Cursor.lockState = panelActivated ? CursorLockMode.None : CursorLockMode.Locked;
     }
 }
