@@ -11,12 +11,17 @@ public class PlayerHealthController : EnemyHealthController
 
     public override void Start()
     {
-        deathMenu = GameObject.Find("DeathMenu");
 
         currentHealth = maxHealth;
         if (whoDies == null)
         {
             whoDies = gameObject;
+        }
+
+        deathMenu = GameObject.Find("DeathMenu");
+        while (deathMenu.activeSelf)
+        {            
+            deathMenu.SetActive(false);
         }
     }
 
@@ -35,8 +40,6 @@ public class PlayerHealthController : EnemyHealthController
         Instantiate(deathCamera, deathCameraSpawnPoint.position, deathCameraSpawnPoint.rotation);
         deathMenu.SetActive(true);
 
-        Destroy(gameObject);
+        Destroy(whoDies);
     }
-
-
 }

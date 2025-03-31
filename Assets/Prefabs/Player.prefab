@@ -35,6 +35,7 @@ Transform:
   m_Children:
   - {fileID: 5684358163948163166}
   - {fileID: 316116817463063823}
+  - {fileID: 9554285757019637}
   m_Father: {fileID: 5474971094339391789}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1593019297686687297
@@ -76,7 +77,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 215
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -382,6 +383,7 @@ MonoBehaviour:
   Air: {fileID: 5073125103903471179, guid: 4da77000a0dff224ba0f67ed8a027fd8, type: 3}
   Water: {fileID: 4429227453154285928, guid: c68dfb7187743084596460968ae10670, type: 3}
   CrystalsController: {fileID: 642073453458398334}
+  inventoryVisualManager: {fileID: 0}
   moveSpeed: 8
   gravity: -29.4
   jumpHeight: 1.5
@@ -408,10 +410,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  whoDies: {fileID: 0}
+  whoDies: {fileID: 6816843259406738505}
   itemPrefabs: []
   deathCamera: {fileID: 2864178902019536406, guid: 3a7d49491fad71c46a2277beba14b887, type: 3}
   deathCameraSpawnPoint: {fileID: 8783884431233236634}
+  deathMenu: {fileID: 0}
+--- !u!1 &8463242730867725734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9554285757019637}
+  - component: {fileID: 7957754540626824665}
+  m_Layer: 0
+  m_Name: UICamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9554285757019637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463242730867725734}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.000000062398605, y: -0.00000058114523, z: 0.000000021653248, w: -1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3123964814589484877}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &7957754540626824665
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463242730867725734}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 3
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 32
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1001 &2873678860705152320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -676,7 +762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 22fae9b711b69b144b71899c05540d88, type: 3}
       propertyPath: m_Name
-      value: Arms
+      value: CharacterModel
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 22fae9b711b69b144b71899c05540d88, type: 3}
       propertyPath: m_Layer
