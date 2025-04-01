@@ -120,7 +120,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858c26c5fa18e95489260733c4e96776, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: {fileID: 1427962332153456, guid: 301583a5af63a494298d60cd9f296909, type: 3}
+  explosionRadius: 7
+  explosionForce: 500
+  damage: 0
+  shootFromTag: 
+  explosion: {fileID: 100000, guid: 5d028565f79e270408884b995abc06ef, type: 3}
 --- !u!54 &7130643309111090884
 Rigidbody:
   m_ObjectHideFlags: 0

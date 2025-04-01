@@ -11,7 +11,7 @@ namespace MimicSpace
         [Header("Movimiento")]
         [Tooltip("Altura del cuerpo respecto al suelo")]
         [Range(0.5f, 5f)]
-        public float height = 0.8f;
+        public float height = 1.6f;
         public float speed = 5f;
         private Vector3 velocity = Vector3.zero;
         public float velocityLerpCoef = 4f;
@@ -30,7 +30,7 @@ namespace MimicSpace
             IAMovement();
         }
                 
-        private void MovimientoMimico()
+        public void MovimientoMimico()
         {
             myMimic.velocity = velocity;
 

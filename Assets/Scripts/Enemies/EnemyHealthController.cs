@@ -12,8 +12,10 @@ public class EnemyHealthController : MonoBehaviour
     public int currentHealth;
     [SerializeField]
     public GameObject whoDies;
+    [SerializeField]
+    public int dropsQuantity;
 
-    public GameObject[] itemPrefabs;
+    public GameObject[] dropsPrefabs;
     float explosionForce = 10f; 
     float explosionRadius = 2f; 
     float positionVariation = 1f;
@@ -65,9 +67,9 @@ public class EnemyHealthController : MonoBehaviour
     public void DropItemsWithExplosion()
     {
 
-        foreach (GameObject itemPrefab in itemPrefabs)
+        foreach (GameObject itemPrefab in dropsPrefabs)
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < dropsQuantity; i++)
             {
                 // Crear una pequeña variación en la posición inicial
                 Vector3 randomOffset = new Vector3(

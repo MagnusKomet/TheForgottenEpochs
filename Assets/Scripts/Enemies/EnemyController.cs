@@ -49,6 +49,9 @@ public class EnemyController : MonoBehaviour
 
     public void IAMovement()
     {
+        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
+        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+
         if (isForcedChaseActive)
         {
             forcedChaseTimer -= Time.deltaTime;
@@ -58,14 +61,19 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                ChasePlayer();
+                if (playerInAttackRange && playerInSightRange)
+                {
+                    AttackPlayer();
+                }
+                else
+                {
+                    ChasePlayer();
+                }
             }
         }
         else
         {
-            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
-
+            
             if (!playerInSightRange && !playerInAttackRange) Patroling();
             if (playerInSightRange && !playerInAttackRange) ChasePlayer();
             if (playerInAttackRange && playerInSightRange) AttackPlayer();
@@ -107,7 +115,10 @@ public class EnemyController : MonoBehaviour
 
     public void ChasePlayer()
     {
-        agent.SetDestination(player.position);
+        if (player != null)
+        {
+            agent.SetDestination(player.position);
+        }
     }
 
     public void ForceChaseOnDamage()

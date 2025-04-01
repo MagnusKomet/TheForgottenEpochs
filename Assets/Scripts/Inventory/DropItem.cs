@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using InfimaGames.LowPolyShooterPack;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;

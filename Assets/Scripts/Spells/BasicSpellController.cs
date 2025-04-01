@@ -6,24 +6,20 @@ using static UnityEngine.ParticleSystem;
 public class BasicSpellController : MonoBehaviour
 {
 
-    private float explosionRadius = 5f;
-    private float explosionForce = 500f;
+    public float explosionRadius;
+    public float explosionForce;
     public int damage;
     public string shootFromTag;
 
     private EnemyHealthController health;
-
-
 
     public void Start()
     {
         Destroy(this, 30f);
     }
 
-
     public void DamageOnHitTrigger(Collider other)
     {
-        
         if (other.gameObject.tag != shootFromTag)
         {
             health = other.gameObject.GetComponent<EnemyHealthController>();
@@ -44,12 +40,13 @@ public class BasicSpellController : MonoBehaviour
             if (obj.gameObject.tag != shootFromTag)
             {
                 health = obj.GetComponent<EnemyHealthController>();
-
+                                
                 var rb = obj.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
                     rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, 1f);
                 }
+                
 
                 if (health != null)
                 {
@@ -57,6 +54,12 @@ public class BasicSpellController : MonoBehaviour
                 }
             }
         }
-        
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        // Dibujar una esfera en el editor para visualizar el área de explosión
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
 }

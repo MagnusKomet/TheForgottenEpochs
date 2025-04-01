@@ -7,12 +7,12 @@ public class FireballController : BasicSpellController
 {
 
     [SerializeField]
-    private GameObject particles;
+    private GameObject explosion;
 
     private void OnCollisionEnter(Collision collision)
     {
         DamageAoeCollider(collision);
-        Instantiate(particles, transform.position, Quaternion.identity);
+        Instantiate(explosion, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 }

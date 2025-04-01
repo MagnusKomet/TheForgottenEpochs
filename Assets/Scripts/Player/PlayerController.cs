@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using InfimaGames.LowPolyShooterPack.Interface;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;

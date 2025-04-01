@@ -40,6 +40,9 @@ public class PlayerHealthController : EnemyHealthController
         Instantiate(deathCamera, deathCameraSpawnPoint.position, deathCameraSpawnPoint.rotation);
         deathMenu.SetActive(true);
 
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
         Destroy(whoDies);
     }
 }
