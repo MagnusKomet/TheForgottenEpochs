@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Inventory\DropItem.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\ExploderComponent.cs" />
     <Compile Include="Assets\Scripts\Enemies\MimicController.cs" />
+    <Compile Include="Assets\RunemarkStudio\DarkFantasyKit [Free]\Readme\Parts\Readme.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellsCreatorController.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\Leg.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -127,6 +128,7 @@
     <None Include="Assets\Packages\Free Slash VFX\Shaders\Particle Distortion.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-UnlitTransparentCutout.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-Unlit.shader" />
+    <None Include="Assets\EmaceArt\Slavic World Free\Plugin\Grass.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-VertexLitTransparent.shader" />
     <None Include="Assets\Packages\LiteFireEffect\Shader\ParticlePremultiplyBlend.shader" />
@@ -134,6 +136,7 @@
     <None Include="Assets\Packages\TriForge Assets\ReadMe.txt" />
     <None Include="Assets\Packages\Mimic\README.txt" />
     <None Include="Assets\Packages\Mimic\Materials\Shaders\SimplexNoise3D.hlsl" />
+    <None Include="Assets\EmaceArt\Slavic World Free\URP_Support\URP Info.txt" />
     <None Include="Assets\Packages\Mimic\Materials\Shaders\NoiseUtils.hlsl" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-VertexLitTransparentCutout.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -162,6 +165,7 @@
     <None Include="Assets\Packages\TriForge Assets\Fantasy Worlds - DEMO Common Files\Shaders\FWTreeBark.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-VertexLitTransparentCutout.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\EmaceArt\Slavic World Free\Thanks and checkout this\Info.txt" />
     <None Include="Assets\Materials\ToonShader.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\ImageEffects\PSX-PostProcess-Accurate.shader" />

@@ -60,6 +60,8 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.51f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\RunemarkStudio\DarkFantasyKit [Free]\Readme\Parts\Editor\ReadmeEditor.cs" />
+    <Compile Include="Assets\EmaceArt\Slavic World Free\Editor\WelcomeWindow.cs" />
     <Compile Include="Assets\Packages\SlimUI\Editor\SlimUIWindow.cs" />
   </ItemGroup>
   <ItemGroup>
