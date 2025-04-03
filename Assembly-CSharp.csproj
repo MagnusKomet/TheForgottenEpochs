@@ -80,6 +80,7 @@
     <Compile Include="Assets\Meet and Talk\Demo\Demo_MainMenu.cs" />
     <Compile Include="Assets\Meet and Talk\Script\GlobalValue\GlobalValueInUI.cs" />
     <Compile Include="Assets\Meet and Talk\Script\Localization\LocalizationDropdown.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\RunemarkStudio\DarkFantasyKit [Free]\Readme\Parts\Readme.cs" />
     <Compile Include="Assets\Scripts\Spells\SpellsCreatorController.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\Leg.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Managers\UIMenuManager.cs" />
     <Compile Include="Assets\Meet and Talk\Script\DialogueEventSO.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent.cs" />
+    <Compile Include="Assets\Scripts\PortalController.cs" />
     <Compile Include="Assets\Scripts\Spells\WindBladeController.cs" />
     <Compile Include="Assets\Scripts\Player\ElementalCrystalsController.cs" />
     <Compile Include="Assets\Scripts\NPCPathController.cs" />

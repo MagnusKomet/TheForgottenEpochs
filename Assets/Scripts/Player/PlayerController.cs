@@ -440,21 +440,8 @@ namespace PlayerSpace
 
         #region Collisions
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.tag == "Portal")
-            {
-                if (other.gameObject.name == "PortalMuseo")
-                {
-                    SceneManager.LoadScene("MuseoScene");
-                }
-                else if (other.gameObject.name == "PortalBosque")
-                {
-                    SceneManager.LoadScene("BosqueScene");
-                }
-            }
-        }
-           
+
+        // (·_·)?
 
 
         #endregion

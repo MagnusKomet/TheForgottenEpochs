@@ -14,6 +14,7 @@ public class NPCPathController : MonoBehaviour
     private Animator skeletonAnimator;
     string currentAnimationState;
     bool admiring = false;
+    float rotationDuration = 0.5f;
 
 
     void Start()
@@ -47,13 +48,27 @@ public class NPCPathController : MonoBehaviour
 
     private IEnumerator WaitAndChangeTarget()
     {
-        admiring = true;
-        ChangeAnimationState("IdleLookAround");
-        yield return new WaitForSeconds(1);
+        if (pathParent.GetChild(index).name == "Exhibit")
+        {
+            admiring = true;
+            ChangeAnimationState("IdleLookAround");
+
+            Quaternion originalRotation = transform.rotation;
+            Quaternion targetRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + 90, transform.rotation.eulerAngles.z);
+
+            for (float t = 0; t < rotationDuration; t += Time.deltaTime)
+            {
+                transform.rotation = Quaternion.Slerp(originalRotation, targetRotation, t / rotationDuration);
+                yield return null;
+            }
+            yield return new WaitForSeconds(Random.Range(5, 16));
+
+            admiring = false;
+        }
+
         index++;
         index %= pathParent.childCount;
         targetPoint = pathParent.GetChild(index);
-        admiring = false;
     }
 
     public void ChangeAnimationState(string newState)

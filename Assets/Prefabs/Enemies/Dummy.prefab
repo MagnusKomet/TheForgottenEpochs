@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.34, y: 0.79, z: 4.84}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalScale: {x: 0.029999997, y: 0.03, z: 0.029999997}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,6 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3fdc9c3b400cef4596e00e27ee20fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 25
   currentHealth: 0
   whoDies: {fileID: 8953863879292068232}
+  dropsQuantity: 4
+  dropsPrefabs:
+  - {fileID: 8318294484227744504, guid: 3134c19829b2cce42904357d7f420988, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
+  - {fileID: 3608898455747402935, guid: 772c83d13d201e440b63ed9942e73e92, type: 3}
+  - {fileID: 5648572820905123144, guid: 53b72f13acbcdba47a91d6f7dae8c336, type: 3}

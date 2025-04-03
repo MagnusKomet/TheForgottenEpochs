@@ -449,6 +449,8 @@
 "Assets/Scripts/Player/ElementalCrystalsController.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Player/PlayerHealthController.cs"
+"Assets/Scripts/PortalController.cs"
+"Assets/Scripts/Spawner.cs"
 "Assets/Scripts/Spells/BasicSpellController.cs"
 "Assets/Scripts/Spells/FireballController.cs"
 "Assets/Scripts/Spells/SpellsCreatorController.cs"
