@@ -120,6 +120,7 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:UNITY_POST_PROCESSING_STACK_V2
+-define:MeetAndTalk
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -344,6 +345,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.AddOns.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.AssetIdRemapUtility.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.ShaderLibrary.ref.dll"
@@ -373,6 +378,26 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Inputs/PlayerInput.cs"
+"Assets/Meet and Talk/Demo/DemoInteraction.cs"
+"Assets/Meet and Talk/Demo/DemoPlayer.cs"
+"Assets/Meet and Talk/Demo/Demo_MainMenu.cs"
+"Assets/Meet and Talk/Demo/triggerArea.cs"
+"Assets/Meet and Talk/Resources/LocalizationEnum.cs"
+"Assets/Meet and Talk/Script/AddMeetAndTalkDefine.cs"
+"Assets/Meet and Talk/Script/DialogueCharacterSO.cs"
+"Assets/Meet and Talk/Script/DialogueContainerSO.cs"
+"Assets/Meet and Talk/Script/DialogueEventSO.cs"
+"Assets/Meet and Talk/Script/DialogueGetData.cs"
+"Assets/Meet and Talk/Script/DialogueManager.cs"
+"Assets/Meet and Talk/Script/DialogueUIManager.cs"
+"Assets/Meet and Talk/Script/GlobalValue/GlobalValueInUI.cs"
+"Assets/Meet and Talk/Script/GlobalValue/GlobalValueManager.cs"
+"Assets/Meet and Talk/Script/LayoutElementWithMaxValues.cs"
+"Assets/Meet and Talk/Script/Localization/LocalizationDropdown.cs"
+"Assets/Meet and Talk/Script/Localization/LocalizedTextMeshProText.cs"
+"Assets/Meet and Talk/Script/LocalizationManager.cs"
+"Assets/Meet and Talk/Script/MeetAndTalkProBenefits.cs"
+"Assets/Meet and Talk/Script/MeetAndTalkSettings.cs"
 "Assets/Packages/Breakable Windows/Scripts/BreakableWindow.cs"
 "Assets/Packages/Free Slash VFX/Demo/Scripts/AttackerController.cs"
 "Assets/Packages/Free Slash VFX/Demo/Scripts/CameraOrbit.cs"
@@ -420,6 +445,7 @@
 "Assets/Scripts/Inventory/InventoryItem.cs"
 "Assets/Scripts/Inventory/InventoryVisualManager.cs"
 "Assets/Scripts/Inventory/ItemSlot.cs"
+"Assets/Scripts/NPCPathController.cs"
 "Assets/Scripts/Player/ElementalCrystalsController.cs"
 "Assets/Scripts/Player/PlayerController.cs"
 "Assets/Scripts/Player/PlayerHealthController.cs"
