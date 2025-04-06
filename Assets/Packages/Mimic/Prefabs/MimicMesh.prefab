@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1361550438602663263}
   - component: {fileID: 4581632945482242286}
   - component: {fileID: 1547845888156502223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MimicMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
-  velocity: {x: 0.023803059, y: 0, z: 0.18326753}
+  velocity: {x: -0.475225, y: 0, z: -0.8338293}
 --- !u!114 &1547845888156502223
 MonoBehaviour:
   m_ObjectHideFlags: 0

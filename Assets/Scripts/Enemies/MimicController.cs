@@ -17,7 +17,7 @@ namespace MimicSpace
         public float velocityLerpCoef = 4f;
         private Mimic myMimic;
 
-        public new void Awake()
+        public override void Awake()
         {
             myMimic = GetComponent<Mimic>();
             player = GameObject.Find("Player").transform;

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8675915457954794082}
   - component: {fileID: 8675915457954794083}
   - component: {fileID: 608258904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MimicSpline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
-  velocity: {x: 0.841114, y: 0, z: 0.4385968}
+  velocity: {x: -0.11393935, y: 0, z: -0.50839245}
 --- !u!114 &608258904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 8675915458194695970}
   - component: {fileID: 8675915458194695975}
   - component: {fileID: 8675915458194695972}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2512604949561864013}
   - component: {fileID: 2336278065694270157}
   - component: {fileID: 8756831054016911778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LegMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}

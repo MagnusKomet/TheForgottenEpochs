@@ -34,11 +34,7 @@ public class EnemyHealthController : MonoBehaviour
     {
         currentHealth -= damage;
 
-        if (whoDies.gameObject.tag == "Mimic")
-        {
-            whoDies.GetComponent<MimicController>().ForceChaseOnDamage();
-        }
-        else if (whoDies.gameObject.tag == "Enemy")
+        if (whoDies.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             whoDies.GetComponent<EnemyController>().ForceChaseOnDamage();
         }

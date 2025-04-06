@@ -77,7 +77,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 215
+    m_Bits: 471
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -411,7 +411,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   whoDies: {fileID: 6816843259406738505}
-  itemPrefabs: []
+  dropsQuantity: 0
+  dropsPrefabs: []
   deathCamera: {fileID: 2864178902019536406, guid: 3a7d49491fad71c46a2277beba14b887, type: 3}
   deathCameraSpawnPoint: {fileID: 8783884431233236634}
   deathMenu: {fileID: 0}

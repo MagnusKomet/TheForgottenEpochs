@@ -64,7 +64,6 @@
     <Compile Include="Assets\Meet and Talk\Editor\Node\DialogueNode.cs" />
     <Compile Include="Assets\Meet and Talk\Editor\DialogueGraphView.cs" />
     <Compile Include="Assets\Meet and Talk\Editor\NodeSearchWindow.cs" />
-    <Compile Include="Assets\RunemarkStudio\DarkFantasyKit [Free]\Readme\Parts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Meet and Talk\Editor\Node\BaseNode.cs" />
     <Compile Include="Assets\Meet and Talk\Editor\DialogueEditorWindow.cs" />
     <Compile Include="Assets\Meet and Talk\Editor\Node\DialogueChoiceNode.cs" />

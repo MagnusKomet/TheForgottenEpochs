@@ -10,9 +10,8 @@ public class EnemyController : MonoBehaviour
     public NavMeshAgent agent;
 
     [Header("Ranges")]
-    public float sightRange = 10f;
-    public float attackRange = 5f;
-    public LayerMask whatIsPlayer;
+    public float sightRange = 20f;
+    public float attackRange = 12f;
     public LayerMask whatIsGround;
 
     public bool playerInSightRange;
@@ -35,22 +34,21 @@ public class EnemyController : MonoBehaviour
     public float forcedChaseTimer;
 
 
-    public void Awake()
+    public virtual void Awake()
     {
         player = GameObject.Find("Player").transform;
-        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         IAMovement();
     }
 
     public void IAMovement()
     {
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        playerInSightRange = CheckPlayerInRange(sightRange);
+        playerInAttackRange = CheckPlayerInRange(attackRange);
 
         if (isForcedChaseActive)
         {
@@ -73,14 +71,27 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            
+
             if (!playerInSightRange && !playerInAttackRange) Patroling();
             if (playerInSightRange && !playerInAttackRange) ChasePlayer();
             if (playerInAttackRange && playerInSightRange) AttackPlayer();
         }
     }
 
-    public void Patroling()
+    public virtual bool CheckPlayerInRange(float range)
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, (player.position - transform.position).normalized, out hit, range))
+        {
+            Debug.DrawRay(transform.position, (player.position - transform.position).normalized * sightRange, Color.blue);
+            return hit.transform == player;
+        }
+
+        return false;
+    }
+
+    public virtual void Patroling()
     {
         if (!walkPointSet)
         {
@@ -127,7 +138,7 @@ public class EnemyController : MonoBehaviour
         forcedChaseTimer = forcedChaseDuration;
     }
 
-    public void AttackPlayer()
+    public virtual void AttackPlayer()
     {
         agent.SetDestination(transform.position);
 
@@ -135,22 +146,27 @@ public class EnemyController : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            var ball = Instantiate(fireball, transform.position + transform.forward, Quaternion.identity);
-
-            FireballController fireballController = ball.GetComponent<FireballController>();
-            fireballController.damage = fireballDamage;
-            fireballController.shootFromTag = gameObject.tag;
-
-            Rigidbody rb = ball.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                rb.velocity = transform.forward * 50f;
-            }
-            Destroy(ball, 30f);
-
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            CastFireball(transform.position + transform.forward);
         }
+    }
+
+    public void CastFireball(Vector3 spawnPosition)
+    {
+        var ball = Instantiate(fireball, spawnPosition, Quaternion.identity);
+
+        FireballController fireballController = ball.GetComponent<FireballController>();
+        fireballController.damage = fireballDamage;
+        fireballController.shootFromTag = gameObject.tag;
+
+        Rigidbody rb = ball.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = transform.forward * 50f;
+        }
+        Destroy(ball, 30f);
+
+        alreadyAttacked = true;
+        Invoke(nameof(ResetAttack), timeBetweenAttacks);
     }
 
     public void ResetAttack()
@@ -164,5 +180,6 @@ public class EnemyController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+
     }
 }
