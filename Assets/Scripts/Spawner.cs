@@ -7,27 +7,31 @@ public class Spawner : MonoBehaviour
     public GameObject objectToSpawn;
     public float minTime = 15f;
     public float maxTime = 30f;
-    private float nextSpawnTime;
+    public float nextSpawnTime;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         SetNextSpawnTime();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (Time.time >= nextSpawnTime)
         {
-            Instantiate(objectToSpawn, transform.position, transform.rotation);
+            SpawnObject();
             SetNextSpawnTime();
         }
     }
 
-    void SetNextSpawnTime()
+    public void SetNextSpawnTime()
     {
         nextSpawnTime = Time.time + Random.Range(minTime, maxTime);
     }
 
+    public virtual void SpawnObject()
+    {
+        Instantiate(objectToSpawn, transform.position, transform.rotation);
+    }
 }

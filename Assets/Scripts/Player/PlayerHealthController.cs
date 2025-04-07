@@ -1,4 +1,5 @@
 using MimicSpace;
+using PlayerSpace;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,21 +8,13 @@ public class PlayerHealthController : EnemyHealthController
 {
     public GameObject deathCamera;
     public Transform deathCameraSpawnPoint;
-    public GameObject deathMenu;
 
     public override void Start()
     {
-
         currentHealth = maxHealth;
         if (whoDies == null)
         {
             whoDies = gameObject;
-        }
-
-        deathMenu = GameObject.Find("DeathMenu");
-        while (deathMenu.activeSelf)
-        {            
-            deathMenu.SetActive(false);
         }
     }
 
@@ -38,7 +31,7 @@ public class PlayerHealthController : EnemyHealthController
     public override void Die()
     {
         Instantiate(deathCamera, deathCameraSpawnPoint.position, deathCameraSpawnPoint.rotation);
-        deathMenu.SetActive(true);
+        InventoryVisualManager.Instance.deathMenu.SetActive(true);
 
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;

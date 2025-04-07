@@ -1052,7 +1052,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathParent: {fileID: 0}
   skeletonAnimator: {fileID: 2694943633596397941}
-  head: {fileID: 3413322330637640283}
+  skeletonTextures:
+  - {fileID: 2100000, guid: d5ecddaca8fb55e4b8f37591de9b38d1, type: 2}
+  - {fileID: 2100000, guid: ab048cc70b5b45042be0093c1db8ddb7, type: 2}
+  - {fileID: 2100000, guid: 41f22e5d057a93c48abbc6450336ae84, type: 2}
+  - {fileID: 2100000, guid: 4ff0ddc44cdaf1948b9d76dad713f12c, type: 2}
+  - {fileID: 2100000, guid: b709ba275900d79499394c58d8723fad, type: 2}
+  alpacaTextures:
+  - {fileID: 2100000, guid: d8660ed9e48b3384abb01b56389cdbf0, type: 2}
+  - {fileID: 2100000, guid: 9168b0b3bbc56d94ba8679c5a52412de, type: 2}
+  - {fileID: 2100000, guid: 2715917799b230448bec4fa69f465735, type: 2}
+  - {fileID: 2100000, guid: 8dce4de588249e44bb0894ca47a2439e, type: 2}
+  - {fileID: 2100000, guid: 8e655b9c162bcec4ba2161cc3f45140d, type: 2}
+  ponchitoTextures:
+  - {fileID: 2100000, guid: 6a201ac8eea408742b6fe0a9bb2c97f2, type: 2}
+  - {fileID: 2100000, guid: 9b9b42424476897418273b51cf4ec3db, type: 2}
+  - {fileID: 2100000, guid: 86ded97b81034354688bf0bb8e9206a3, type: 2}
+  - {fileID: 2100000, guid: fec3fffc88e80ba4984eed00b5eb722c, type: 2}
+  - {fileID: 2100000, guid: b5ded4857fe182d48bb9810f71365215, type: 2}
+  skeletonRenderer: {fileID: 6586843775706467509}
+  alpacaRenderer: {fileID: 3686424908134709499}
+  ponchitoRenderer:
+  - {fileID: 1720778163232182481}
+  - {fileID: 6322971767035953747}
+  - {fileID: 8444178143440560976}
 --- !u!1 &1549346088074591878
 GameObject:
   m_ObjectHideFlags: 0

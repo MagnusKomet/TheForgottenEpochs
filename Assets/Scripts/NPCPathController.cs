@@ -16,16 +16,38 @@ public class NPCPathController : MonoBehaviour
     bool admiring = false;
     float rotationDuration = 0.5f;
 
+    [SerializeField]
+    private List<Material> skeletonTextures;
+    [SerializeField]
+    private List<Material> alpacaTextures;
+    [SerializeField]
+    private List<Material> ponchitoTextures;
+    [SerializeField]
+    private Renderer skeletonRenderer;
+    [SerializeField]
+    private Renderer alpacaRenderer;
+    [SerializeField]
+    private List<Renderer> ponchitoRenderer;
+
 
     void Start()
     {
+        pathParent = GameObject.Find("NPCPath").transform;
+
         // Inicialitza l'índex en el primer punt del camí i assigna el primer punt com a targetPoint
         index = 0;
         targetPoint = pathParent.GetChild(index);
 
         agent = GetComponent<NavMeshAgent>();
         alpacaAnimator = GetComponent<Animator>();
-        
+
+        // Asigna texturas aleatorias a los renderers
+        skeletonRenderer.material = skeletonTextures[Random.Range(0, skeletonTextures.Count)];
+        alpacaRenderer.material = alpacaTextures[Random.Range(0, alpacaTextures.Count)];
+        foreach (var renderer in ponchitoRenderer)
+        {
+            renderer.material = ponchitoTextures[Random.Range(0, ponchitoTextures.Count)];
+        }
     }
 
     // Update is called once per frame

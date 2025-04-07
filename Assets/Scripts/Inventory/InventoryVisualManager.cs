@@ -18,7 +18,7 @@ namespace PlayerSpace
         public bool menuActivated;
         public ItemSlot[] itemSlots;
         public InventoryDataController inventoryData;
-
+        public GameObject deathMenu;
         [SerializeField]
         private TMP_Text interactionText;
 
@@ -43,8 +43,8 @@ namespace PlayerSpace
 
         void Update()
         {
-            if (input.Inventory.WasPressedThisFrame())
-            {                
+            if (input.Inventory.WasPressedThisFrame() && !deathMenu.activeSelf)
+            {
                 DeselectAllSlots();
                 LoadAllItems();
                 menuActivated = !menuActivated;
@@ -53,6 +53,7 @@ namespace PlayerSpace
                 Time.timeScale = menuActivated ? 0 : 1;
                 Cursor.visible = menuActivated;
                 Cursor.lockState = menuActivated ? CursorLockMode.None : CursorLockMode.Locked;
+
             }
         }
 

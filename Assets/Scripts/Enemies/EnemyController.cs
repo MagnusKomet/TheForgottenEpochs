@@ -36,7 +36,11 @@ public class EnemyController : MonoBehaviour
 
     public virtual void Awake()
     {
-        player = GameObject.Find("Player").transform;
+        GameObject playerObject = GameObject.Find("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
     }
 
     // Update is called once per frame
@@ -80,6 +84,8 @@ public class EnemyController : MonoBehaviour
 
     public virtual bool CheckPlayerInRange(float range)
     {
+        if (player == null) return false;
+
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position, (player.position - transform.position).normalized, out hit, range))

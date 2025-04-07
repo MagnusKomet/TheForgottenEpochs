@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -70,6 +71,7 @@ namespace PlayerSpace
 
         void Awake()
         {
+            LoadData();
             inventoryVisualManager = GameObject.Find("GameManager").GetComponent<InventoryVisualManager>();
             ComboHud = GameObject.Find("ComboHUD");
             controller = GetComponent<CharacterController>();
@@ -355,9 +357,7 @@ namespace PlayerSpace
 
         #region Spells
 
-        // tmp
-        HashSet<string> unlockedSpells = new HashSet<string> { "FFA", "F", "AAAE" };
-
+        public HashSet<string> unlockedSpells;
 
         [SerializeField]
         private GameObject fireball;
@@ -435,17 +435,42 @@ namespace PlayerSpace
         #endregion
 
         // ------------------- //
-        //      COLLISIONS     //
+        //      Saving...      //
         // ------------------- //
 
-        #region Collisions
+        #region Saving
 
 
-        // (·_·)?
+        public void SaveData()
+        {
+            string spellsString = string.Join("-", unlockedSpells);
+            PlayerPrefs.SetString("UnlockedSpells", spellsString);
+            PlayerPrefs.Save();
+        }
 
+        public void LoadData()
+        {
+            if (PlayerPrefs.HasKey("UnlockedSpells"))
+            {
+                string spellsString = PlayerPrefs.GetString("UnlockedSpells");
+                unlockedSpells = new HashSet<string>(spellsString.Split("-"));
+            }
+            else
+            {
+                unlockedSpells = new HashSet<string>();
+            }
+        }
+
+        public void ClearData()
+        {
+            PlayerPrefs.DeleteKey("UnlockedSpells");
+            if(unlockedSpells != null)
+            {
+                unlockedSpells.Clear();
+            }
+        }
 
         #endregion
-
 
     }
 }

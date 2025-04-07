@@ -58,11 +58,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532568249808126427, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: velocity.x
-      value: -0.039500616
+      value: 0.26852137
       objectReference: {fileID: 0}
     - target: {fileID: 8532568249808126427, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: velocity.z
-      value: 0.06486726
+      value: -0.2631168
       objectReference: {fileID: 0}
     - target: {fileID: 8532568249808126427, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: legResolution
@@ -78,6 +78,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8649345389762647525, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
+    - {fileID: 6184087519665950242, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

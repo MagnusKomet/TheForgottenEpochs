@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using Newtonsoft.Json;
 
 public class ApiManager : MonoBehaviour
 {
-    /*
     public Text playerName;
     public Text highScoreText;
     public Text successState;
@@ -18,15 +18,9 @@ public class ApiManager : MonoBehaviour
     List<GameObject> rows;
 
     private string apiUrl = "https://localhost:44351/api/highscores";
-    //private string apiUrl = "https://localhost:44374/api/highscore";
     //private HighScoreStruct highScoreStruct;
 
-    public void Awake()
-    {
-        
-    }
-
-    //Mètode per ser clicable pel botó CallAPI 
+    //Mètode per ser clicable pel botó CallAPI
     public void CallAPISerial()
     {
         StartCoroutine(GetRequest(apiUrl, LoadJsonDataCallBack));
@@ -71,6 +65,7 @@ public class ApiManager : MonoBehaviour
 
         callback(response);
     }
+
     //Mètode per afegit un nou rècord
     IEnumerator Upload(string url)
     {
@@ -129,6 +124,8 @@ public class ApiManager : MonoBehaviour
 
         }
     }
+
+
     //Mètode per extreure la informació de un JSON i transformar-ho a objecte HighScoreModel
     private void LoadJsonDataCallBack(string res)
     {
@@ -182,6 +179,8 @@ public class ApiManager : MonoBehaviour
             successState.text = "Fail!";
         }
     }
+
+
     private void ClearHighscores()
     {
         if (rows != null)
@@ -203,6 +202,4 @@ public class ApiManager : MonoBehaviour
         public String PlayerName { get; set; }
         public int HighScore { get; set; }
     }
-    */
 }
-
