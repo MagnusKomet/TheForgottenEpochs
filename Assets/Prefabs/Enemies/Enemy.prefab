@@ -205,8 +205,9 @@ MonoBehaviour:
   maxHealth: 50
   currentHealth: 0
   whoDies: {fileID: 4620978639673703574}
-  dropsQuantity: 0
-  dropsPrefabs: []
+  dropsQuantity: 5
+  dropsPrefabs:
+  - {fileID: 3608898455747402935, guid: 772c83d13d201e440b63ed9942e73e92, type: 3}
 --- !u!1001 &769979748129835767
 PrefabInstance:
   m_ObjectHideFlags: 0

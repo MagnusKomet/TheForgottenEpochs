@@ -271,14 +271,15 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
-  fireballDamage: 1
-  timeBetweenAttacks: 10
+  fireballDamage: 5
+  timeBetweenAttacks: 0.5
   alreadyAttacked: 0
   forcedChaseDuration: 15
   isForcedChaseActive: 0
   forcedChaseTimer: 0
   laserMount: {fileID: 6480377910572498571}
   weapon: {fileID: 6344153113454161164}
+  pathParent: {fileID: 0}
 --- !u!195 &3809888466362595771
 NavMeshAgent:
   m_ObjectHideFlags: 0

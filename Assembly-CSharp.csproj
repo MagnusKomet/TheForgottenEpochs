@@ -101,8 +101,8 @@
     <Compile Include="Assets\Scripts\ApiManager.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
     <Compile Include="Assets\Meet and Talk\Script\DialogueCharacterSO.cs" />
-    <Compile Include="Assets\Meet and Talk\Script\DialogueUIManager.cs" />
     <Compile Include="Assets\Scripts\Enemies\RobotController.cs" />
+    <Compile Include="Assets\Meet and Talk\Script\DialogueUIManager.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\PseudoVolumetricComponent.cs" />
     <Compile Include="Assets\Scripts\Spells\BasicSpellController.cs" />
     <Compile Include="Assets\Meet and Talk\Script\DialogueManager.cs" />
