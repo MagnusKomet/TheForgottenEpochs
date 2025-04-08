@@ -21,6 +21,8 @@ namespace PlayerSpace
         public GameObject deathMenu;
         [SerializeField]
         private TMP_Text interactionText;
+        GameObject playerModel;
+        public bool isSpellMenuActive = false;
 
         private void Awake()
         {
@@ -33,6 +35,7 @@ namespace PlayerSpace
                 DontDestroyOnLoad(gameObject);
                 inventoryData.LoadData();
                 SceneManager.sceneUnloaded += OnSceneUnloaded;
+                SceneManager.sceneLoaded += OnSceneLoaded;
             }
             else
             {
@@ -41,19 +44,16 @@ namespace PlayerSpace
 
         }
 
+
+
         void Update()
         {
             if (input.Inventory.WasPressedThisFrame() && !deathMenu.activeSelf)
             {
                 DeselectAllSlots();
                 LoadAllItems();
-                menuActivated = !menuActivated;
+                MenuActivated();
                 InventoryMenu.SetActive(menuActivated);
-                GUI.SetActive(!menuActivated);
-                Time.timeScale = menuActivated ? 0 : 1;
-                Cursor.visible = menuActivated;
-                Cursor.lockState = menuActivated ? CursorLockMode.None : CursorLockMode.Locked;
-
             }
         }
 
@@ -85,6 +85,10 @@ namespace PlayerSpace
         {
             inventoryData.SaveData();
         }
+        private void OnSceneLoaded(Scene current, LoadSceneMode sceneMode)
+        {
+            playerModel = GameObject.Find("CharacterModel");
+        }
 
         public void EnableInteractionText(string message)
         {
@@ -96,6 +100,25 @@ namespace PlayerSpace
         {
             interactionText.text = "";
             interactionText.gameObject.SetActive(false);
+        }
+
+        public void MenuActivated(bool isSpell = false)
+        {
+            if (isSpell)
+            {
+                isSpellMenuActive = !isSpellMenuActive;
+            }
+            else
+            {
+                isSpellMenuActive = false;
+            }
+
+            menuActivated = !menuActivated;
+            playerModel.SetActive(!menuActivated);
+            GUI.SetActive(!menuActivated);
+            Time.timeScale = menuActivated ? 0 : 1;
+            Cursor.visible = menuActivated;
+            Cursor.lockState = menuActivated ? CursorLockMode.None : CursorLockMode.Locked;
         }
     }
 }

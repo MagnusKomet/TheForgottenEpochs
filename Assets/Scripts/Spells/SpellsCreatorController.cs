@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using PlayerSpace;
 using TMPro;
 using UnityEngine;
 
@@ -12,43 +13,73 @@ public class SpellsCreatorController : MonoBehaviour
     [SerializeField]
     GameObject windblade;
 
-    GameObject playerModel;
-    [SerializeField]
-    TMP_Text interactionText;
-    GameObject lastSpell;
 
-    bool panelActivated = false;
+    [SerializeField]
+    TMP_Text fireText;
+    [SerializeField]
+    TMP_Text airText;
+    [SerializeField]
+    TMP_Text earthText;
+    [SerializeField]
+    TMP_Text waterText;
+    [SerializeField]
+    TMP_Text fireTextPrice;
+    [SerializeField]
+    TMP_Text airTextPrice;
+    [SerializeField]
+    TMP_Text earthTextPrice;
+    [SerializeField]
+    TMP_Text waterTextPrice;
+    int firePrice = 0;
+    int airPrice = 0;
+    int earthPrice = 0;
+    int waterPrice = 0;
+    GameObject lastSpell;
 
     string combo = "";
 
+    PlayerController playerController;
+    InventoryDataController inventoryData;
+
     private void Start()
     {
-        playerModel = GameObject.Find("CharacterModel");
-        
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        inventoryData = InventoryVisualManager.Instance.inventoryData;
     }
 
     public void AddFireToCombo()
     {
         combo += "F";
-        CastSpell();
+        fireText.text += "*";
+        firePrice += 10;
+        fireTextPrice.text = firePrice.ToString();
         CastSpell();
     }
 
     public void AddWaterToCombo()
     {
         combo += "W";
+        waterText.text += "@";
+        waterPrice += 10;
+        waterTextPrice.text = waterPrice.ToString();
         CastSpell();
     }
 
     public void AddEarthToCombo()
     {
         combo += "E";
+        earthText.text += ";!;";
+        earthPrice += 10;
+        earthTextPrice.text = earthPrice.ToString();
         CastSpell();
     }
 
     public void AddAirToCombo()
     {
         combo += "A";
+        airText.text += "0";
+        airPrice += 10;
+        airTextPrice.text = airPrice.ToString();
         CastSpell();
     }
 
@@ -66,25 +97,56 @@ public class SpellsCreatorController : MonoBehaviour
         {
             lastSpell = Instantiate(windblade, transform.position, transform.rotation);
         }
+    }
+
+    public void CreateSpell()
+    {
+        if (!string.IsNullOrEmpty(combo) && !playerController.unlockedSpells.Contains(combo))
+        {
+            if (inventoryData.GetObjectCount("Fire Crystal") >= firePrice &&
+            inventoryData.GetObjectCount("Air Crystal") >= airPrice &&
+            inventoryData.GetObjectCount("Earth Crystal") >= earthPrice &&
+            inventoryData.GetObjectCount("Water Crystal") >= waterPrice)
+            {
+                inventoryData.RemoveItem("Fire Crystal", firePrice);
+                inventoryData.RemoveItem("Air Crystal", airPrice);
+                inventoryData.RemoveItem("Earth Crystal", earthPrice);
+                inventoryData.RemoveItem("Water Crystal", waterPrice);
+
+                playerController.unlockedSpells.Add(combo);
+                playerController.SaveData();
+                ResetSpell();
+            }
+            else
+            {
+                //TODO: poner algun mensaje de error o algo
+            }
+        }
 
     }
 
     public void ResetSpell()
     {
         combo = "";
+        fireText.text = "";
+        airText.text = "";
+        earthText.text = "";
+        waterText.text = "";
         txt_combo.text = combo;
+        firePrice = 0;
+        airPrice = 0;
+        earthPrice = 0;
+        waterPrice = 0;
+        fireTextPrice.text = "";
+        airTextPrice.text = "";
+        earthTextPrice.text = "";
+        waterTextPrice.text = "";
         Destroy(lastSpell);
     }
 
     public void ActivatePanel()
     {
-        panelActivated = !panelActivated;
+        InventoryVisualManager.Instance.MenuActivated(true);
 
-        Time.timeScale = panelActivated ? 0 : 1;
-        Cursor.visible = panelActivated;
-        Cursor.lockState = panelActivated ? CursorLockMode.None : CursorLockMode.Locked;
-
-        playerModel.SetActive(!panelActivated);
-        interactionText.text = !panelActivated ? "Press [RMB] to create new spell" : "";
     }
 }

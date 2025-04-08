@@ -99,9 +99,11 @@ namespace PlayerSpace
 
             if (input.Interact.WasPressedThisFrame() && currentInteractable != null)
             {
-                currentInteractable.Interact();
+                if (!inventoryVisualManager.menuActivated || inventoryVisualManager.isSpellMenuActive)
+                {
+                    currentInteractable.Interact();
+                }
             }
-
 
             if (input.Earth.WasPressedThisFrame())
             {
@@ -129,9 +131,9 @@ namespace PlayerSpace
             RaycastHit hit;
             Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
 
-            if(Physics.Raycast(ray, out hit, playerReach))
+            if (Physics.Raycast(ray, out hit, playerReach))
             {
-                if(hit.collider.tag == "Interactable")
+                if (hit.collider.tag == "Interactable")
                 {
                     Interactable interactable = hit.collider.GetComponent<Interactable>();
 
@@ -149,7 +151,6 @@ namespace PlayerSpace
             {
                 DisableCurrentInteractable();
             }
-
         }
 
         private void SetCurrentInteractable(Interactable interactable)
@@ -377,6 +378,10 @@ namespace PlayerSpace
                 switch (combo)
                 {
                     case "F":
+                        ShootFireball(fireball);
+                        break;
+
+                    case "A":
                         ShootFireball(fireball);
                         break;
 
