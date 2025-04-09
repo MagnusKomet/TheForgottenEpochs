@@ -151,7 +151,7 @@ public class DialogueContainerEditor : Editor
 [CustomEditor(typeof(DialogueCharacterSO))]
 public class DialogueCharacterSOEditor : Editor
 {
-    bool Portrait = true;
+    public bool Portrait = true;
     VisualElement GlobalName, NormalName;
 
     public override VisualElement CreateInspectorGUI()

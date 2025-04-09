@@ -49,38 +49,50 @@ public class SpellsCreatorController : MonoBehaviour
 
     public void AddFireToCombo()
     {
-        combo += "F";
-        fireText.text += "*";
-        firePrice += 10;
-        fireTextPrice.text = firePrice.ToString();
-        CastSpell();
+        if (fireText.text.Length < 5)
+        {
+            combo += "F";
+            fireText.text += "*";
+            firePrice += 10;
+            fireTextPrice.text = firePrice.ToString();
+            CastSpell();
+        }
     }
 
     public void AddWaterToCombo()
     {
-        combo += "W";
-        waterText.text += "@";
-        waterPrice += 10;
-        waterTextPrice.text = waterPrice.ToString();
-        CastSpell();
+        if (waterText.text.Length < 5)
+        {
+            combo += "W";
+            waterText.text += "@";
+            waterPrice += 10;
+            waterTextPrice.text = waterPrice.ToString();
+            CastSpell();
+        }
     }
 
     public void AddEarthToCombo()
-    {
-        combo += "E";
-        earthText.text += ";!;";
-        earthPrice += 10;
-        earthTextPrice.text = earthPrice.ToString();
-        CastSpell();
+    {        
+        if (earthText.text.Length < 15)
+        {
+            combo += "E";
+            earthText.text += ";!;";
+            earthPrice += 10;
+            earthTextPrice.text = earthPrice.ToString();
+            CastSpell();
+        }
     }
 
     public void AddAirToCombo()
     {
-        combo += "A";
-        airText.text += "0";
-        airPrice += 10;
-        airTextPrice.text = airPrice.ToString();
-        CastSpell();
+        if (airText.text.Length < 5)
+        {
+            combo += "A";
+            airText.text += "0";
+            airPrice += 10;
+            airTextPrice.text = airPrice.ToString();
+            CastSpell();
+        }
     }
 
     public void CastSpell()
@@ -101,27 +113,40 @@ public class SpellsCreatorController : MonoBehaviour
 
     public void CreateSpell()
     {
-        if (!string.IsNullOrEmpty(combo) && !playerController.unlockedSpells.Contains(combo))
+        if (!string.IsNullOrEmpty(combo))
         {
-            if (inventoryData.GetObjectCount("Fire Crystal") >= firePrice &&
-            inventoryData.GetObjectCount("Air Crystal") >= airPrice &&
-            inventoryData.GetObjectCount("Earth Crystal") >= earthPrice &&
-            inventoryData.GetObjectCount("Water Crystal") >= waterPrice)
+            if (!playerController.unlockedSpells.Contains(combo))
             {
-                inventoryData.RemoveItem("Fire Crystal", firePrice);
-                inventoryData.RemoveItem("Air Crystal", airPrice);
-                inventoryData.RemoveItem("Earth Crystal", earthPrice);
-                inventoryData.RemoveItem("Water Crystal", waterPrice);
+                if (inventoryData.GetObjectCount("Fire Crystal") >= firePrice &&
+                inventoryData.GetObjectCount("Air Crystal") >= airPrice &&
+                inventoryData.GetObjectCount("Earth Crystal") >= earthPrice &&
+                inventoryData.GetObjectCount("Water Crystal") >= waterPrice)
+                {
+                    inventoryData.RemoveItem("Fire Crystal", firePrice);
+                    inventoryData.RemoveItem("Air Crystal", airPrice);
+                    inventoryData.RemoveItem("Earth Crystal", earthPrice);
+                    inventoryData.RemoveItem("Water Crystal", waterPrice);
 
-                playerController.unlockedSpells.Add(combo);
-                playerController.SaveData();
-                ResetSpell();
+                    playerController.unlockedSpells.Add(combo);
+                    playerController.SaveData();
+                    inventoryData.SaveData();
+                    ResetSpell();
+                }
+                else
+                {
+                    ToastNotification.Show("No crystals sirrrr?");
+                }
             }
             else
             {
-                //TODO: poner algun mensaje de error o algo
+                ToastNotification.Show("You already know that sirrrr");
             }
         }
+        else
+        {
+            ToastNotification.Show("That doesn't exist sirrrr");
+        }
+
 
     }
 

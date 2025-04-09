@@ -154,6 +154,10 @@ public class EnemyController : MonoBehaviour
         {
             CastFireball(transform.position + transform.forward);
         }
+        else
+        {
+            Patroling();
+        }
     }
 
     public void CastFireball(Vector3 spawnPosition)

@@ -37,9 +37,9 @@ namespace MeetAndTalk
 
         [HideInInspector] public string prefixText;
         [HideInInspector] public string fullText;
-        private string currentText = "";
-        private int characterIndex = 0;
-        private float lastTypingTime;
+        public string currentText = "";
+        public int characterIndex = 0;
+        public float lastTypingTime;
 
         private List<Button> buttons = new List<Button>();
         private List<TextMeshProUGUI> buttonsTexts = new List<TextMeshProUGUI>();

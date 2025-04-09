@@ -1125,6 +1125,7 @@ MonoBehaviour:
   inventoryData: {fileID: 11400000, guid: 259251f73e7c1554e8f1537a09a5d680, type: 2}
   deathMenu: {fileID: 4209706177167623188}
   interactionText: {fileID: 7868795388245455963}
+  isSpellMenuActive: 0
 --- !u!1 &4209706177167623188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,6 +1802,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1532352805525121831}
   - {fileID: 877893873787226336}
   - {fileID: 5618890334162906523}
   - {fileID: 1804380153460193258}
@@ -2696,6 +2698,63 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &7775691089635851205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1532352805525121831}
+  - component: {fileID: 3372748103196826248}
+  m_Layer: 5
+  m_Name: ToastNotificationMessage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1532352805525121831
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7775691089635851205}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2930021645283955068}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &3372748103196826248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7775691089635851205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2716cedf2fa134e43b62cf3011f871a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _messagePrefab: {fileID: 7001399534701900153, guid: 993f3c0579c2ec243bd931e9e23be749, type: 3}
+  _showTimerRender: 1
+  _darkTheme: 1
+  _minimumMessageTime: 5
+  _margin: {x: 20, y: 150}
+  _stopOnOver: 1
+  _hideOnClick: 1
+  _messageScreenPosition: 5
+  _timerDirection: 0
 --- !u!1 &8636403244797614763
 GameObject:
   m_ObjectHideFlags: 0
