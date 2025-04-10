@@ -395,6 +395,7 @@ MonoBehaviour:
   fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
   secondFireball: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
   windBlade: {fileID: 6054753705526747894, guid: e56c8528052e2204bb1fd401795448b8, type: 3}
+  tornado: {fileID: 2673694762706284870, guid: da33f7610ab55234981a51ca3008ae46, type: 3}
   SpellsSpawnPoint: {fileID: 316116817463063823}
 --- !u!114 &6488219911713767130
 MonoBehaviour:
@@ -415,7 +416,6 @@ MonoBehaviour:
   dropsPrefabs: []
   deathCamera: {fileID: 2864178902019536406, guid: 3a7d49491fad71c46a2277beba14b887, type: 3}
   deathCameraSpawnPoint: {fileID: 8783884431233236634}
-  deathMenu: {fileID: 0}
 --- !u!1 &8463242730867725734
 GameObject:
   m_ObjectHideFlags: 0

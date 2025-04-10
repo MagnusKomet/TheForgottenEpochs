@@ -9,6 +9,7 @@ public class MimicExhibitController : MonoBehaviour
     public GameObject mimicInfoPanel;
     public GameObject mimicSelectorPanel;
     public Transform mimicSpawnPoint;
+    public int exhibitNumber;
 
     public void ChangeMimicPanel()
     {
@@ -38,6 +39,7 @@ public class MimicExhibitController : MonoBehaviour
              
         invokedMimic = Instantiate(mimic, mimicSpawnPoint.position, mimicSpawnPoint.rotation);
         ChangeMimicPanel();
+
     }
 
 

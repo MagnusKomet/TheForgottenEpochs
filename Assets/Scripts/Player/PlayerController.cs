@@ -366,6 +366,8 @@ namespace PlayerSpace
         private GameObject secondFireball;
         [SerializeField]
         private GameObject windBlade;
+        [SerializeField]
+        private GameObject tornado;
 
         [SerializeField]
         private Transform SpellsSpawnPoint;
@@ -378,19 +380,19 @@ namespace PlayerSpace
                 switch (combo)
                 {
                     case "F":
-                        ShootFireball(fireball);
+                        ShootSpell(fireball);
                         break;
 
                     case "A":
-                        ShootFireball(fireball);
+                        ShootSpell(tornado);
                         break;
 
                     case "FFA":
-                        ShootFireball(secondFireball);
+                        ShootSpell(secondFireball);
                         break;
 
                     case "AAAE":
-                        ShootWindBlade();
+                        ShootSpell(windBlade);
                         break;
                 }
             }
@@ -398,15 +400,15 @@ namespace PlayerSpace
             DestroyCombo();
         }
 
-        void ShootFireball(GameObject tmpFireball)
+        void ShootSpell(GameObject spell)
         {
-            var spell = Instantiate(tmpFireball, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
-            Rigidbody rb = spell.GetComponent<Rigidbody>();
-            FireballController controller = spell.GetComponent<FireballController>();
+            var shootedSpell = Instantiate(spell, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
+            Rigidbody rb = shootedSpell.GetComponent<Rigidbody>();
+            BasicSpellController controller = shootedSpell.GetComponent<BasicSpellController>();
             if (controller != null)
             {
                 float damageMultiplier = CrystalsController.GetDamageMultiplier(combo);
-                int damage = (int)(15 * damageMultiplier);
+                int damage = (int)(25 * damageMultiplier);
                 controller.damage = damage;
                 controller.shootFromTag = gameObject.tag;
             }
@@ -417,25 +419,6 @@ namespace PlayerSpace
             }
         }
 
-        void ShootWindBlade()
-        {
-            var spell = Instantiate(windBlade, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
-            Rigidbody rb = spell.GetComponent<Rigidbody>();
-            WindBladeController controller = spell.GetComponent<WindBladeController>();
-            if (controller != null)
-            {
-                float damageMultiplier = CrystalsController.GetDamageMultiplier(combo);
-                int damage = (int)(50 * damageMultiplier);
-                controller.damage = damage;
-                controller.shootFromTag = gameObject.tag;
-            }
-
-            if (rb != null)
-            {
-                rb.velocity = cam.transform.forward * 50f;
-            }
-            
-        }
 
         #endregion
 
