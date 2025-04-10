@@ -47,52 +47,54 @@ public class SpellsCreatorController : MonoBehaviour
         inventoryData = InventoryVisualManager.Instance.inventoryData;
     }
 
-    public void AddFireToCombo()
+    public void AddElementToCombo(string element)
     {
-        if (fireText.text.Length < 5)
+        switch (element)
         {
-            combo += "F";
-            fireText.text += "*";
-            firePrice += 10;
-            fireTextPrice.text = firePrice.ToString();
-            CastSpell();
-        }
-    }
+            case "F":
+                if (fireText.text.Length < 5)
+                {
+                    combo += "F";
+                    fireText.text += "*";
+                    firePrice += 10;
+                    fireTextPrice.text = firePrice.ToString();
+                    CastSpell();
+                }
+                break;
 
-    public void AddWaterToCombo()
-    {
-        if (waterText.text.Length < 5)
-        {
-            combo += "W";
-            waterText.text += "@";
-            waterPrice += 10;
-            waterTextPrice.text = waterPrice.ToString();
-            CastSpell();
-        }
-    }
+            case "W":
+                if (waterText.text.Length < 5)
+                {
+                    combo += "W";
+                    waterText.text += "@";
+                    waterPrice += 10;
+                    waterTextPrice.text = waterPrice.ToString();
+                    CastSpell();
+                }
+                break;
 
-    public void AddEarthToCombo()
-    {        
-        if (earthText.text.Length < 15)
-        {
-            combo += "E";
-            earthText.text += ";!;";
-            earthPrice += 10;
-            earthTextPrice.text = earthPrice.ToString();
-            CastSpell();
-        }
-    }
+            case "E":
+                if (earthText.text.Length < 15)
+                {
+                    combo += "E";
+                    earthText.text += ";!;";
+                    earthPrice += 10;
+                    earthTextPrice.text = earthPrice.ToString();
+                    CastSpell();
+                }
+                break;
 
-    public void AddAirToCombo()
-    {
-        if (airText.text.Length < 5)
-        {
-            combo += "A";
-            airText.text += "0";
-            airPrice += 10;
-            airTextPrice.text = airPrice.ToString();
-            CastSpell();
-        }
+            case "A":
+                if (airText.text.Length < 5)
+                {
+                    combo += "A";
+                    airText.text += "0";
+                    airPrice += 10;
+                    airTextPrice.text = airPrice.ToString();
+                    CastSpell();
+                }
+                break;
+        }        
     }
 
     public void CastSpell()

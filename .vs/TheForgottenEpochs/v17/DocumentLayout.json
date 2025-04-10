@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mimicexhibitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\desktop\\insti\\projecte\\theforgottenepochs\\assets\\scripts\\spawnercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\spells\\spellscreatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\spellscreatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\spawnercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\inventory\\inventoryvisualmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\enemies\\enemyhealthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemyhealthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\assets\\scripts\\spells\\basicspellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,22 +138,23 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\MimicExhibitController.cs",
               "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\MimicExhibitController.cs",
               "RelativeToolTip": "Assets\\Scripts\\MimicExhibitController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwB8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T17:43:33.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SpellsCreatorController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\SpellsCreatorController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\SpellsCreatorController.cs",
               "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\SpellsCreatorController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spells\\SpellsCreatorController.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAswD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAwFkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T17:51:50.638Z"
+              "WhenOpened": "2025-03-28T17:51:50.638Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -197,18 +194,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ApiManager.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ApiManager.cs",
-              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ApiManager.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAYwLYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T16:31:14.84Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "EnemyController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyController.cs",
@@ -221,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SpawnerController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\SpawnerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnerController.cs",
@@ -229,8 +214,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SpawnerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T23:07:17.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T23:07:17.96Z"
             },
             {
               "$type": "Document",
@@ -258,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "NPCPathController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\NPCPathController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPCPathController.cs",
@@ -270,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "BasicSpellController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\BasicSpellController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\BasicSpellController.cs",
@@ -282,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "RobotController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\RobotController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\RobotController.cs",
@@ -294,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "Mimic.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Packages\\Mimic\\Scripts\\Mimic.cs",
               "RelativeDocumentMoniker": "Assets\\Packages\\Mimic\\Scripts\\Mimic.cs",
@@ -306,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "FireballController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\FireballController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\FireballController.cs",
@@ -318,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "MimicController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\MimicController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\MimicController.cs",
@@ -330,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "PortalController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\PortalController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PortalController.cs",
@@ -342,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "DropItem.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\DropItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\DropItem.cs",
@@ -354,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "ChillEnemyMovement.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\ChillEnemyMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\ChillEnemyMovement.cs",
@@ -366,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "ParticleComponent.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\True Explosions\\System\\Scripts\\effects\\exploderComponents\\ParticleComponent.cs",
               "RelativeDocumentMoniker": "Assets\\True Explosions\\System\\Scripts\\effects\\exploderComponents\\ParticleComponent.cs",
@@ -377,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "PseudoVolumetricExplosion.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\True Explosions\\System\\Scripts\\effects\\PseudoVolumetricExplosion.cs",
               "RelativeDocumentMoniker": "Assets\\True Explosions\\System\\Scripts\\effects\\PseudoVolumetricExplosion.cs",
@@ -388,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "UISettingsManager.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
@@ -399,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "BreakableWindow.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Breakable Windows\\Scripts\\BreakableWindow.cs",
               "RelativeDocumentMoniker": "Assets\\Breakable Windows\\Scripts\\BreakableWindow.cs",
@@ -410,7 +394,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "WindBladeController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\WindBladeController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\WindBladeController.cs",
@@ -422,7 +406,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "ElementalCrystalsController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Player\\ElementalCrystalsController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\ElementalCrystalsController.cs",
@@ -434,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "Interactable.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\Interactable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Interactable.cs",
@@ -446,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "EnemyHealthController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\EnemyHealthController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyHealthController.cs",
@@ -457,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "UIMenuManager.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
