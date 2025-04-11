@@ -94,7 +94,6 @@
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\LayoutElementWithMaxValues.cs" />
     <Compile Include="Assets\Scripts\Spells\WindBladeController.cs" />
     <Compile Include="Assets\Scripts\Player\ElementalCrystalsController.cs" />
-    <Compile Include="Assets\Scripts\MimicData.cs" />
     <Compile Include="Assets\Scripts\NPCPathController.cs" />
     <Compile Include="Assets\Scripts\Inventory\ItemSlot.cs" />
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\SlashDecal.cs" />

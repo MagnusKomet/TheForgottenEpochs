@@ -63,7 +63,15 @@ namespace PlayerSpace
             {
                 if(i < inventoryData.inventoryList.Count)
                 {
-                    itemSlots[i].AddItem(inventoryData.inventoryList[i]);
+                    if(inventoryData.inventoryList[i].quantity <= 0)
+                    {
+                        inventoryData.inventoryList.RemoveAt(i);
+                        itemSlots[i].EmptyItem();
+                    }
+                    else
+                    {
+                        itemSlots[i].AddItem(inventoryData.inventoryList[i]);
+                    }
                 }
                 else
                 {
