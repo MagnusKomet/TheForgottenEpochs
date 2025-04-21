@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 // State the position of the message on the screen.
 public enum MessageScreenPosition { TopLeft, TopCenter, TopRight, Center, BottomLeft, BottomCenter, BottomRight }
@@ -58,7 +59,6 @@ public class ToastNotification : MonoBehaviour, IPointerEnterHandler, IPointerEx
     // You can change Awake to Start if this is causing problems with other scripts in your game
     void Awake()
     {
-
         // Assign public variables to their static counterparts
         messagePrefab = _messagePrefab;
         toastNotification = transform;

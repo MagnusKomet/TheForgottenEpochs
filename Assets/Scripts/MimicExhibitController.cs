@@ -106,4 +106,10 @@ public class MimicExhibitController : MonoBehaviour
         invokedMimic = null;
     }
 
+    public void ActivatePanel()
+    {
+        InventoryVisualManager.Instance.MenuActivated(true);
+
+    }
+
 }
