@@ -8,6 +8,9 @@ namespace SlimUI.ModernMenu{
 	public class UIMenuManager : MonoBehaviour {
 		private Animator CameraObject;
 
+		// si no lo borras explota el multiverso
+		public GameObject eventSystem;
+
 		// campaign button sub menu
         [Header("MENUS")]
         [Tooltip("The Menu for when the MAIN menu buttons")]
@@ -44,7 +47,9 @@ namespace SlimUI.ModernMenu{
         public GameObject PanelCombat;
         [Tooltip("The UI Sub-Panel under KEY BINDINGS for GENERAL")]
         public GameObject PanelGeneral;
-        
+        [Tooltip("Pal LOGIN")]
+        public GameObject PanelLogin;
+
 
         // highlights in settings screen
         [Header("SETTINGS SCREEN")]
@@ -62,6 +67,8 @@ namespace SlimUI.ModernMenu{
         public GameObject lineCombat;
         [Tooltip("Highlight Image for when GENERAL Sub-Tab is selected in KEY BINDINGS")]
         public GameObject lineGeneral;
+        [Tooltip("Highlight del Login")]
+        public GameObject lineLogin;
 
         [Header("LOADING SCREEN")]
 		[Tooltip("If this is true, the loaded scene won't load until receiving user input")]
@@ -137,13 +144,18 @@ namespace SlimUI.ModernMenu{
 			mainMenu.SetActive(true);
 		}
 
-		public void LoadScene(string scene){
+		public void LoadSceneAsync(string scene){
 			if(scene != ""){
 				StartCoroutine(LoadAsynchronously(scene));
 			}
 		}
 
-		public void  DisablePlayCampaign(){
+        public void LoadScene(string scene)
+        {
+            SceneManager.LoadScene(scene);
+        }
+
+        public void  DisablePlayCampaign(){
 			playMenu.SetActive(false);
 		}
 
@@ -173,7 +185,11 @@ namespace SlimUI.ModernMenu{
 			lineCombat.SetActive(false);
 			PanelGeneral.SetActive(false);
 			lineGeneral.SetActive(false);
-		}
+
+            PanelLogin.SetActive(false);
+            lineLogin.SetActive(false);
+
+        }
 
 		public void GamePanel(){
 			DisablePanels();
@@ -181,13 +197,22 @@ namespace SlimUI.ModernMenu{
 			lineGame.SetActive(true);
 		}
 
-		public void VideoPanel(){
+		public void VideoPanel()
+		{
 			DisablePanels();
 			PanelVideo.SetActive(true);
 			lineVideo.SetActive(true);
 		}
 
-		public void ControlsPanel(){
+
+        public void LoginPanel()
+        {
+            DisablePanels();
+            PanelLogin.SetActive(true);
+            lineLogin.SetActive(true);
+        }
+
+        public void ControlsPanel(){
 			DisablePanels();
 			PanelControls.SetActive(true);
 			lineControls.SetActive(true);
@@ -263,6 +288,7 @@ namespace SlimUI.ModernMenu{
 
 		// Load Bar synching animation
 		IEnumerator LoadAsynchronously(string sceneName){ // scene name is just the name of the current scene being loaded
+			Destroy(eventSystem);
 			AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
 			operation.allowSceneActivation = false;
 			mainCanvas.SetActive(false);

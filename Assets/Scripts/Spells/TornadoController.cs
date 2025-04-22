@@ -1,3 +1,4 @@
+using PlayerSpace;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,12 +27,12 @@ public class TornadoController : BasicSpellController
         else
         {
             Debug.Log("Aupa: " + other.gameObject.name);
-            CharacterController playerController = other.GetComponent<CharacterController>();
+            PlayerController playerController = other.GetComponent<PlayerController>();
             if (playerController != null)
             {
-                Vector3 knockbackDirection = Vector3.up * knockbackForce;
-                playerController.Move(knockbackDirection * Time.deltaTime);
+                playerController._PlayerVelocity.y = Mathf.Sqrt(knockbackForce * -10.0f * playerController.gravity);
             }
         }
     }
+
 }

@@ -384,9 +384,9 @@ MonoBehaviour:
   Water: {fileID: 4429227453154285928, guid: c68dfb7187743084596460968ae10670, type: 3}
   CrystalsController: {fileID: 642073453458398334}
   inventoryVisualManager: {fileID: 0}
-  moveSpeed: 8
-  gravity: -29.4
-  jumpHeight: 1.5
+  moveSpeed: 15
+  gravity: -20
+  jumpHeight: 2.5
   cam: {fileID: 1593019297686687297}
   sensitivity: 30
   playerReach: 3

@@ -52,7 +52,7 @@ namespace PlayerSpace
         public float gravity = -9.8f;
         public float jumpHeight = 1.2f;
 
-        Vector3 _PlayerVelocity;
+        public Vector3 _PlayerVelocity;
 
         bool isGrounded;
 

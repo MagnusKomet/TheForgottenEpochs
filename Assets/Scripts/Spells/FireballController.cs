@@ -11,8 +11,12 @@ public class FireballController : BasicSpellController
 
     private void OnCollisionEnter(Collision collision)
     {
-        DamageAoeCollider(collision);
-        Instantiate(explosion, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        if (collision.gameObject.tag != shootFromTag)
+        {
+            DamageAoeCollider(collision);
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+        
     }
 }
