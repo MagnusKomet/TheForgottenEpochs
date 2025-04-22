@@ -445,7 +445,7 @@ namespace PlayerSpace
             }
             else
             {
-                unlockedSpells = new HashSet<string>();
+                unlockedSpells = new HashSet<string>() { "F", "A", "E", "W"};
             }
         }
 
