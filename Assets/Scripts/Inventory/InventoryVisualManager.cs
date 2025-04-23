@@ -92,10 +92,20 @@ namespace PlayerSpace
         private void OnSceneUnloaded(Scene current)
         {
             inventoryData.SaveData();
+
+            if (current.name == "MainMenu")
+            {
+                GUI.SetActive(true);
+            }
         }
         private void OnSceneLoaded(Scene current, LoadSceneMode sceneMode)
         {
             playerModel = GameObject.Find("CharacterModel");
+
+            if (current.name == "MainMenu")
+            {
+                GUI.SetActive(false);
+            }
         }
 
         public void EnableInteractionText(string message)
@@ -127,6 +137,11 @@ namespace PlayerSpace
             Time.timeScale = menuActivated ? 0 : 1;
             Cursor.visible = menuActivated;
             Cursor.lockState = menuActivated ? CursorLockMode.None : CursorLockMode.Locked;
+        }
+
+        public void RestartScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

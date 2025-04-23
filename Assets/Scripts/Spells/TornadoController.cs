@@ -23,6 +23,12 @@ public class TornadoController : BasicSpellController
             {
                 enemy.TakeDamage(damage);
             }
+
+            Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.AddForce(Vector3.up * knockbackForce * 2, ForceMode.Impulse);
+            }
         }
         else
         {

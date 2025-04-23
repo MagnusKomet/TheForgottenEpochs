@@ -33,6 +33,7 @@ public class MimicExhibitController : MonoBehaviour
             {
                 inventoryVisualManager.inventoryData.AddItemData(new InventoryItem(invokedMimic.GetComponent<DropItem>()));
                 Destroy(invokedMimic);
+                invokedMimic = null;
                 SaveData();
             }
 
@@ -54,6 +55,7 @@ public class MimicExhibitController : MonoBehaviour
             if (invokedMimic != null)
             {
                 Destroy(invokedMimic);
+                invokedMimic = null;
             }
 
             SetMimic(mimic);
@@ -77,8 +79,18 @@ public class MimicExhibitController : MonoBehaviour
     }
 
     public void SaveData()
-    {
-        string mimicName = invokedMimic.name.Replace("(Clone)", "").Trim();
+    { 
+        string mimicName;
+
+        if(invokedMimic != null)
+        {
+            mimicName = invokedMimic.name.Replace("(Clone)", "").Trim();
+        }
+        else
+        {
+            mimicName = "";
+        }
+        
         PlayerPrefs.SetString(exhibitNumber, mimicName);
         PlayerPrefs.Save();
     }
@@ -87,8 +99,15 @@ public class MimicExhibitController : MonoBehaviour
     {
         if (PlayerPrefs.HasKey(exhibitNumber))
         {
-            SetMimic(Resources.Load<GameObject>(PlayerPrefs.GetString(exhibitNumber)));
-            ChangeMimicPanel();
+            if (!string.IsNullOrEmpty(PlayerPrefs.GetString(exhibitNumber)))
+            {
+                SetMimic(Resources.Load<GameObject>(PlayerPrefs.GetString(exhibitNumber)));
+                ChangeMimicPanel();
+            }
+            else
+            {
+                invokedMimic = null;
+            }
         }
         else
         {

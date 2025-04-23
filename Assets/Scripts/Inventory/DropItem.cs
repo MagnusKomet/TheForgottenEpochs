@@ -17,7 +17,14 @@ namespace PlayerSpace
                
         private void Start()
         {
-            inventory = InventoryVisualManager.Instance.inventoryData;
+            try
+            {
+                inventory = InventoryVisualManager.Instance.inventoryData;
+            }
+            catch 
+            { 
+                Debug.Assert(inventory == null, "DropItem no encuentra el InventoryVisualManager");
+            }
         }
 
         private void OnTriggerEnter(Collider other)
