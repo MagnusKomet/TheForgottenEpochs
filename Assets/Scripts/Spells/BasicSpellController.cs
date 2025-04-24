@@ -15,7 +15,7 @@ public class BasicSpellController : MonoBehaviour
 
     public void Start()
     {
-        Destroy(this, 30f);
+        Destroy(gameObject, 30f);
     }
 
     public void DamageOnHitTrigger(Collider other)

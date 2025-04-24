@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using Newtonsoft.Json;
+using TMPro;
 
 public class ApiManager : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class ApiManager : MonoBehaviour
     public Canvas canvas;
     public GameObject row;
     List<GameObject> rows;
+
+    public TMP_InputField username;
+    public TMP_InputField password;
 
     private string apiUrl = "https://localhost:44351/api/highscores";
     //private HighScoreStruct highScoreStruct;
