@@ -22,11 +22,6 @@ namespace PlayerSpace
         PlayerInput.OnFootActions input;
 
         [SerializeField]
-        GameObject shortParticleOnHit;
-        [SerializeField]
-        GameObject longParticleOnHit;
-
-        [SerializeField]
         GameObject ComboHud;
         [SerializeField]
         GameObject Earth;

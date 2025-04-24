@@ -21,6 +21,8 @@ namespace PlayerSpace
         public GameObject deathMenu;
         [SerializeField]
         private TMP_Text interactionText;
+        [SerializeField]
+        private GameObject interactionTextBackground;
         GameObject playerModel;
         public bool isSpellMenuActive = false;
 
@@ -112,12 +114,14 @@ namespace PlayerSpace
         {
             interactionText.text = message;
             interactionText.gameObject.SetActive(true);
+            interactionTextBackground.gameObject.SetActive(true);
         }
 
         public void DisableInteractionText() 
         {
             interactionText.text = "";
             interactionText.gameObject.SetActive(false);
+            interactionTextBackground.gameObject.SetActive(false);
         }
 
         public void MenuActivated(bool isSpell = false)
