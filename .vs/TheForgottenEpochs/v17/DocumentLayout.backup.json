@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\inventory\\inventoryvisualmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventoryvisualmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\documents\\github\\theforgottenepochs\\assets\\maybepackages\\meet and talk\\demo\\demo_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\maybepackages\\meet and talk\\demo\\demo_mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\tornadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\tornadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\packages\\slimui\\modern menu 1\\scripts\\managers\\uimenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,10 +43,6 @@
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventorydatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\packages\\slimui\\modern menu 1\\scripts\\managers\\uisettingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\packages\\slimui\\modern menu 1\\scripts\\managers\\uisettingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\mimicexhibitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mimicexhibitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,16 +51,8 @@
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\packages\\toastnotificationmessage\\toastnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\packages\\toastnotificationmessage\\toastnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\tornadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\tornadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\inventory\\dropitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,74 +70,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Demo_MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\MaybePackages\\Meet and Talk\\Demo\\Demo_MainMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\MaybePackages\\Meet and Talk\\Demo\\Demo_MainMenu.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\MaybePackages\\Meet and Talk\\Demo\\Demo_MainMenu.cs",
-              "RelativeToolTip": "Assets\\MaybePackages\\Meet and Talk\\Demo\\Demo_MainMenu.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAYAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T00:27:38.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EnemyHealthController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCYAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T19:02:49.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UISettingsManager.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
-              "RelativeToolTip": "Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UISettingsManager.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAowDwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T18:49:01.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "InventoryVisualManager.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\InventoryVisualManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\InventoryVisualManager.cs",
               "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\InventoryVisualManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Inventory\\InventoryVisualManager.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAvwJsAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwJsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T17:40:14.293Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UIMenuManager.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
               "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
               "RelativeToolTip": "Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAvwJAAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAvwHoAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T15:32:00.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "InventoryDataController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\InventoryDataController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\InventoryDataController.cs",
@@ -169,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "BasicSpellController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\BasicSpellController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\BasicSpellController.cs",
@@ -181,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
@@ -205,7 +160,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "ApiManager.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ApiManager.cs",
+              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ApiManager.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAG8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T21:48:42.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TornadoController.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\TornadoController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\TornadoController.cs",
+              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\TornadoController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spells\\TornadoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:38:45.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnemyHealthController.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
+              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCYAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:02:49.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "SpellsCreatorController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\SpellsCreatorController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpellsCreatorController.cs",
@@ -218,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "DropItem.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\DropItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\DropItem.cs",
@@ -230,19 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApiManager.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ApiManager.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ApiManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwG0AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T21:48:42.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "FireballController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\FireballController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\FireballController.cs",
@@ -254,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "ItemSlot.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\ItemSlot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ItemSlot.cs",
@@ -266,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "ToastNotification.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\ToastNotificationMessage\\ToastNotification.cs",
               "RelativeDocumentMoniker": "Assets\\Packages\\ToastNotificationMessage\\ToastNotification.cs",
@@ -275,18 +256,6 @@
               "ViewState": "AgIAADwAAAAAAAAAAAAAADwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-21T23:08:34.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TornadoController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\TornadoController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\TornadoController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\TornadoController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\TornadoController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwB0AAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T13:38:45.276Z"
             }
           ]
         }

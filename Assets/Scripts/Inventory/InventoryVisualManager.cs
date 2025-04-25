@@ -155,5 +155,10 @@ namespace PlayerSpace
             InventoryMenu.SetActive(menuActivated);
             SceneManager.LoadScene("MainMenuScene");
         }
+
+        public void ReturnToMuseum()
+        {
+            SceneManager.LoadScene("MuseoScene");
+        }
     }
 }
