@@ -17,7 +17,6 @@ public class TornadoController : BasicSpellController
     {
         if (other.gameObject.tag != shootFromTag)
         {
-            Debug.Log("Hit: " + other.gameObject.name);
             EnemyHealthController enemy = other.GetComponent<EnemyHealthController>();
             if (enemy != null)
             {
@@ -32,7 +31,6 @@ public class TornadoController : BasicSpellController
         }
         else
         {
-            Debug.Log("Aupa: " + other.gameObject.name);
             PlayerController playerController = other.GetComponent<PlayerController>();
             if (playerController != null)
             {

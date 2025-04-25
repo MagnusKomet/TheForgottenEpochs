@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using PlayerSpace;
 
 namespace SlimUI.ModernMenu{
 	public class UIMenuManager : MonoBehaviour {
@@ -152,6 +153,19 @@ namespace SlimUI.ModernMenu{
 
         public void LoadScene(string scene)
         {
+            SceneManager.LoadScene(scene);
+        }
+
+        public void NewGame(string scene)
+        {
+            InventoryVisualManager.Instance.inventoryData.ClearData();
+            PlayerPrefs.DeleteKey("UnlockedSpells");
+            PlayerPrefs.DeleteKey("Exhibit1");
+            PlayerPrefs.DeleteKey("Exhibit2");
+            PlayerPrefs.DeleteKey("Exhibit3");
+            PlayerPrefs.DeleteKey("Exhibit4");
+            PlayerPrefs.DeleteKey("Exhibit5");
+            PlayerPrefs.DeleteKey("Exhibit6");
             SceneManager.LoadScene(scene);
         }
 

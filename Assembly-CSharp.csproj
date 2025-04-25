@@ -81,7 +81,6 @@
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\ExploderComponent.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Demo\Demo_MainMenu.cs" />
     <Compile Include="Assets\Scripts\Enemies\MimicController.cs" />
-    <Compile Include="Assets\Scripts\Spells\SpellsCreatorController.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\Leg.cs" />
     <Compile Include="Assets\Packages\ToastNotificationMessage\ToastNotification.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
@@ -99,6 +98,7 @@
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\SlashDecal.cs" />
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\ElementsShowCase.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\exploders\Exploder2D.cs" />
+    <Compile Include="Assets\Scripts\SpellsCreatorController.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\DialogueGetData.cs" />
     <Compile Include="Assets\Scripts\ApiManager.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />

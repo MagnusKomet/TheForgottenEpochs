@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/BosqueScene.unity
     guid: 4e5eaac25dadc7f4ab8a115987f43619
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/MainMenuScene.unity
     guid: fd200b2acb36dc34b8d0b6e445f772f1
   - enabled: 1
     path: Assets/Scenes/SpawnersScene.unity

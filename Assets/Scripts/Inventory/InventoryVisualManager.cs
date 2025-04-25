@@ -95,7 +95,7 @@ namespace PlayerSpace
         {
             inventoryData.SaveData();
 
-            if (current.name == "MainMenu")
+            if (current.name == "MainMenuScene")
             {
                 GUI.SetActive(true);
             }
@@ -104,7 +104,7 @@ namespace PlayerSpace
         {
             playerModel = GameObject.Find("CharacterModel");
 
-            if (current.name == "MainMenu")
+            if (current.name == "MainMenuScene")
             {
                 GUI.SetActive(false);
             }
@@ -146,6 +146,14 @@ namespace PlayerSpace
         public void RestartScene()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        public void ReturnToMainMenu()
+        {
+            menuActivated = !menuActivated;
+            Time.timeScale = menuActivated ? 0 : 1;
+            InventoryMenu.SetActive(menuActivated);
+            SceneManager.LoadScene("MainMenuScene");
         }
     }
 }
