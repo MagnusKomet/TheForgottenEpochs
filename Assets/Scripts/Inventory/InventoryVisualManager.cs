@@ -15,6 +15,8 @@ namespace PlayerSpace
         public GameObject InventoryMenu;
         [SerializeField]
         private GameObject GUI;
+        [SerializeField]
+        private GameObject ComboHUD;
         public bool menuActivated;
         public ItemSlot[] itemSlots;
         public InventoryDataController inventoryData;
@@ -124,7 +126,7 @@ namespace PlayerSpace
             interactionTextBackground.gameObject.SetActive(false);
         }
 
-        public void MenuActivated(bool isSpell = false)
+        public void MenuActivated(bool isSpell = false, bool isDeath = false)
         {
             if (isSpell)
             {
@@ -135,16 +137,28 @@ namespace PlayerSpace
                 isSpellMenuActive = false;
             }
 
-            menuActivated = !menuActivated;
-            playerModel.SetActive(!menuActivated);
+            menuActivated = !menuActivated;            
             GUI.SetActive(!menuActivated);
-            Time.timeScale = menuActivated ? 0 : 1;
+
+            if(isDeath)
+            {
+                deathMenu.SetActive(menuActivated);
+                ComboHUD.SetActive(!menuActivated);
+            }
+            else
+            {
+                Time.timeScale = menuActivated ? 0 : 1;
+                playerModel.SetActive(!menuActivated);
+            }
+
             Cursor.visible = menuActivated;
             Cursor.lockState = menuActivated ? CursorLockMode.None : CursorLockMode.Locked;
         }
 
         public void RestartScene()
         {
+            deathMenu.SetActive(false);
+            MenuActivated(false,true);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
@@ -158,6 +172,7 @@ namespace PlayerSpace
 
         public void ReturnToMuseum()
         {
+            MenuActivated(false, true);
             SceneManager.LoadScene("MuseoScene");
         }
     }

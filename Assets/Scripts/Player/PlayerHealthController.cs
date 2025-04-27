@@ -31,10 +31,8 @@ public class PlayerHealthController : EnemyHealthController
     public override void Die()
     {
         Instantiate(deathCamera, deathCameraSpawnPoint.position, deathCameraSpawnPoint.rotation);
-        InventoryVisualManager.Instance.deathMenu.SetActive(true);
 
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
+        InventoryVisualManager.Instance.MenuActivated(false,true);
 
         Destroy(whoDies);
     }

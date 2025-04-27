@@ -127,6 +127,7 @@
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\LightComponent.cs" />
     <Compile Include="Assets\Packages\PSXShaderKit\Scripts\PSXShaderManager.cs" />
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\PlayerInput.cs" />
+    <Compile Include="Assets\APITest.cs" />
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\CameraOrbit.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\Mimic.cs" />
     <Compile Include="Assets\Packages\Breakable Windows\Scripts\BreakableWindow.cs" />
