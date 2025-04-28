@@ -11,11 +11,15 @@ using static ApiDataManager;
 
 public class ApiDataManager : MonoBehaviour
 {
-    public TMP_InputField userIdInput;
+    public TMP_InputField userInput; 
+    public TMP_InputField passwordInput;
+
+    private string userId; 
 
     private string spellsApiUrl = "https://localhost:44351/api/grimoires";
     private string inventoriesApiUrl = "https://localhost:44351/api/inventories";
     private string exhibitsApiUrl = "https://localhost:44351/api/exhibits";
+
 
     // ------------------- //
     //      Spells         //
@@ -76,7 +80,6 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<List<string>> GetSpellsAsync()
     {
-        int userId = int.Parse(userIdInput.text);
         string url = $"{spellsApiUrl}/{userId}";
         string response = await GetRequestAsync(url);
         return response != null ? JsonConvert.DeserializeObject<List<string>>(response) : null;
@@ -84,7 +87,6 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<bool> UpdateSpellsAsync(HashSet<string> spells)
     {
-        int userId = int.Parse(userIdInput.text);
         return await PutRequestAsync($"{spellsApiUrl}/{userId}", spells.ToList());
     }
     #endregion
@@ -155,7 +157,6 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<List<InventoryItem>> GetInventoryAsync()
     {
-        int userId = int.Parse(userIdInput.text);
         string url = $"{inventoriesApiUrl}/{userId}";
         string response = await GetRequestAsync(url);
         return response != null ? JsonConvert.DeserializeObject<List<InventoryItem>>(response) : null;
@@ -163,7 +164,6 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<bool> UpdateInventoryAsync(List<ItemQuantity> inventory)
     {
-        int userId = int.Parse(userIdInput.text);
         return await PutRequestAsync($"{inventoriesApiUrl}/{userId}", inventory);
     }
     #endregion
@@ -250,7 +250,6 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<List<Exhibit>> GetExhibitsAsync()
     {
-        int userId = int.Parse(userIdInput.text);
         string url = $"{exhibitsApiUrl}/{userId}";
         string response = await GetRequestAsync(url);
         return response != null ? JsonConvert.DeserializeObject<List<Exhibit>>(response) : null;
@@ -258,10 +257,70 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<bool> UpdateExhibitsAsync(List<Exhibit> exhibits)
     {
-        int userId = int.Parse(userIdInput.text);
         return await PutRequestAsync($"{exhibitsApiUrl}/{userId}", exhibits);
     }
     #endregion
+
+    // ------------------- //
+    //        Users        //
+    // ------------------- //
+
+    #region Users
+    public async void Login()
+    {
+        string username = userInput.text;
+        string password = passwordInput.text;
+
+        var userCredentials = new { Username = username, Password = password };
+        string jsonData = JsonConvert.SerializeObject(userCredentials);
+
+        using (UnityWebRequest www = new UnityWebRequest("https://localhost:44351/api/users/login", "POST"))
+        {
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonData);
+            www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            www.downloadHandler = new DownloadHandlerBuffer();
+            www.SetRequestHeader("Content-Type", "application/json");
+
+            var operation = www.SendWebRequest();
+            while (!operation.isDone)
+                await Task.Yield();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                userId = www.downloadHandler.text; // Almacenar el ID del usuario autenticado
+                Debug.Log($"Login exitoso. User ID: {userId}");
+            }
+            else
+            {
+                Debug.LogError($"Error en el login: {www.error}");
+            }
+        }
+    }
+
+    public async void Register()
+    {
+        string username = userInput.text;
+        string password = passwordInput.text;
+
+        var userCredentials = new { Username = username, Password = password };
+        string url = "https://localhost:44351/api/users/register";
+
+        // Usar PutRequestAsync para registrar al usuario
+        bool success = await PutRequestAsync(url, userCredentials);
+
+        if (success)
+        {
+            Debug.Log("Registro exitoso.");
+            // Realizar login automáticamente después del registro
+            Login();
+        }
+        else
+        {
+            Debug.LogError("Error en el registro.");
+        }
+    }
+    #endregion
+
 
     // ------------------- //
     //        Resto        //

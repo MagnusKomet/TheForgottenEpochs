@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\documents\\github\\theforgottenepochs\\assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -84,7 +84,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ApiManager.cs",
               "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ApiManager.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAAAMgAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAB0BAAAAAAAAAAAkwCYBAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T21:48:42.616Z",
               "EditorCaption": ""
@@ -99,8 +99,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Inventory\\InventoryItem.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T13:57:25.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T13:57:25.555Z"
             },
             {
               "$type": "Document",
@@ -148,8 +147,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
               "ViewState": "AgIAAJIBAAAAAAAAAAAqwKMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:08:56.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T14:08:56.388Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Inventory\\InventoryDataController.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAA9wEkAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T16:55:25.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T16:55:25.559Z"
             },
             {
               "$type": "Document",
