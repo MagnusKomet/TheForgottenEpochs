@@ -13,6 +13,8 @@ namespace PlayerSpace
         public string spritePath;
         public string itemDescription;
 
+        public InventoryItem() { }
+
         public InventoryItem(string itemName, int quantity, string spritePath, string itemDescription)
         {
             this.itemName = itemName;

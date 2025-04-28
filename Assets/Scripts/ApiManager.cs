@@ -7,19 +7,34 @@ using UnityEngine.Networking;
 using Newtonsoft.Json;
 using TMPro;
 using PlayerSpace;
-using static ApiDataManager;
+using System;
+using System.Text;
 
 public class ApiDataManager : MonoBehaviour
 {
-    public TMP_InputField userInput; 
+    public TMP_InputField userInput;
     public TMP_InputField passwordInput;
 
-    private string userId; 
+    private string userToken;
 
-    private string spellsApiUrl = "https://localhost:44351/api/grimoires";
-    private string inventoriesApiUrl = "https://localhost:44351/api/inventories";
-    private string exhibitsApiUrl = "https://localhost:44351/api/exhibits";
+    private string spellsApiUrl = "https://localhost:44351/api/grimoires/token";
+    private string inventoriesApiUrl = "https://localhost:44351/api/inventories/token";
+    private string exhibitsApiUrl = "https://localhost:44351/api/exhibits/token";
 
+
+    public void Start()
+    {
+        // Cargar el token de usuario al iniciar
+        if (IsTokenValid())
+        {
+            userToken = PlayerPrefs.GetString("SecureToken");
+            Debug.Log($"Token de usuario cargado: {userToken}");
+        }
+        else
+        {
+            Debug.LogWarning("El token de usuario no es válido o no existe.");
+        }
+    }
 
     // ------------------- //
     //      Spells         //
@@ -80,14 +95,14 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<List<string>> GetSpellsAsync()
     {
-        string url = $"{spellsApiUrl}/{userId}";
+        string url = $"{spellsApiUrl}/{userToken}";
         string response = await GetRequestAsync(url);
         return response != null ? JsonConvert.DeserializeObject<List<string>>(response) : null;
     }
 
     private async Task<bool> UpdateSpellsAsync(HashSet<string> spells)
     {
-        return await PutRequestAsync($"{spellsApiUrl}/{userId}", spells.ToList());
+        return await PutRequestAsync($"{spellsApiUrl}/{userToken}", spells.ToList());
     }
     #endregion
 
@@ -157,14 +172,14 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<List<InventoryItem>> GetInventoryAsync()
     {
-        string url = $"{inventoriesApiUrl}/{userId}";
+        string url = $"{inventoriesApiUrl}/{userToken}";
         string response = await GetRequestAsync(url);
         return response != null ? JsonConvert.DeserializeObject<List<InventoryItem>>(response) : null;
     }
 
     private async Task<bool> UpdateInventoryAsync(List<ItemQuantity> inventory)
     {
-        return await PutRequestAsync($"{inventoriesApiUrl}/{userId}", inventory);
+        return await PutRequestAsync($"{inventoriesApiUrl}/{userToken}", inventory);
     }
     #endregion
 
@@ -250,14 +265,14 @@ public class ApiDataManager : MonoBehaviour
 
     private async Task<List<Exhibit>> GetExhibitsAsync()
     {
-        string url = $"{exhibitsApiUrl}/{userId}";
+        string url = $"{exhibitsApiUrl}/{userToken}";
         string response = await GetRequestAsync(url);
         return response != null ? JsonConvert.DeserializeObject<List<Exhibit>>(response) : null;
     }
 
     private async Task<bool> UpdateExhibitsAsync(List<Exhibit> exhibits)
     {
-        return await PutRequestAsync($"{exhibitsApiUrl}/{userId}", exhibits);
+        return await PutRequestAsync($"{exhibitsApiUrl}/{userToken}", exhibits);
     }
     #endregion
 
@@ -287,8 +302,9 @@ public class ApiDataManager : MonoBehaviour
 
             if (www.result == UnityWebRequest.Result.Success)
             {
-                userId = www.downloadHandler.text; // Almacenar el ID del usuario autenticado
-                Debug.Log($"Login exitoso. User ID: {userId}");
+                userToken = www.downloadHandler.text; // Almacenar el token del usuario autenticado
+                SaveTokenWithExpiration(userToken);
+                Debug.Log($"Login exitoso. User Token: {userToken}");
             }
             else
             {
@@ -319,6 +335,27 @@ public class ApiDataManager : MonoBehaviour
             Debug.LogError("Error en el registro.");
         }
     }
+
+    public static void SaveTokenWithExpiration(string token)
+    {
+        string encryptedToken = CryptoHelper.Encrypt(token);
+        DateTime expiration = DateTime.UtcNow.AddMonths(1);
+
+        PlayerPrefs.SetString("SecureToken", encryptedToken);
+        PlayerPrefs.SetString("TokenExpiration", expiration.ToString("o")); // Formato ISO 8601  
+        PlayerPrefs.Save();
+    }
+
+    public static bool IsTokenValid()
+    {
+        if (PlayerPrefs.HasKey("TokenExpiration"))
+        {
+            DateTime expiration = DateTime.Parse(PlayerPrefs.GetString("TokenExpiration"));
+            return DateTime.UtcNow < expiration;
+        }
+        return false;
+    }
+
     #endregion
 
 
@@ -389,6 +426,7 @@ public class ApiDataManager : MonoBehaviour
         }
     }
 
+
     [System.Serializable]
     public class ItemQuantity
     {
@@ -413,5 +451,8 @@ public class ApiDataManager : MonoBehaviour
             this.items = items;
         }
     }
+
+
+
     #endregion
 }
