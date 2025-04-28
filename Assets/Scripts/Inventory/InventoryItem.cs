@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static ApiDataManager;
 
 namespace PlayerSpace
 {
@@ -27,6 +28,7 @@ namespace PlayerSpace
             spritePath = dropItem.spritePath;
             itemDescription = dropItem.itemDescription;
         }
+
 
         public Sprite GetSprite()
         {

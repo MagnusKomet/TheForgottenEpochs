@@ -1,134 +1,335 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 using Newtonsoft.Json;
 using TMPro;
+using PlayerSpace;
+using static ApiDataManager;
 
-public class ApiManager : MonoBehaviour
+public class ApiDataManager : MonoBehaviour
 {
     public TMP_InputField userIdInput;
-    public TMP_InputField dataInput;
-    public Text successState;
 
-    private string grimoiresApiUrl = "https://localhost:44351/api/grimoires";
+    private string spellsApiUrl = "https://localhost:44351/api/grimoires";
     private string inventoriesApiUrl = "https://localhost:44351/api/inventories";
     private string exhibitsApiUrl = "https://localhost:44351/api/exhibits";
 
-    // Método para obtener Grimoires por userId
-    public void GetGrimoires()
-    {
-        int userId = int.Parse(userIdInput.text);
-        StartCoroutine(GetRequest($"{grimoiresApiUrl}/{userId}", HandleGrimoiresResponse));
-    }
+    // ------------------- //
+    //      Spells         //
+    // ------------------- //
 
-    // Método para actualizar Grimoires
-    public void UpdateGrimoires()
+    #region Spells
+    public async void SaveSpellsToApi()
     {
-        int userId = int.Parse(userIdInput.text);
-        List<string> spellNames = JsonConvert.DeserializeObject<List<string>>(dataInput.text);
-        StartCoroutine(PutRequest($"{grimoiresApiUrl}/{userId}", spellNames));
-    }
+        HashSet<string> localSpells = LoadSpellsLocally();
+        bool success = await UpdateSpellsAsync(localSpells);
 
-    // Método para obtener Inventories por userId
-    public void GetInventories()
-    {
-        int userId = int.Parse(userIdInput.text);
-        StartCoroutine(GetRequest($"{inventoriesApiUrl}/{userId}", HandleInventoriesResponse));
-    }
-
-    // Método para actualizar Inventories
-    public void UpdateInventories()
-    {
-        int userId = int.Parse(userIdInput.text);
-        List<ItemQuantity> newInventory = JsonConvert.DeserializeObject<List<ItemQuantity>>(dataInput.text);
-        StartCoroutine(PutRequest($"{inventoriesApiUrl}/{userId}", newInventory));
-    }
-
-    // Método para obtener Exhibits por userId
-    public void GetExhibits()
-    {
-        int userId = int.Parse(userIdInput.text);
-        StartCoroutine(GetRequest($"{exhibitsApiUrl}/{userId}", HandleExhibitsResponse));
-    }
-
-    // Método para actualizar Exhibits
-    public void UpdateExhibits()
-    {
-        int userId = int.Parse(userIdInput.text);
-        List<Exhibit> newExhibits = JsonConvert.DeserializeObject<List<Exhibit>>(dataInput.text);
-        StartCoroutine(PutRequest($"{exhibitsApiUrl}/{userId}", newExhibits));
-    }
-
-    // Método genérico para realizar una solicitud GET
-    private IEnumerator GetRequest(string url, Action<string> callback)
-    {
-        UnityWebRequest www = UnityWebRequest.Get(url);
-        yield return www.SendWebRequest();
-
-        if (www.result == UnityWebRequest.Result.Success)
+        if (success)
         {
-            callback(www.downloadHandler.text);
+            Debug.Log($"Spells guardados en la API correctamente: {string.Join(", ", localSpells)}");
         }
         else
         {
-            Debug.LogError(www.error);
-            successState.color = Color.red;
-            successState.text = "Fail!";
+            Debug.LogError("Error al guardar los Spells en la API.");
         }
     }
 
-    // Método genérico para realizar una solicitud PUT
-    private IEnumerator PutRequest<T>(string url, T data)
+    public async void LoadSpellsFromApi()
+    {
+        List<string> spellsFromApi = await GetSpellsAsync();
+        if (spellsFromApi != null)
+        {
+            SaveSpellsLocally(new HashSet<string>(spellsFromApi));
+            Debug.Log($"Spells cargados desde la API correctamente: {string.Join(", ", spellsFromApi)}");
+        }
+        else
+        {
+            Debug.LogError("Error al cargar los Spells desde la API.");
+        }
+    }
+
+    private void SaveSpellsLocally(HashSet<string> spells)
+    {
+        string spellsString = string.Join("-", spells);
+        PlayerPrefs.SetString("UnlockedSpells", spellsString);
+        PlayerPrefs.Save();
+        Debug.Log($"Spells guardados localmente: {string.Join(", ", spells)}");
+    }
+
+    private HashSet<string> LoadSpellsLocally()
+    {
+        if (PlayerPrefs.HasKey("UnlockedSpells"))
+        {
+            string spellsString = PlayerPrefs.GetString("UnlockedSpells");
+            Debug.Log($"Spells cargados localmente: {spellsString.Replace("-", ", ")}");
+            return new HashSet<string>(spellsString.Split('-'));
+        }
+        else
+        {
+            Debug.LogWarning("No se encontraron Spells guardados localmente. Usando valores predeterminados.");
+            return new HashSet<string>() { "F", "A", "E", "W" };
+        }
+    }
+
+    private async Task<List<string>> GetSpellsAsync()
+    {
+        int userId = int.Parse(userIdInput.text);
+        string url = $"{spellsApiUrl}/{userId}";
+        string response = await GetRequestAsync(url);
+        return response != null ? JsonConvert.DeserializeObject<List<string>>(response) : null;
+    }
+
+    private async Task<bool> UpdateSpellsAsync(HashSet<string> spells)
+    {
+        int userId = int.Parse(userIdInput.text);
+        return await PutRequestAsync($"{spellsApiUrl}/{userId}", spells.ToList());
+    }
+    #endregion
+
+    // ------------------- //
+    //      Inventory      //
+    // ------------------- //
+
+    #region Inventory
+    public async void SaveInventoryToApi()
+    {
+        List<InventoryItem> localInventory = LoadInventoryLocally();
+        List<ItemQuantity> inventoryToSend = localInventory.Select(item => new ItemQuantity
+        {
+            itemName = item.itemName,
+            quantity = item.quantity
+        }).ToList();
+
+        bool success = await UpdateInventoryAsync(inventoryToSend);
+
+        if (success)
+        {
+            Debug.Log($"Inventario guardado en la API correctamente: {JsonConvert.SerializeObject(inventoryToSend)}");
+        }
+        else
+        {
+            Debug.LogError("Error al guardar el Inventario en la API.");
+        }
+    }
+
+    public async void LoadInventoryFromApi()
+    {
+        List<InventoryItem> inventoryFromApi = await GetInventoryAsync();
+        if (inventoryFromApi != null)
+        {
+            SaveInventoryLocally(inventoryFromApi);
+            Debug.Log($"Inventario cargado desde la API correctamente: {JsonConvert.SerializeObject(inventoryFromApi)}");
+        }
+        else
+        {
+            Debug.LogError("Error al cargar el Inventario desde la API.");
+        }
+    }
+
+    private void SaveInventoryLocally(List<InventoryItem> inventory)
+    {
+        string json = JsonUtility.ToJson(new ItemSerializableList<InventoryItem>(inventory));
+        PlayerPrefs.SetString("InventoryData", json);
+        PlayerPrefs.Save();
+        Debug.Log($"Inventario guardado localmente: {JsonConvert.SerializeObject(inventory)}");
+    }
+
+    private List<InventoryItem> LoadInventoryLocally()
+    {
+        if (PlayerPrefs.HasKey("InventoryData"))
+        {
+            string json = PlayerPrefs.GetString("InventoryData");
+            ItemSerializableList<InventoryItem> inventoryDataArray = JsonUtility.FromJson<ItemSerializableList<InventoryItem>>(json);
+            Debug.Log($"Inventario cargado localmente: {JsonConvert.SerializeObject(inventoryDataArray.items)}");
+            return inventoryDataArray.items;
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró Inventario guardado localmente. Usando una lista vacía.");
+            return new List<InventoryItem>();
+        }
+    }
+
+    private async Task<List<InventoryItem>> GetInventoryAsync()
+    {
+        int userId = int.Parse(userIdInput.text);
+        string url = $"{inventoriesApiUrl}/{userId}";
+        string response = await GetRequestAsync(url);
+        return response != null ? JsonConvert.DeserializeObject<List<InventoryItem>>(response) : null;
+    }
+
+    private async Task<bool> UpdateInventoryAsync(List<ItemQuantity> inventory)
+    {
+        int userId = int.Parse(userIdInput.text);
+        return await PutRequestAsync($"{inventoriesApiUrl}/{userId}", inventory);
+    }
+    #endregion
+
+    // ------------------- //
+    //      Exhibits       //
+    // ------------------- //
+
+    #region Exhibits
+    public async void SaveExhibitsToApi()
+    {
+        List<Exhibit> localExhibits = LoadAllExhibitsLocally();
+        foreach (var exhibit in localExhibits)
+        {
+            exhibit.exhibitPosition = exhibit.exhibitPosition.Replace("Exhibit", "");
+        }
+        bool success = await UpdateExhibitsAsync(localExhibits);
+
+        if (success)
+        {
+            Debug.Log($"Exhibits guardados en la API correctamente: {JsonConvert.SerializeObject(localExhibits)}");
+        }
+        else
+        {
+            Debug.LogError("Error al guardar los Exhibits en la API.");
+        }
+    }
+
+    public async void LoadExhibitsFromApi()
+    {
+        List<Exhibit> exhibitsFromApi = await GetExhibitsAsync();
+        if (exhibitsFromApi != null)
+        {
+            foreach (var exhibit in exhibitsFromApi)
+            {
+
+                SaveExhibitLocally("Exhibit" + exhibit.exhibitPosition, exhibit.invokedMimic);
+            }
+            Debug.Log($"Exhibits cargados desde la API correctamente: {JsonConvert.SerializeObject(exhibitsFromApi)}");
+        }
+        else
+        {
+            Debug.LogError("Error al cargar los Exhibits desde la API.");
+        }
+    }
+
+    private void SaveExhibitLocally(string exhibitNumber, string mimicName)
+    {
+        PlayerPrefs.SetString(exhibitNumber, mimicName);
+        PlayerPrefs.Save();
+        Debug.Log($"Exhibit guardado localmente: {exhibitNumber} -> {mimicName}");
+    }
+
+    private string LoadExhibitLocally(string exhibitNumber)
+    {
+        if (PlayerPrefs.HasKey(exhibitNumber))
+        {
+            string mimicName = PlayerPrefs.GetString(exhibitNumber);
+            Debug.Log($"Exhibit cargado localmente: {exhibitNumber} -> {mimicName}");
+            return mimicName;
+        }
+        else
+        {
+            Debug.LogWarning($"No se encontró Exhibit guardado localmente para: {exhibitNumber}");
+            return string.Empty;
+        }
+    }
+
+    private List<Exhibit> LoadAllExhibitsLocally()
+    {
+        List<Exhibit> exhibits = new List<Exhibit>();
+        for (int i = 1; i <= 6; i++)
+        {
+            string exhibitNumber = $"Exhibit{i}";
+            string mimicName = LoadExhibitLocally(exhibitNumber);
+            if (!string.IsNullOrEmpty(mimicName))
+            {
+                exhibits.Add(new Exhibit { exhibitPosition = exhibitNumber, invokedMimic = mimicName });
+            }
+        }
+        Debug.Log($"Todos los Exhibits cargados localmente: {JsonConvert.SerializeObject(exhibits)}");
+        return exhibits;
+    }
+
+    private async Task<List<Exhibit>> GetExhibitsAsync()
+    {
+        int userId = int.Parse(userIdInput.text);
+        string url = $"{exhibitsApiUrl}/{userId}";
+        string response = await GetRequestAsync(url);
+        return response != null ? JsonConvert.DeserializeObject<List<Exhibit>>(response) : null;
+    }
+
+    private async Task<bool> UpdateExhibitsAsync(List<Exhibit> exhibits)
+    {
+        int userId = int.Parse(userIdInput.text);
+        return await PutRequestAsync($"{exhibitsApiUrl}/{userId}", exhibits);
+    }
+    #endregion
+
+    // ------------------- //
+    //        Resto        //
+    // ------------------- //
+
+    #region Resto
+    public void SaveAllToApi()
+    {
+        SaveSpellsToApi();
+        SaveInventoryToApi();
+        SaveExhibitsToApi();
+    }
+
+    public void LoadAllFromApi()
+    {
+        LoadSpellsFromApi();
+        LoadInventoryFromApi();
+        LoadExhibitsFromApi();
+    }
+    private async Task<string> GetRequestAsync(string url)
+    {
+        using (UnityWebRequest www = UnityWebRequest.Get(url))
+        {
+            var operation = www.SendWebRequest();
+            while (!operation.isDone)
+                await Task.Yield();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log($"Respuesta recibida: {www.downloadHandler.text}");
+                return www.downloadHandler.text;
+            }
+            else
+            {
+                Debug.LogError($"Error en la solicitud GET: {www.error}");
+                return null;
+            }
+        }
+    }
+
+    private async Task<bool> PutRequestAsync<T>(string url, T data)
     {
         string body = JsonConvert.SerializeObject(data);
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(body);
 
-        UnityWebRequest www = new UnityWebRequest(url, "PUT");
-        www.uploadHandler = new UploadHandlerRaw(bodyRaw);
-        www.downloadHandler = new DownloadHandlerBuffer();
-        www.SetRequestHeader("Content-Type", "application/json");
-
-        yield return www.SendWebRequest();
-
-        if (www.result == UnityWebRequest.Result.Success)
+        using (UnityWebRequest www = new UnityWebRequest(url, "PUT"))
         {
-            Debug.Log("Update successful!");
-            successState.color = Color.green;
-            successState.text = "Success!";
+            www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            www.downloadHandler = new DownloadHandlerBuffer();
+            www.SetRequestHeader("Content-Type", "application/json");
+
+            var operation = www.SendWebRequest();
+            while (!operation.isDone)
+                await Task.Yield();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                Debug.Log($"Datos enviados correctamente: {body}");
+                return true;
+            }
+            else
+            {
+                Debug.LogError($"Error en la solicitud PUT: {www.error}");
+                return false;
+            }
         }
-        else
-        {
-            Debug.LogError(www.error);
-            successState.color = Color.red;
-            successState.text = "Fail!";
-        }
     }
 
-    // Manejo de la respuesta de Grimoires
-    private void HandleGrimoiresResponse(string response)
-    {
-        List<string> grimoires = JsonConvert.DeserializeObject<List<string>>(response);
-        Debug.Log($"Grimoires: {string.Join(", ", grimoires)}");
-    }
-
-    // Manejo de la respuesta de Inventories
-    private void HandleInventoriesResponse(string response)
-    {
-        List<ItemQuantity> inventory = JsonConvert.DeserializeObject<List<ItemQuantity>>(response);
-        Debug.Log($"Inventory: {JsonConvert.SerializeObject(inventory)}");
-    }
-
-    // Manejo de la respuesta de Exhibits
-    private void HandleExhibitsResponse(string response)
-    {
-        List<Exhibit> exhibits = JsonConvert.DeserializeObject<List<Exhibit>>(response);
-        Debug.Log($"Exhibits: {JsonConvert.SerializeObject(exhibits)}");
-    }
-
-    // Clases auxiliares
     [System.Serializable]
     public class ItemQuantity
     {
@@ -142,4 +343,16 @@ public class ApiManager : MonoBehaviour
         public string exhibitPosition { get; set; }
         public string invokedMimic { get; set; }
     }
+
+    [System.Serializable]
+    public class ItemSerializableList<T>
+    {
+        public List<T> items;
+
+        public ItemSerializableList(List<T> items)
+        {
+            this.items = items;
+        }
+    }
+    #endregion
 }
