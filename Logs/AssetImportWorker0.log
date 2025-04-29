@@ -1,0 +1,435 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.51f1 (9f9d16c45e54) revision 10460438'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'es' Physical Memory: 16318 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.51f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ernes/Documents/GitHub/TheForgottenEpochs
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61356
+Successfully changed project path to: C:/Users/ernes/Documents/GitHub/TheForgottenEpochs
+C:/Users/ernes/Documents/GitHub/TheForgottenEpochs
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19552]  Target information:
+
+Player connection [19552]  * "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 1154480148 [EditorId] 1154480148 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TT7TRAO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [19552]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1154480148 [EditorId] 1154480148 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TT7TRAO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [19552] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19552] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+Refreshing native plugins compatible for Editor in 38.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.51f1 (9f9d16c45e54)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ernes/Documents/GitHub/TheForgottenEpochs/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   NVIDIA
+    VRAM:     4004 MB
+    Driver:   32.0.15.7602
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.024337 seconds.
+- Loaded All Assemblies, in  0.559 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 400 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.868 seconds
+Domain Reload Profiling: 1423ms
+	BeginReloadAssembly (191ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (96ms)
+	LoadAllAssembliesAndSetupDomain (208ms)
+		LoadAssemblies (189ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (203ms)
+			TypeCache.Refresh (201ms)
+				TypeCache.ScanAssembly (181ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (868ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (799ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (543ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (169ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.553 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.465 seconds
+Domain Reload Profiling: 3009ms
+	BeginReloadAssembly (253ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (47ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (1162ms)
+		LoadAssemblies (793ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (521ms)
+			TypeCache.Refresh (426ms)
+				TypeCache.ScanAssembly (385ms)
+			ScanForSourceGeneratedMonoScriptInfo (64ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (1465ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1095ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (136ms)
+			ProcessInitializeOnLoadAttributes (794ms)
+			ProcessInitializeOnLoadMethodAttributes (103ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 11.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5314 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (2.1 MB). Loaded Objects now: 5804.
+Memory consumption went from 224.1 MB to 222.0 MB.
+Total: 8.195500 ms (FindLiveObjects: 0.491500 ms CreateObjectMapping: 0.476900 ms MarkObjects: 5.998600 ms  DeleteObjects: 1.226900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11900.680798 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_MuzzleFlash_01.prefab
+  artifactKey: Guid(1f58a1dea6bbd9347843e4935585e6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_MuzzleFlash_01.prefab using Guid(1f58a1dea6bbd9347843e4935585e6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '4a66839d08b18816cc5d9aeb180b22b7') in 0.386652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Rain_01.prefab
+  artifactKey: Guid(1731425cf73de7541b40acd38dba18ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Rain_01.prefab using Guid(1731425cf73de7541b40acd38dba18ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'bd7771f0a9021b7768d9e810f6b16dee') in 0.093433 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Portal_01.prefab
+  artifactKey: Guid(d5774d459f0f43d4591f34994be1404e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Portal_01.prefab using Guid(d5774d459f0f43d4591f34994be1404e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'c3b3750ec7ce0136dd9011fbcdfe4ba4') in 0.044875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 22
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Rain_02.prefab
+  artifactKey: Guid(6c064513aa7cae142b65066943c8fdbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Rain_02.prefab using Guid(6c064513aa7cae142b65066943c8fdbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '9870be1e3c87a5cc4a204e2615fe92b8') in 0.031306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Shield_01.prefab
+  artifactKey: Guid(ccf28ea29cf499744ac31bab90073aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Shield_01.prefab using Guid(ccf28ea29cf499744ac31bab90073aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '1cf629a690e94720aa60e3e1c75de98b') in 0.038408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Explosion_02.prefab
+  artifactKey: Guid(83ad694f134ab954580473212156b35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Explosion_02.prefab using Guid(83ad694f134ab954580473212156b35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e5caf5bbfbf6a851b17932c3d3b48e9c') in 0.037071 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 56
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Flames_01.prefab
+  artifactKey: Guid(8fa5143051527e949b0ae174c8430414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Flames_01.prefab using Guid(8fa5143051527e949b0ae174c8430414) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '2b0e74440b1d69deb4768995d51fee45') in 0.034928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Projectile_01.prefab
+  artifactKey: Guid(bc142210df3ec4545a4e3e1f21e00da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Projectile_01.prefab using Guid(bc142210df3ec4545a4e3e1f21e00da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '80a2d42e9abae568c426a4d2ef8765b6') in 0.048516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Shockwave_01.prefab
+  artifactKey: Guid(82066d902ed0dd6488ddfd32eb994801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Shockwave_01.prefab using Guid(82066d902ed0dd6488ddfd32eb994801) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'af58a98c6ea7a9f30b26975f65725b6f') in 0.044523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Heal_01.prefab
+  artifactKey: Guid(108ca465382c11742bd2c91fe4fdb13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Heal_01.prefab using Guid(108ca465382c11742bd2c91fe4fdb13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'fec2e7b3c62bdfcabbc3aea5d8cae59e') in 0.048208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Tornado_01.prefab
+  artifactKey: Guid(460babe280fe4aa41adc3fefd46f0c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Tornado_01.prefab using Guid(460babe280fe4aa41adc3fefd46f0c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e03a8e278614b8950e52e17c785ee8e6') in 0.034142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/FreeQuickEffectsVol1/Prefabs/vfx_Sparks_01.prefab
+  artifactKey: Guid(5a936c83b1746f14f9100db745e94f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FreeQuickEffectsVol1/Prefabs/vfx_Sparks_01.prefab using Guid(5a936c83b1746f14f9100db745e94f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '44de7ad98bfd15479cb8b7fd57640253') in 0.025772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 159.047125 seconds.
+  path: Assets/Packages/EnemyRobots/Particles/Smoke.prefab
+  artifactKey: Guid(7130b0ee03a0e6644a91afb929e7ab2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/EnemyRobots/Particles/Smoke.prefab using Guid(7130b0ee03a0e6644a91afb929e7ab2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'dbed879ba2782d95120f5f7fe1952e2a') in 0.078891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.001568 seconds.
+  path: Assets/Packages/LiteFireEffect/Material/Base/Smoke_01.mat
+  artifactKey: Guid(afad238031a6402489da5209c8a266eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/LiteFireEffect/Material/Base/Smoke_01.mat using Guid(afad238031a6402489da5209c8a266eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '928b88007e63d0ef0ea170e92a62c536') in 0.055352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Packages/TriForge Assets/Fantasy Worlds - DEMO Common Files/Textures/T_fw_Smoke_01.png
+  artifactKey: Guid(bef1a7c4c0a31824cb2a004aa33408ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/TriForge Assets/Fantasy Worlds - DEMO Common Files/Textures/T_fw_Smoke_01.png using Guid(bef1a7c4c0a31824cb2a004aa33408ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'c9aadbfb9dcc7564a095780b003ddb9c') in 0.061684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Packages/EnemyRobots/Materials/CannonMachine/Particles/SmokeParticle.mat
+  artifactKey: Guid(4f0077caf53021a45ac23e48be8a0caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/EnemyRobots/Materials/CannonMachine/Particles/SmokeParticle.mat using Guid(4f0077caf53021a45ac23e48be8a0caf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '7744bfbd8a3e00cd561ecefa23191ec6') in 0.026070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Packages/Free Slash VFX/Model/Smoke/SmokeSphere01.fbx
+  artifactKey: Guid(7f2c09fa4c36d064083944bc9331f95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Free Slash VFX/Model/Smoke/SmokeSphere01.fbx using Guid(7f2c09fa4c36d064083944bc9331f95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f8f28599f20857766306fc7d172d2e53') in 0.165167 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Packages/LiteFireEffect/Texture/Smoke_001.png
+  artifactKey: Guid(dda9e6246ee0d63419eebfa3a2dd85b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/LiteFireEffect/Texture/Smoke_001.png using Guid(dda9e6246ee0d63419eebfa3a2dd85b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '175b0f0c3b9eb418013731dcde3a4b3d') in 0.031247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Packages/LiteFireEffect/Material/Skill/Smoke_Blend_01.mat
+  artifactKey: Guid(231d3ae1fbdb46c4985625133d1d2fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/LiteFireEffect/Material/Skill/Smoke_Blend_01.mat using Guid(231d3ae1fbdb46c4985625133d1d2fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '72847597c845baf01830ebc2eb83849b') in 0.022829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Packages/EnemyRobots/Textures/CannonMachine/Particles/SmokeParticle.png
+  artifactKey: Guid(f1e10b8930dc3b74c9a4af4675bd43e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/EnemyRobots/Textures/CannonMachine/Particles/SmokeParticle.png using Guid(f1e10b8930dc3b74c9a4af4675bd43e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f9fb2b22833f62be7416c928bbdf6eb5') in 0.026418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Packages/True Explosions/System/Materials/Smoke.mat
+  artifactKey: Guid(aa97ce4670bef2a4ea36da479afcc588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/True Explosions/System/Materials/Smoke.mat using Guid(aa97ce4670bef2a4ea36da479afcc588) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '85f34abe3867f168f3e4c482a89da7e9') in 0.076202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Packages/LiteFireEffect/Texture/Smoke_002.png
+  artifactKey: Guid(0f65db651371903478b418461d3790de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/LiteFireEffect/Texture/Smoke_002.png using Guid(0f65db651371903478b418461d3790de) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '8c5e80af0c8e2166db6e91ac5754bc7d') in 0.031875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Packages/LiteFireEffect/Material/Skill/Smoke_Blend_02.mat
+  artifactKey: Guid(77ceef26433dd1d4c86238067c81b094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/LiteFireEffect/Material/Skill/Smoke_Blend_02.mat using Guid(77ceef26433dd1d4c86238067c81b094) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f5a79b2787cfbf51b4d61f64ee92470c') in 0.021021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Packages/LiteFireEffect/Material/Skill/Smoke_Blend_03.mat
+  artifactKey: Guid(9500792ffdb17bb4c96d612b3e6a48c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/LiteFireEffect/Material/Skill/Smoke_Blend_03.mat using Guid(9500792ffdb17bb4c96d612b3e6a48c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '3167c07a0aedf38418e868fa1fe3592a') in 0.018893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -27,6 +27,8 @@ namespace PlayerSpace
         private GameObject interactionTextBackground;
         GameObject playerModel;
         public bool isSpellMenuActive = false;
+        private bool isMainMenuActive = false;
+        public GameObject PlayerHealthBar;
 
         private void Awake()
         {
@@ -52,7 +54,7 @@ namespace PlayerSpace
 
         void Update()
         {
-            if (input.Inventory.WasPressedThisFrame() && !deathMenu.activeSelf)
+            if (input.Inventory.WasPressedThisFrame() && !deathMenu.activeSelf && !isMainMenuActive)
             {
                 DeselectAllSlots();
                 LoadAllItems();
@@ -92,6 +94,20 @@ namespace PlayerSpace
                 slot.thisItemSelected = false;
             }
         }
+        private void OnSceneLoaded(Scene current, LoadSceneMode sceneMode)
+        {
+            playerModel = GameObject.Find("CharacterModel");
+
+            if (current.name == "MainMenuScene")
+            {
+                GUI.SetActive(false);
+                isMainMenuActive = true;
+            }
+            else if (current.name == "MuseoScene")
+            {
+                PlayerHealthBar.SetActive(false);
+            }
+        }
 
         private void OnSceneUnloaded(Scene current)
         {
@@ -100,17 +116,14 @@ namespace PlayerSpace
             if (current.name == "MainMenuScene")
             {
                 GUI.SetActive(true);
+                isMainMenuActive = false;
             }
-        }
-        private void OnSceneLoaded(Scene current, LoadSceneMode sceneMode)
-        {
-            playerModel = GameObject.Find("CharacterModel");
-
-            if (current.name == "MainMenuScene")
+            else if (current.name == "MuseoScene")
             {
-                GUI.SetActive(false);
+                PlayerHealthBar.SetActive(true);
             }
         }
+
 
         public void EnableInteractionText(string message)
         {

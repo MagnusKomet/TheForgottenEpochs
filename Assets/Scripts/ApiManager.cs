@@ -21,18 +21,11 @@ public class ApiDataManager : MonoBehaviour
     private string inventoriesApiUrl = "https://localhost:44351/api/inventories/token";
     private string exhibitsApiUrl = "https://localhost:44351/api/exhibits/token";
 
-
     public void Start()
     {
-        // Cargar el token de usuario al iniciar
         if (IsTokenValid())
         {
             userToken = PlayerPrefs.GetString("SecureToken");
-            Debug.Log($"Token de usuario cargado: {userToken}");
-        }
-        else
-        {
-            Debug.LogWarning("El token de usuario no es válido o no existe.");
         }
     }
 
@@ -41,32 +34,36 @@ public class ApiDataManager : MonoBehaviour
     // ------------------- //
 
     #region Spells
-    public async void SaveSpellsToApi()
+    public async Task<bool> SaveSpellsToApi()
     {
-        HashSet<string> localSpells = LoadSpellsLocally();
-        bool success = await UpdateSpellsAsync(localSpells);
-
-        if (success)
+        
+        try
         {
-            Debug.Log($"Spells guardados en la API correctamente: {string.Join(", ", localSpells)}");
+            HashSet<string> localSpells = LoadSpellsLocally();
+            return await UpdateSpellsAsync(localSpells);
         }
-        else
+        catch
         {
-            Debug.LogError("Error al guardar los Spells en la API.");
+            return false;
         }
     }
 
-    public async void LoadSpellsFromApi()
+    public async Task<bool> LoadSpellsFromApi()
     {
-        List<string> spellsFromApi = await GetSpellsAsync();
-        if (spellsFromApi != null)
+        
+        try
         {
-            SaveSpellsLocally(new HashSet<string>(spellsFromApi));
-            Debug.Log($"Spells cargados desde la API correctamente: {string.Join(", ", spellsFromApi)}");
+            List<string> spellsFromApi = await GetSpellsAsync();
+            if (spellsFromApi != null)
+            {
+                SaveSpellsLocally(new HashSet<string>(spellsFromApi));
+                return true;
+            }
+            return false;
         }
-        else
+        catch
         {
-            Debug.LogError("Error al cargar los Spells desde la API.");
+            return false;
         }
     }
 
@@ -75,7 +72,6 @@ public class ApiDataManager : MonoBehaviour
         string spellsString = string.Join("-", spells);
         PlayerPrefs.SetString("UnlockedSpells", spellsString);
         PlayerPrefs.Save();
-        Debug.Log($"Spells guardados localmente: {string.Join(", ", spells)}");
     }
 
     private HashSet<string> LoadSpellsLocally()
@@ -83,12 +79,10 @@ public class ApiDataManager : MonoBehaviour
         if (PlayerPrefs.HasKey("UnlockedSpells"))
         {
             string spellsString = PlayerPrefs.GetString("UnlockedSpells");
-            Debug.Log($"Spells cargados localmente: {spellsString.Replace("-", ", ")}");
             return new HashSet<string>(spellsString.Split('-'));
         }
         else
         {
-            Debug.LogWarning("No se encontraron Spells guardados localmente. Usando valores predeterminados.");
             return new HashSet<string>() { "F", "A", "E", "W" };
         }
     }
@@ -111,38 +105,42 @@ public class ApiDataManager : MonoBehaviour
     // ------------------- //
 
     #region Inventory
-    public async void SaveInventoryToApi()
+    public async Task<bool> SaveInventoryToApi()
     {
-        List<InventoryItem> localInventory = LoadInventoryLocally();
-        List<ItemQuantity> inventoryToSend = localInventory.Select(item => new ItemQuantity
+        
+        try
         {
-            itemName = item.itemName,
-            quantity = item.quantity
-        }).ToList();
+            List<InventoryItem> localInventory = LoadInventoryLocally();
+            List<ItemQuantity> inventoryToSend = localInventory.Select(item => new ItemQuantity
+            {
+                itemName = item.itemName,
+                quantity = item.quantity
+            }).ToList();
 
-        bool success = await UpdateInventoryAsync(inventoryToSend);
-
-        if (success)
-        {
-            Debug.Log($"Inventario guardado en la API correctamente: {JsonConvert.SerializeObject(inventoryToSend)}");
+            return await UpdateInventoryAsync(inventoryToSend);
         }
-        else
+        catch
         {
-            Debug.LogError("Error al guardar el Inventario en la API.");
+            return false;
         }
     }
 
-    public async void LoadInventoryFromApi()
+    public async Task<bool> LoadInventoryFromApi()
     {
-        List<InventoryItem> inventoryFromApi = await GetInventoryAsync();
-        if (inventoryFromApi != null)
+        
+        try
         {
-            SaveInventoryLocally(inventoryFromApi);
-            Debug.Log($"Inventario cargado desde la API correctamente: {JsonConvert.SerializeObject(inventoryFromApi)}");
+            List<InventoryItem> inventoryFromApi = await GetInventoryAsync();
+            if (inventoryFromApi != null)
+            {
+                SaveInventoryLocally(inventoryFromApi);
+                return true;
+            }
+            return false;
         }
-        else
+        catch
         {
-            Debug.LogError("Error al cargar el Inventario desde la API.");
+            return false;
         }
     }
 
@@ -151,7 +149,6 @@ public class ApiDataManager : MonoBehaviour
         string json = JsonUtility.ToJson(new ItemSerializableList<InventoryItem>(inventory));
         PlayerPrefs.SetString("InventoryData", json);
         PlayerPrefs.Save();
-        Debug.Log($"Inventario guardado localmente: {JsonConvert.SerializeObject(inventory)}");
     }
 
     private List<InventoryItem> LoadInventoryLocally()
@@ -160,12 +157,10 @@ public class ApiDataManager : MonoBehaviour
         {
             string json = PlayerPrefs.GetString("InventoryData");
             ItemSerializableList<InventoryItem> inventoryDataArray = JsonUtility.FromJson<ItemSerializableList<InventoryItem>>(json);
-            Debug.Log($"Inventario cargado localmente: {JsonConvert.SerializeObject(inventoryDataArray.items)}");
             return inventoryDataArray.items;
         }
         else
         {
-            Debug.LogWarning("No se encontró Inventario guardado localmente. Usando una lista vacía.");
             return new List<InventoryItem>();
         }
     }
@@ -188,40 +183,43 @@ public class ApiDataManager : MonoBehaviour
     // ------------------- //
 
     #region Exhibits
-    public async void SaveExhibitsToApi()
+    public async Task<bool> SaveExhibitsToApi()
     {
-        List<Exhibit> localExhibits = LoadAllExhibitsLocally();
-        foreach (var exhibit in localExhibits)
+        
+        try
         {
-            exhibit.exhibitPosition = exhibit.exhibitPosition.Replace("Exhibit", "");
+            List<Exhibit> localExhibits = LoadAllExhibitsLocally();
+            foreach (var exhibit in localExhibits)
+            {
+                exhibit.exhibitPosition = exhibit.exhibitPosition.Replace("Exhibit", "");
+            }
+            return await UpdateExhibitsAsync(localExhibits);
         }
-        bool success = await UpdateExhibitsAsync(localExhibits);
-
-        if (success)
+        catch
         {
-            Debug.Log($"Exhibits guardados en la API correctamente: {JsonConvert.SerializeObject(localExhibits)}");
-        }
-        else
-        {
-            Debug.LogError("Error al guardar los Exhibits en la API.");
+            return false;
         }
     }
 
-    public async void LoadExhibitsFromApi()
+    public async Task<bool> LoadExhibitsFromApi()
     {
-        List<Exhibit> exhibitsFromApi = await GetExhibitsAsync();
-        if (exhibitsFromApi != null)
+        
+        try
         {
-            foreach (var exhibit in exhibitsFromApi)
+            List<Exhibit> exhibitsFromApi = await GetExhibitsAsync();
+            if (exhibitsFromApi != null)
             {
-
-                SaveExhibitLocally("Exhibit" + exhibit.exhibitPosition, exhibit.invokedMimic);
+                foreach (var exhibit in exhibitsFromApi)
+                {
+                    SaveExhibitLocally("Exhibit" + exhibit.exhibitPosition, exhibit.invokedMimic);
+                }
+                return true;
             }
-            Debug.Log($"Exhibits cargados desde la API correctamente: {JsonConvert.SerializeObject(exhibitsFromApi)}");
+            return false;
         }
-        else
+        catch
         {
-            Debug.LogError("Error al cargar los Exhibits desde la API.");
+            return false;
         }
     }
 
@@ -229,7 +227,6 @@ public class ApiDataManager : MonoBehaviour
     {
         PlayerPrefs.SetString(exhibitNumber, mimicName);
         PlayerPrefs.Save();
-        Debug.Log($"Exhibit guardado localmente: {exhibitNumber} -> {mimicName}");
     }
 
     private string LoadExhibitLocally(string exhibitNumber)
@@ -237,12 +234,10 @@ public class ApiDataManager : MonoBehaviour
         if (PlayerPrefs.HasKey(exhibitNumber))
         {
             string mimicName = PlayerPrefs.GetString(exhibitNumber);
-            Debug.Log($"Exhibit cargado localmente: {exhibitNumber} -> {mimicName}");
             return mimicName;
         }
         else
         {
-            Debug.LogWarning($"No se encontró Exhibit guardado localmente para: {exhibitNumber}");
             return string.Empty;
         }
     }
@@ -259,7 +254,7 @@ public class ApiDataManager : MonoBehaviour
                 exhibits.Add(new Exhibit { exhibitPosition = exhibitNumber, invokedMimic = mimicName });
             }
         }
-        Debug.Log($"Todos los Exhibits cargados localmente: {JsonConvert.SerializeObject(exhibits)}");
+
         return exhibits;
     }
 
@@ -274,6 +269,8 @@ public class ApiDataManager : MonoBehaviour
     {
         return await PutRequestAsync($"{exhibitsApiUrl}/{userToken}", exhibits);
     }
+
+
     #endregion
 
     // ------------------- //
@@ -283,8 +280,15 @@ public class ApiDataManager : MonoBehaviour
     #region Users
     public async void Login()
     {
+        ToastNotification.Show("Connecting to the server to log in...");
         string username = userInput.text;
         string password = passwordInput.text;
+
+        if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+        {
+            ToastNotification.Show("Please enter a username and password.");
+            return;
+        }
 
         var userCredentials = new { Username = username, Password = password };
         string jsonData = JsonConvert.SerializeObject(userCredentials);
@@ -302,47 +306,79 @@ public class ApiDataManager : MonoBehaviour
 
             if (www.result == UnityWebRequest.Result.Success)
             {
-                userToken = www.downloadHandler.text; // Almacenar el token del usuario autenticado
-                SaveTokenWithExpiration(userToken);
-                Debug.Log($"Login exitoso. User Token: {userToken}");
+                string responseText = www.downloadHandler.text;
+
+                if (responseText != "Invalid username or password.")
+                {
+                    userToken = responseText;
+                    SaveTokenWithExpiration(userToken);
+                    ToastNotification.Show("Login successful.");
+                }
+                else
+                {
+                    ToastNotification.Show("Login failed: Invalid username or password.");
+                }
             }
             else
             {
-                Debug.LogError($"Error en el login: {www.error}");
+                ToastNotification.Show($"Error during login.");
             }
         }
     }
 
     public async void Register()
     {
+        ToastNotification.Show("Connecting to the server to register...");
         string username = userInput.text;
         string password = passwordInput.text;
 
-        var userCredentials = new { Username = username, Password = password };
-        string url = "https://localhost:44351/api/users/register";
-
-        // Usar PutRequestAsync para registrar al usuario
-        bool success = await PutRequestAsync(url, userCredentials);
-
-        if (success)
+        if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
         {
-            Debug.Log("Registro exitoso.");
-            // Realizar login automáticamente después del registro
-            Login();
+            ToastNotification.Show("Please enter a username and password.");
+            return;
         }
-        else
+
+        var userCredentials = new { Username = username, Password = password };
+        string jsonData = JsonConvert.SerializeObject(userCredentials);
+
+        using (UnityWebRequest www = new UnityWebRequest("https://localhost:44351/api/users/register", "PUT"))
         {
-            Debug.LogError("Error en el registro.");
+            byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonData);
+            www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+            www.downloadHandler = new DownloadHandlerBuffer();
+            www.SetRequestHeader("Content-Type", "application/json");
+
+            var operation = www.SendWebRequest();
+            while (!operation.isDone)
+                await Task.Yield();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                string responseText = www.downloadHandler.text;
+
+                // Verificar si el registro fue exitoso
+                if (responseText != "Username already exists.")
+                {
+                    ToastNotification.Show("Registration successful.");
+                }
+                else
+                {
+                    ToastNotification.Show("Registration failed: Username already exists.");
+                }
+            }
+            else
+            {
+                ToastNotification.Show($"Error during registration: {www.error}");
+            }
         }
     }
 
     public static void SaveTokenWithExpiration(string token)
     {
-        string encryptedToken = CryptoHelper.Encrypt(token);
         DateTime expiration = DateTime.UtcNow.AddMonths(1);
 
-        PlayerPrefs.SetString("SecureToken", encryptedToken);
-        PlayerPrefs.SetString("TokenExpiration", expiration.ToString("o")); // Formato ISO 8601  
+        PlayerPrefs.SetString("SecureToken", token);
+        PlayerPrefs.SetString("TokenExpiration", expiration.ToString("o"));
         PlayerPrefs.Save();
     }
 
@@ -356,27 +392,84 @@ public class ApiDataManager : MonoBehaviour
         return false;
     }
 
+    public static void LogOut()
+    {
+        PlayerPrefs.DeleteKey("SecureToken");
+        PlayerPrefs.DeleteKey("TokenExpiration");
+        PlayerPrefs.Save();
+        ToastNotification.Show("User logged out successfully");
+    }
     #endregion
-
 
     // ------------------- //
     //        Resto        //
     // ------------------- //
 
     #region Resto
-    public void SaveAllToApi()
+    public async void SaveAllToApi()
     {
-        SaveSpellsToApi();
-        SaveInventoryToApi();
-        SaveExhibitsToApi();
+        ToastNotification.Show("Connecting to the server to save all data...");
+        bool spellsSaved = await SaveSpellsToApi();
+        bool inventorySaved = await SaveInventoryToApi();
+        bool exhibitsSaved = await SaveExhibitsToApi();
+
+        if (spellsSaved && inventorySaved && exhibitsSaved)
+        {
+            ToastNotification.Show("All data successfully saved to the server.");
+        }
+        else if (!spellsSaved && !inventorySaved && !exhibitsSaved)
+        {
+            if (string.IsNullOrEmpty(userToken))
+            {
+                ToastNotification.Show("Please log in to save data.");
+            }
+            else
+            {
+                ToastNotification.Show("Connection to the server cannot be established");
+            }
+        }
+        else
+        {
+            string errorMessage = "Some data could not be saved to the server:";
+            if (!spellsSaved) errorMessage += " Spells";
+            if (!inventorySaved) errorMessage += " Inventory";
+            if (!exhibitsSaved) errorMessage += " Exhibits";
+            ToastNotification.Show(errorMessage);
+        }
     }
 
-    public void LoadAllFromApi()
+    public async void LoadAllFromApi()
     {
-        LoadSpellsFromApi();
-        LoadInventoryFromApi();
-        LoadExhibitsFromApi();
+        ToastNotification.Show("Connecting to the server to load all data...");
+        bool spellsLoaded = await LoadSpellsFromApi();
+        bool inventoryLoaded = await LoadInventoryFromApi();
+        bool exhibitsLoaded = await LoadExhibitsFromApi();
+
+        if (spellsLoaded && inventoryLoaded && exhibitsLoaded)
+        {
+            ToastNotification.Show("All data successfully loaded from the server.");
+        }
+        else if (!spellsLoaded && !inventoryLoaded && !exhibitsLoaded)
+        {
+            if (string.IsNullOrEmpty(userToken))
+            {
+                ToastNotification.Show("Please log in to load data.");
+            }
+            else
+            {
+                ToastNotification.Show("Connection to the server cannot be established");
+            }
+        }
+        else
+        {
+            string errorMessage = "Some data could not be loaded from the server:";
+            if (!spellsLoaded) errorMessage += " Spells";
+            if (!inventoryLoaded) errorMessage += " Inventory";
+            if (!exhibitsLoaded) errorMessage += " Exhibits";
+            ToastNotification.Show(errorMessage);
+        }
     }
+
     private async Task<string> GetRequestAsync(string url)
     {
         using (UnityWebRequest www = UnityWebRequest.Get(url))
@@ -426,7 +519,6 @@ public class ApiDataManager : MonoBehaviour
         }
     }
 
-
     [System.Serializable]
     public class ItemQuantity
     {
@@ -451,8 +543,5 @@ public class ApiDataManager : MonoBehaviour
             this.items = items;
         }
     }
-
-
-
     #endregion
 }

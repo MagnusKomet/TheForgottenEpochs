@@ -62,10 +62,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5000001
+  m_Radius: 0.7
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8528216688125847123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,12 +93,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 6877767382046179275}
     m_Modifications:
     - target: {fileID: 4321358288067726026, guid: 460babe280fe4aa41adc3fefd46f0c0b, type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4321358288067726026, guid: 460babe280fe4aa41adc3fefd46f0c0b, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 35
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 4321358288067726026, guid: 460babe280fe4aa41adc3fefd46f0c0b, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1000
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4321358288067726026, guid: 460babe280fe4aa41adc3fefd46f0c0b, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
