@@ -13,7 +13,7 @@ public class BasicSpellController : MonoBehaviour
 
     private EnemyHealthController health;
 
-    public void Start()
+    public virtual void Start()
     {
         Destroy(gameObject, 30f);
     }

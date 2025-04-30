@@ -46,7 +46,8 @@ namespace SlimUI.ModernMenu{
 
 		// sliders
 		public GameObject musicSlider;
-		public GameObject sensitivityXSlider;
+        public GameObject psxSlider;
+        public GameObject sensitivityXSlider;
 		public GameObject sensitivityYSlider;
 		public GameObject mouseSmoothSlider;
 
@@ -57,6 +58,8 @@ namespace SlimUI.ModernMenu{
 		
 
 		public void  Start (){
+
+            /*
 			// check difficulty
 			if(PlayerPrefs.GetInt("NormalDifficulty") == 1){
 				difficultynormaltextLINE.gameObject.SetActive(true);
@@ -67,21 +70,25 @@ namespace SlimUI.ModernMenu{
 				difficultyhardcoretextLINE.gameObject.SetActive(true);
 				difficultynormaltextLINE.gameObject.SetActive(false);
 			}
+			
 
 			// check slider values
-			musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
 			sensitivityXSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("XSensitivity");
 			sensitivityYSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("YSensitivity");
 			mouseSmoothSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MouseSmoothing");
+			*/
 
-			// check full screen
-			if(Screen.fullScreen == true){
+			musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
+            psxSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("PSXLevel");
+
+            // check full screen
+            if (Screen.fullScreen == true){
 				fullscreentext.GetComponent<TMP_Text>().text = "on";
 			}
 			else if(Screen.fullScreen == false){
 				fullscreentext.GetComponent<TMP_Text>().text = "off";
 			}
-
+			/*
 			// check hud value
 			if(PlayerPrefs.GetInt("ShowHUD")==0){
 				showhudtext.GetComponent<TMP_Text>().text = "off";
@@ -97,7 +104,7 @@ namespace SlimUI.ModernMenu{
 			else{
 				tooltipstext.GetComponent<TMP_Text>().text = "on";
 			}
-
+			*/
 			// check shadow distance/enabled
 			if(platform == Platform.Desktop){
 				if(PlayerPrefs.GetInt("Shadows") == 0){
@@ -153,7 +160,7 @@ namespace SlimUI.ModernMenu{
 			else if(QualitySettings.vSyncCount == 1){
 				vsynctext.GetComponent<TMP_Text>().text = "on";
 			}
-
+			/*
 			// check mouse inverse
 			if(PlayerPrefs.GetInt("Inverted")==0){
 				invertmousetext.GetComponent<TMP_Text>().text = "off";
@@ -177,7 +184,7 @@ namespace SlimUI.ModernMenu{
 			else if(PlayerPrefs.GetInt("AmbientOcclusion")==1){
 				ambientocclusiontext.GetComponent<TMP_Text>().text = "on";
 			}
-
+			*/
 			// check texture quality
 			if(PlayerPrefs.GetInt("Textures") == 0){
 				QualitySettings.globalTextureMipmapLimit = 2;
@@ -198,14 +205,7 @@ namespace SlimUI.ModernMenu{
 				texturehightextLINE.gameObject.SetActive(true);
 			}
 		}
-
-		public void Update (){
-			//sliderValue = musicSlider.GetComponent<Slider>().value;
-			sliderValueXSensitivity = sensitivityXSlider.GetComponent<Slider>().value;
-			sliderValueYSensitivity = sensitivityYSlider.GetComponent<Slider>().value;
-			sliderValueSmoothing = mouseSmoothSlider.GetComponent<Slider>().value;
-		}
-
+				
 		public void FullScreen (){
 			Screen.fullScreen = !Screen.fullScreen;
 
@@ -222,7 +222,16 @@ namespace SlimUI.ModernMenu{
 			PlayerPrefs.SetFloat("MusicVolume", musicSlider.GetComponent<Slider>().value);
 		}
 
-		public void SensitivityXSlider (){
+        public void PSXSlider()
+        {
+            PlayerPrefs.SetFloat("PSXLevel", psxSlider.GetComponent<Slider>().value);
+        }
+        public void UpdatePSXSlider()
+        {
+            psxSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("PSXLevel");
+        }
+
+        public void SensitivityXSlider (){
 			PlayerPrefs.SetFloat("XSensitivity", sliderValueXSensitivity);
 		}
 

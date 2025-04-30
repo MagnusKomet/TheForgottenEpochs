@@ -3,6 +3,7 @@ using PlayerSpace;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthController : EnemyHealthController
 {
@@ -13,12 +14,16 @@ public class PlayerHealthController : EnemyHealthController
 
     public override void Start()
     {
-        GameObject healthBarObject = GameObject.Find("PlayerHealthBar");
-        playerHealthBar = healthBarObject.GetComponent<RectTransform>();
-        
         currentHealth = maxHealth;
 
-        playerHealthBar.sizeDelta = new Vector2(playerHealthBar.sizeDelta.x, currentHealth);
+        GameObject healthBarObject = GameObject.Find("PlayerHealthBar");
+        if(healthBarObject != null)
+        {            
+            playerHealthBar = healthBarObject.GetComponent<RectTransform>();
+            playerHealthBar.sizeDelta = new Vector2(playerHealthBar.sizeDelta.x, currentHealth);
+        }
+        
+
 
         if (whoDies == null)
         {
@@ -29,12 +34,15 @@ public class PlayerHealthController : EnemyHealthController
     public override void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        playerHealthBar.sizeDelta = new Vector2(playerHealthBar.sizeDelta.x, currentHealth);
+
+        if (playerHealthBar != null)
+            playerHealthBar.sizeDelta = new Vector2(playerHealthBar.sizeDelta.x, currentHealth);
 
         if (currentHealth <= 0)
         {
             Die();
         }
+
     }
 
     public override void Die()

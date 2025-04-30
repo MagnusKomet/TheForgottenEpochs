@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1277667631419296829}
   - component: {fileID: 3838815329128526300}
   - component: {fileID: 4254710755914319195}
+  - component: {fileID: 7188259782482824682}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -141,6 +142,18 @@ MonoBehaviour:
   _FlatShadingMode: 0
   _TriangleSortMode: 1
   _DepthDebugView: 0
+--- !u!114 &7188259782482824682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135511226727948302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22887a53d9f558e4c83a39a695d44215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2182703442525696248
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +229,7 @@ GameObject:
   - component: {fileID: 1960066882962087107}
   - component: {fileID: 1724571163528880646}
   - component: {fileID: 6488219911713767130}
+  - component: {fileID: -4166783193474675994}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -374,8 +388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 526ed24552cf0d04684295be1f2c8308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shortParticleOnHit: {fileID: 1126181125208960, guid: ca26d7307564ff848b29e32bbe6279ef, type: 3}
-  longParticleOnHit: {fileID: 1924146031275744, guid: a50b888ceca3dca4eab49f79ed67390a, type: 3}
   ComboHud: {fileID: 0}
   Earth: {fileID: 2368369716680940278, guid: 2e6aadd33b7da864483e81a7f52d0d1c, type: 3}
   Fire: {fileID: 360401561620727141, guid: 6466db6c11d7cea4da6329620683a539, type: 3}
@@ -392,7 +404,7 @@ MonoBehaviour:
   playerReach: 3
   swordSwing: {fileID: 8300000, guid: 7923190c5e80b4d4d9396acc5d0b48cf, type: 3}
   hitSound: {fileID: 8300000, guid: 11245d3945c564b45a1bafad5ecb70e5, type: 3}
-  fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
+  fireball: {fileID: 5974098797394965845, guid: ad19dcca479adc74caa24c183a423535, type: 3}
   secondFireball: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
   windBlade: {fileID: 6054753705526747894, guid: e56c8528052e2204bb1fd401795448b8, type: 3}
   tornado: {fileID: 2673694762706284870, guid: da33f7610ab55234981a51ca3008ae46, type: 3}
@@ -416,6 +428,19 @@ MonoBehaviour:
   dropsPrefabs: []
   deathCamera: {fileID: 2864178902019536406, guid: 3a7d49491fad71c46a2277beba14b887, type: 3}
   deathCameraSpawnPoint: {fileID: 8783884431233236634}
+  playerHealthBar: {fileID: 0}
+--- !u!114 &-4166783193474675994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6816843259406738505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad149d53679afc04782ee02fa3e008d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2873678860705152320
 PrefabInstance:
   m_ObjectHideFlags: 0

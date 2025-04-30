@@ -115,6 +115,7 @@
     <Compile Include="Assets\Scripts\SpawnerController.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\GlobalValue\GlobalValueInUI.cs" />
     <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Audio\CheckMusicVolume.cs" />
+    <Compile Include="Assets\Scripts\CheckPSXLevel.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\exploders\SphereExploder.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\Localization\LocalizedTextMeshProText.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryVisualManager.cs" />

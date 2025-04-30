@@ -1,0 +1,943 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.51f1 (9f9d16c45e54) revision 10460438'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'es' Physical Memory: 16318 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.51f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/ernes/Documents/GitHub/TheForgottenEpochs
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+61356
+Successfully changed project path to: C:/Users/ernes/Documents/GitHub/TheForgottenEpochs
+C:/Users/ernes/Documents/GitHub/TheForgottenEpochs
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [31700]  Target information:
+
+Player connection [31700]  * "[IP] 192.168.1.108 [Port] 0 [Flags] 2 [Guid] 2566779020 [EditorId] 2566779020 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TT7TRAO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [31700]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2566779020 [EditorId] 2566779020 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-TT7TRAO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [31700] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [31700] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+Refreshing native plugins compatible for Editor in 19.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.51f1 (9f9d16c45e54)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ernes/Documents/GitHub/TheForgottenEpochs/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   NVIDIA
+    VRAM:     4004 MB
+    Driver:   32.0.15.7602
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.51f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.026203 seconds.
+- Loaded All Assemblies, in  0.493 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 332 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.710 seconds
+Domain Reload Profiling: 1200ms
+	BeginReloadAssembly (148ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (91ms)
+	LoadAllAssembliesAndSetupDomain (197ms)
+		LoadAssemblies (145ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (193ms)
+			TypeCache.Refresh (192ms)
+				TypeCache.ScanAssembly (172ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (711ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (652ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (467ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (127ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.968 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.899 seconds
+Domain Reload Profiling: 1861ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (681ms)
+		LoadAssemblies (454ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (335ms)
+			TypeCache.Refresh (298ms)
+				TypeCache.ScanAssembly (271ms)
+			ScanForSourceGeneratedMonoScriptInfo (27ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (899ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (714ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (503ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 7.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5314 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (2.1 MB). Loaded Objects now: 5804.
+Memory consumption went from 224.1 MB to 222.0 MB.
+Total: 5.163200 ms (FindLiveObjects: 0.727500 ms CreateObjectMapping: 0.703600 ms MarkObjects: 3.281400 ms  DeleteObjects: 0.449500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 24507.992294 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/07 RPG/Cthulhu/01.png
+  artifactKey: Guid(014de57d3ba2dde47a22122df3dc64eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/07 RPG/Cthulhu/01.png using Guid(014de57d3ba2dde47a22122df3dc64eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'b88d2ae9e95f6ded9ba2facd9a177c17') in 0.190666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/07 RPG/Sky/01.png
+  artifactKey: Guid(bcceb871c32043c4da9858f8dc8c05c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/07 RPG/Sky/01.png using Guid(bcceb871c32043c4da9858f8dc8c05c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'a5d3eac41ef0b2619476b9bc84dc6786') in 0.027397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.557064 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/08 NPC/Angel/01.png
+  artifactKey: Guid(6af3bf16563ecf44997c826460f06dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/08 NPC/Angel/01.png using Guid(6af3bf16563ecf44997c826460f06dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e733eb4ca1fcaed238b32d1e73cbd9b4') in 0.025545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.043430 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/08 NPC/Merchant/01.png
+  artifactKey: Guid(9ec93304e7f19194bbf63ada52dae282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/08 NPC/Merchant/01.png using Guid(9ec93304e7f19194bbf63ada52dae282) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '47094250290790f69962ad7094dad129') in 0.022031 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.167612 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/08 NPC/Nurse/01.png
+  artifactKey: Guid(97caed10fc682f849af076cbd7024b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/08 NPC/Nurse/01.png using Guid(97caed10fc682f849af076cbd7024b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '0db5a20e04e5c5fd85875bd814ebad8e') in 0.022044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.414562 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Mummy/01.png
+  artifactKey: Guid(5b091dfa2bab8bb4cb8b7b867d7b95b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Mummy/01.png using Guid(5b091dfa2bab8bb4cb8b7b867d7b95b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'c72eae91feb91ec5c2edebd51904693b') in 0.023531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.026176 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Blue/01.png
+  artifactKey: Guid(afd793b1787964e44aa4ce39e16e5bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Blue/01.png using Guid(afd793b1787964e44aa4ce39e16e5bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '70af7d2af6b894416f26134fefa7be4d') in 0.014172 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.020047 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Red/01.png
+  artifactKey: Guid(9891b7cecef70924890814f079a4b8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Red/01.png using Guid(9891b7cecef70924890814f079a4b8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '30fda326a836193c832c7807bdd733c2') in 0.029076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.239022 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/02 The Forest/Mushroom/01.png
+  artifactKey: Guid(113acccba3571d740b68a997c5c85387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/02 The Forest/Mushroom/01.png using Guid(113acccba3571d740b68a997c5c85387) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e5be707cd11bd5eefe54a68a40c998fe') in 0.020544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 29.333744 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/03 The Cave/obsidian/01.png
+  artifactKey: Guid(e551a3826321a524985292199cf410b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/03 The Cave/obsidian/01.png using Guid(e551a3826321a524985292199cf410b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '7174a6840b550488fbd42f9189e9f698') in 0.026241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001312 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/03 The Cave/Stone/01.png
+  artifactKey: Guid(219a6446f0382274c992f82b527bd817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/03 The Cave/Stone/01.png using Guid(219a6446f0382274c992f82b527bd817) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '3d9041dd43497a6ef46be75e754c7044') in 0.022476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Ice/01.png
+  artifactKey: Guid(4ab191383f18a71418a2ba906a585e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Ice/01.png using Guid(4ab191383f18a71418a2ba906a585e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '795180e4b31e206fd11b728dbdcedd75') in 0.022052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.010679 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/01.png
+  artifactKey: Guid(446dfdc72714a4e40a7138c58fe1c2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/01.png using Guid(446dfdc72714a4e40a7138c58fe1c2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '9647ff1eec395e002913bf8b76a7cbf4') in 0.024535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Mud King/01.png
+  artifactKey: Guid(99771e5652adc2c46a718ca3ce3204f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Mud King/01.png using Guid(99771e5652adc2c46a718ca3ce3204f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'ec39384a5a6d22871b6c1927ef6075a6') in 0.021764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Little Slim/01.png
+  artifactKey: Guid(2938ddce3739bae4badbfbfd0660d456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Little Slim/01.png using Guid(2938ddce3739bae4badbfbfd0660d456) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '7c5b91d8a606d178a7ad3dd03d6df401') in 0.026763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028174 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/09 The Special/Key/01.png
+  artifactKey: Guid(594528a1cc32c3147800e781a7f28483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/09 The Special/Key/01.png using Guid(594528a1cc32c3147800e781a7f28483) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '5d6c3054346d61b67e8a023d63ecccf4') in 0.021922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Little Slim/02.png
+  artifactKey: Guid(1b6fbdf2ff0f56e4785f28c735377285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Little Slim/02.png using Guid(1b6fbdf2ff0f56e4785f28c735377285) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'cf9ff79b1820d7103ce0e24be620b987') in 0.017402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.466404 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/09 The Special/Key/02.png
+  artifactKey: Guid(d976eb8f204b40b42b17103174302f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/09 The Special/Key/02.png using Guid(d976eb8f204b40b42b17103174302f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '728297158da5ab08bf2dc78496b74cb6') in 0.022310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/06 Element/Light/02.png
+  artifactKey: Guid(60780ac5029c39c4b97476b2694a129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/06 Element/Light/02.png using Guid(60780ac5029c39c4b97476b2694a129e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f9f0f35652f10b1064d5e347e1c00473') in 0.024069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/03 The Cave/Skeleton/02.png
+  artifactKey: Guid(f22839b5e4ad93346b328b6342220e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/03 The Cave/Skeleton/02.png using Guid(f22839b5e4ad93346b328b6342220e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '969a53ef137b1c25e227156cfe961d87') in 0.020875 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/02 The Forest/Wildman/02.png
+  artifactKey: Guid(b6812f0e4b051c24c80b53d18e97036b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/02 The Forest/Wildman/02.png using Guid(b6812f0e4b051c24c80b53d18e97036b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e2870cd7ad820b89c1b3ab0e45b4f1c1') in 0.031512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/05 The Ocean/Water/02.png
+  artifactKey: Guid(d871531f53cd885478dc179046beec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/05 The Ocean/Water/02.png using Guid(d871531f53cd885478dc179046beec83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '56fe3a5368ea51f05ab6a8f66e083675') in 0.030615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Yellow/02.png
+  artifactKey: Guid(106a8a82424f28b4691af9423048e111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Yellow/02.png using Guid(106a8a82424f28b4691af9423048e111) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '28f6e2dc0e7713c3cf746911b6ac31c0') in 0.025030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/05 The Ocean/Lanternfish/02.png
+  artifactKey: Guid(406df3289929e064eb4ab14e3c74bf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/05 The Ocean/Lanternfish/02.png using Guid(406df3289929e064eb4ab14e3c74bf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e325f9ae3435e4482255fc324c2c965f') in 0.023849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Black Hole/02.png
+  artifactKey: Guid(e13faba6a8699484399003c6a0d88f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Black Hole/02.png using Guid(e13faba6a8699484399003c6a0d88f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'b2765629566f511e58852790bc0363be') in 0.021125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Ice/02.png
+  artifactKey: Guid(d4aa2189b7b95c3489282cab14e0409d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Ice/02.png using Guid(d4aa2189b7b95c3489282cab14e0409d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'fa959ee5d8f965fc9d62228be17d7c78') in 0.017870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/02 The Forest/Mushroom/02.png
+  artifactKey: Guid(745fed36a038a0040a4d2dc67e242d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/02 The Forest/Mushroom/02.png using Guid(745fed36a038a0040a4d2dc67e242d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '93550a57eb61dbf0117604236679aefc') in 0.020056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/sand/02.png
+  artifactKey: Guid(1974e119d012d1344805a1f8184ccdbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/sand/02.png using Guid(1974e119d012d1344805a1f8184ccdbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'c7e49b4586724712dba7aa81451ae9c2') in 0.027026 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Snow/02.png
+  artifactKey: Guid(d99d02fca84676a43882bb6385ac51af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Snow/02.png using Guid(d99d02fca84676a43882bb6385ac51af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '3d50ba0e18c836a634d3be6ca4c30aae') in 0.026828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/05 The Ocean/Tiger shark/02.png
+  artifactKey: Guid(4ed45c286a2925744a5e3d1ccb73be48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/05 The Ocean/Tiger shark/02.png using Guid(4ed45c286a2925744a5e3d1ccb73be48) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '4e7812fb675d1269b8b7cc2979c3f0ef') in 0.029409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.092348 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Mud King/02.png
+  artifactKey: Guid(414d01a38e50cb3499a39b5ff1eb28bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Mud King/02.png using Guid(414d01a38e50cb3499a39b5ff1eb28bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '8d54fe2b2490d17b822465b2a7010c0d') in 0.024808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/02.png
+  artifactKey: Guid(4eeea4f9222f0074e8f3b40d0abd5f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/02.png using Guid(4eeea4f9222f0074e8f3b40d0abd5f21) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'd8a19095d715095f8ff772e67d0f4441') in 0.021643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/03 The Cave/obsidian/02.png
+  artifactKey: Guid(5fa3e07bb41e4a94b90e87cb62cf8196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/03 The Cave/obsidian/02.png using Guid(5fa3e07bb41e4a94b90e87cb62cf8196) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '3ab28c5d129eeee2c334e97b49946be8') in 0.026631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/02 The Forest/Flower/02.png
+  artifactKey: Guid(233d926e450c91b4e9028d166cc5dcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/02 The Forest/Flower/02.png using Guid(233d926e450c91b4e9028d166cc5dcc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '623e50f6aa508b3c1f730a0f8d2af409') in 0.021235 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.394722 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Green/02.png
+  artifactKey: Guid(087de982360df8f44a43af33987ee552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Green/02.png using Guid(087de982360df8f44a43af33987ee552) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '07e36059ddef2711685070f0ba774b10') in 0.026268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/08 NPC/Nurse/02.png
+  artifactKey: Guid(0f74072e01edd3d49952328d167e1784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/08 NPC/Nurse/02.png using Guid(0f74072e01edd3d49952328d167e1784) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'c2a46351d6747dad2f5aff3bf742e8fb') in 0.020431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/02 The Forest/Mushroom/03.png
+  artifactKey: Guid(fc8ad4c073a1ba44cb3b19d1e2a986e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/02 The Forest/Mushroom/03.png using Guid(fc8ad4c073a1ba44cb3b19d1e2a986e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'fd36a40fa406496322386702c51ea3c8') in 0.029643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/07 RPG/Cthulhu/02.png
+  artifactKey: Guid(0d115cfe157035944ba50a5192d4211f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/07 RPG/Cthulhu/02.png using Guid(0d115cfe157035944ba50a5192d4211f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '2b06afbe71cd854c186490519bd180f9') in 0.032952 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.344943 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/08 NPC/Angel/03.png
+  artifactKey: Guid(e2edc7adf7ab0f949bd52c79c1e0ac7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/08 NPC/Angel/03.png using Guid(e2edc7adf7ab0f949bd52c79c1e0ac7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '4eaa55d5c6e668088749015bcdaa54f6') in 0.021185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Assassin/03.png
+  artifactKey: Guid(91e9441875f7b1f46be6b0944e9500fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Assassin/03.png using Guid(91e9441875f7b1f46be6b0944e9500fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '9cb6c411f8d7177371e3acd207e649a4') in 0.027422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Ice/03.png
+  artifactKey: Guid(68c1ce66965bf08409215c0ba7865a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Ice/03.png using Guid(68c1ce66965bf08409215c0ba7865a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'd737b3f06d10bf34426afb51127cd140') in 0.023553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/02 The Forest/Wildman/03.png
+  artifactKey: Guid(006d2f7245dad4c46aae007c16c6b0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/02 The Forest/Wildman/03.png using Guid(006d2f7245dad4c46aae007c16c6b0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '4b2f3083a6926ea9fd1650dfaf1b2213') in 0.021899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/03 The Cave/Stone/03.png
+  artifactKey: Guid(a0ca9153825981c4b8ca9114ec813082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/03 The Cave/Stone/03.png using Guid(a0ca9153825981c4b8ca9114ec813082) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '97034bb3ee41132e9a3fb752df31d99a') in 0.025199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/03.png
+  artifactKey: Guid(bdcaeec5459b7314781414725fab72cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/03.png using Guid(bdcaeec5459b7314781414725fab72cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'db4dd73664056debf19095f34bb6cd89') in 0.024472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.070643 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/09 The Special/Bottle/03.png
+  artifactKey: Guid(005ecf7fdf1965e4c803dc3fd39121e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/09 The Special/Bottle/03.png using Guid(005ecf7fdf1965e4c803dc3fd39121e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '781dc1d07194fb2509374512e16482be') in 0.029742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/08 NPC/Nurse/03.png
+  artifactKey: Guid(183623e6f1dfe354c9d63f96f14e6353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/08 NPC/Nurse/03.png using Guid(183623e6f1dfe354c9d63f96f14e6353) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '02972fd4f4988f4fbb5b5ac85c994a77') in 0.019903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/08 NPC/Alchemist/03.png
+  artifactKey: Guid(e64f3eb221a71f8439a54f1a8621587e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/08 NPC/Alchemist/03.png using Guid(e64f3eb221a71f8439a54f1a8621587e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '56f322fff9ce12684fc067efea7ef6a8') in 0.026862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/03 The Cave/Diamond/03.png
+  artifactKey: Guid(85675376e51e22b49861b367a049daff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/03 The Cave/Diamond/03.png using Guid(85675376e51e22b49861b367a049daff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'a1c61b2c1fdf04914c5d20cb0096767f') in 0.022980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/06 Element/Lightning/03.png
+  artifactKey: Guid(b580a8882ca4d0b44b877fbbac113a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/06 Element/Lightning/03.png using Guid(b580a8882ca4d0b44b877fbbac113a43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '008db1218f1647346c6119862e05c729') in 0.029735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/03 The Cave/Gold/03.png
+  artifactKey: Guid(9ed1abaec35ad2c45b7742017f7697e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/03 The Cave/Gold/03.png using Guid(9ed1abaec35ad2c45b7742017f7697e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '3acfe92f7cb4e46315b369cd46d2a43b') in 0.021448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Black/03.png
+  artifactKey: Guid(7e5c782db1b3af74ca27777696670b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Black/03.png using Guid(7e5c782db1b3af74ca27777696670b22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'bfd6ca876adb8519a6095559149bb9e3') in 0.022078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/06 Element/Fire/03.png
+  artifactKey: Guid(d75d744c2e99303479d31010d00ffff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/06 Element/Fire/03.png using Guid(d75d744c2e99303479d31010d00ffff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'c875a08c528b78d2de61339dba4e72f1') in 0.023610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Mud King/03.png
+  artifactKey: Guid(38b36b7dfa079a347b22031d54a36134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Mud King/03.png using Guid(38b36b7dfa079a347b22031d54a36134) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'b04cd7523ad19a5e60814355645d8e6f') in 0.022992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Yellow/03.png
+  artifactKey: Guid(d1e2152391cd5b84a9264131dc61fafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Yellow/03.png using Guid(d1e2152391cd5b84a9264131dc61fafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'fb5b9fc417711414db8296e433e2a325') in 0.023460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/05 The Ocean/Tiger shark/03.png
+  artifactKey: Guid(90e262789e8ee7b46ba31ccb01279c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/05 The Ocean/Tiger shark/03.png using Guid(90e262789e8ee7b46ba31ccb01279c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'b8cc63839b821a0f0044d963a65b047d') in 0.024296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/05 The Ocean/Crab/03.png
+  artifactKey: Guid(348c0074a04867843b52b61797e5b6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/05 The Ocean/Crab/03.png using Guid(348c0074a04867843b52b61797e5b6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e9c9d7ced8237ec6cd2a7396d0720bfa') in 0.030232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Ice King/03.png
+  artifactKey: Guid(e4bc278f1e1ca374ca26de4364392a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/10 Elitist Monster/Ice King/03.png using Guid(e4bc278f1e1ca374ca26de4364392a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'bf2e5c101994a392cf7b19cb4dd41b0b') in 0.028163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/05 The Ocean/Water/03.png
+  artifactKey: Guid(c472b2b839f90164eb92d1b74a8a14a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/05 The Ocean/Water/03.png using Guid(c472b2b839f90164eb92d1b74a8a14a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f60dcff0a1495c210dc698228840f51e') in 0.041571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/05 The Ocean/Lanternfish/03.png
+  artifactKey: Guid(6a3c52a0b829105489023bf6cd4d8e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/05 The Ocean/Lanternfish/03.png using Guid(6a3c52a0b829105489023bf6cd4d8e81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '958a3d3d1f9721e6710341f918729760') in 0.031580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/03 The Cave/obsidian/03.png
+  artifactKey: Guid(ad2e763c9b2328c428de2fe2d0f228ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/03 The Cave/obsidian/03.png using Guid(ad2e763c9b2328c428de2fe2d0f228ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'e2be3b73465b4fa446695009fe9261e7') in 0.027862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Snow/03.png
+  artifactKey: Guid(3e59e3aa9ed75a74fa634f6ea15ecba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Snow/03.png using Guid(3e59e3aa9ed75a74fa634f6ea15ecba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'eb9aeacf12f2ad8f314ea5024b29ee52') in 0.029568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Red/03.png
+  artifactKey: Guid(1aae1cafdfbf61849a1d22f0d27dc22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Red/03.png using Guid(1aae1cafdfbf61849a1d22f0d27dc22b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '9d193450e89f7a0896d40a8cac5049a2') in 0.032927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Blue/03.png
+  artifactKey: Guid(8c24cf91b58c9254d81b0bcc36ed8d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Blue/03.png using Guid(8c24cf91b58c9254d81b0bcc36ed8d4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f6242f0d0bc07eefffa8e70f2f55b4cd') in 0.026198 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 46.619635 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/01 Original/Red/04.png
+  artifactKey: Guid(b4cdb762a19cd024f9a0aa06e8601759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/01 Original/Red/04.png using Guid(b4cdb762a19cd024f9a0aa06e8601759) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '94bc32ffb3704fa9cc61f74a1803efb6') in 0.023997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.496685 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/07 RPG/Electron/04.png
+  artifactKey: Guid(02e29c45c9ce9c04ea3d6a842fb01a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/07 RPG/Electron/04.png using Guid(02e29c45c9ce9c04ea3d6a842fb01a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'ba35511d904b543fcd1f22fe0103a101') in 0.025503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.239253 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/08 NPC/Angel/04.png
+  artifactKey: Guid(14a50af46fe04d54babd4964104b4dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/08 NPC/Angel/04.png using Guid(14a50af46fe04d54babd4964104b4dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '6507208ecb97335d07f4acc170bc15dd') in 0.026317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.671442 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Mummy/04.png
+  artifactKey: Guid(1a088b822caee464d892a779a8ffc5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Mummy/04.png using Guid(1a088b822caee464d892a779a8ffc5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'f47fc8df479311951b60c3a073fe8e11') in 0.021546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003926 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Snow/04.png
+  artifactKey: Guid(8990ca79e541e244d80f41f99b8863e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/04 Desret and Ice/Snow/04.png using Guid(8990ca79e541e244d80f41f99b8863e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: 'a96cd1098e5d3b2fe02f02fc0e834f5c') in 0.023249 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.002990 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/09 The Special/Sword/04.png
+  artifactKey: Guid(c920bd1c667b7194a862783fc9d008db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/09 The Special/Sword/04.png using Guid(c920bd1c667b7194a862783fc9d008db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '6066eaa7f9c47960a10f4fdb272a7c06') in 0.024712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.530925 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/06.png
+  artifactKey: Guid(0d86f24f1f088f34cbd7ec509b8b9a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/06.png using Guid(0d86f24f1f088f34cbd7ec509b8b9a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '4c10ce135af9b1b86bc459b4a7ffaf0c') in 0.012032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.076814 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/11.png
+  artifactKey: Guid(f42c2b10b5a48d64e8e3af419c2760f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/11.png using Guid(f42c2b10b5a48d64e8e3af419c2760f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '934e10f38ad5bc9c678fe194c0f81897') in 0.011086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.661878 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/21.png
+  artifactKey: Guid(228d3e02b0bd016478d544441e140337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/21.png using Guid(228d3e02b0bd016478d544441e140337) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '2c9da842b43894e12630a447486869b8') in 0.014462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.013138 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/24.png
+  artifactKey: Guid(7eeff564ba2fbbc449f275098713f210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/24.png using Guid(7eeff564ba2fbbc449f275098713f210) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '9e720b97b0695c05893b47de81528f5a') in 0.020643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.446943 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/38.png
+  artifactKey: Guid(910ccd84193ff4949a1f71dbbe4435fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/38.png using Guid(910ccd84193ff4949a1f71dbbe4435fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '7e11fee3ae92f9bb2bd648c33ecb4217') in 0.010861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.067801 seconds.
+  path: Assets/MaybePackages/The Legend of Slim/00 Preview all/44.png
+  artifactKey: Guid(d5d6a87da9d33f24b908798578be3581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MaybePackages/The Legend of Slim/00 Preview all/44.png using Guid(d5d6a87da9d33f24b908798578be3581) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 6 workers.
+ -> (artifact id: '5ecc3f8e08653a77544be64359da48ec') in 0.011309 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
