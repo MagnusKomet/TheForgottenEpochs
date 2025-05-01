@@ -29,6 +29,8 @@ namespace PlayerSpace
         // ------ITEM SLOT------  //
         [SerializeField]
         private TMP_Text quantityText;
+        [SerializeField]
+        private GameObject quantityBackground;
 
         [SerializeField]
         private Image itemImage;
@@ -51,7 +53,7 @@ namespace PlayerSpace
             //Update QUANTITY
             quantity = item.quantity;
             quantityText.text = quantity.ToString();
-            quantityText.enabled = true;
+            quantityBackground.SetActive(true);
         }
 
         public void EmptyItem()
@@ -62,7 +64,7 @@ namespace PlayerSpace
             itemDescription = "";
             quantity = 0;
             quantityText.text = "";
-            quantityText.enabled = false;
+            quantityBackground.SetActive(false);
         }
 
 

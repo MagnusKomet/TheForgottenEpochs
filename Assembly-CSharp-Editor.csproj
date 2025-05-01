@@ -63,6 +63,7 @@
     <Compile Include="Assets\MaybePackages\Meet and Talk\Editor\Node\DialogueNode.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Editor\Node\BaseNode.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Editor\Node\DialogueChoiceNode.cs" />
+    <Compile Include="Assets\BubbleR\Editor\BubbleShaderEditor.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Editor\DialogueGraphView.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Editor\Node\StartNode.cs" />
     <Compile Include="Assets\Packages\SlimUI\Editor\SlimUIWindow.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\MaybePackages\Meet and Talk\Editor\NodeSearchWindow.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Editor\CustomEditors.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Editor\DialogueInspector.cs" />
+    <Compile Include="Assets\BubbleR\Editor\BubbleShaderTexturedEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

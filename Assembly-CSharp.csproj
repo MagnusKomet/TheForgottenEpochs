@@ -70,8 +70,10 @@
     <Compile Include="Assets\Packages\Mimic\Scripts\CylinderMesh.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
     <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Managers\UISettingsManager.cs" />
+    <Compile Include="Assets\BubbleR\BlendMode.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\DialogueEventSO.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent2D.cs" />
+    <Compile Include="Assets\Scripts\Spells\TheWallController.cs" />
     <Compile Include="Assets\Inputs\PlayerInput.cs" />
     <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Misc\ResetDemo.cs" />
     <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUIData.cs" />
@@ -128,6 +130,8 @@
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\LightComponent.cs" />
     <Compile Include="Assets\Packages\PSXShaderKit\Scripts\PSXShaderManager.cs" />
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Spells\WaterRingController.cs" />
+    <Compile Include="Assets\Scripts\Spells\BubbleController.cs" />
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\CameraOrbit.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\Mimic.cs" />
     <Compile Include="Assets\Packages\Breakable Windows\Scripts\BreakableWindow.cs" />
@@ -161,11 +165,14 @@
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-VertexLitTransparent.shader" />
     <None Include="Assets\Packages\LiteFireEffect\Shader\ParticlePremultiplyBlend.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\BubbleR\BubbleShader-Textured.shader" />
+    <None Include="Assets\BubbleR\BubbleR.cginc" />
     <None Include="Assets\Packages\TriForge Assets\ReadMe.txt" />
     <None Include="Assets\Packages\Mimic\README.txt" />
     <None Include="Assets\Packages\Mimic\Materials\Shaders\SimplexNoise3D.hlsl" />
     <None Include="Assets\Packages\Slavic World Free\URP_Support\URP Info.txt" />
     <None Include="Assets\Packages\Mimic\Materials\Shaders\NoiseUtils.hlsl" />
+    <None Include="Assets\BubbleR\Documentation\Instructions.txt" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-VertexLitTransparentCutout.shader" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Unlit.shader" />
@@ -207,6 +214,7 @@
     <None Include="Assets\MaybePackages\Meet and Talk\Resources\Themes\CategoryTheme.uss" />
     <None Include="Assets\MaybePackages\Meet and Talk\Resources\Themes\DarkTheme.uss" />
     <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\BubbleR\BubbleShader.shader" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\ImageEffects\PSX-Interlacing.shader" />
     <None Include="Assets\Packages\SkullsOnAlpacas2\Assets\ReadMe\ReadMe!.txt" />
     <None Include="Assets\Packages\PSXShaderKit\Shaders\PSX-Lite-VertexLit.shader" />

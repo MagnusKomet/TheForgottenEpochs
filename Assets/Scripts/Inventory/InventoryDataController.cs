@@ -16,7 +16,14 @@ namespace PlayerSpace
             InventoryItem item = inventoryList.Find(i => i.itemName == addedItem.itemName);
             if (item != null)
             {
-                item.quantity += addedItem.quantity;
+                int totalQuantity = item.quantity + addedItem.quantity;
+
+                if (totalQuantity > 999)
+                {
+                    totalQuantity = 999;
+                }
+
+                item.quantity = totalQuantity;
             }
             else
             {

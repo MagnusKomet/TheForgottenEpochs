@@ -77,8 +77,17 @@ namespace SlimUI.ModernMenu{
 			sensitivityYSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("YSensitivity");
 			mouseSmoothSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MouseSmoothing");
 			*/
+			if(!PlayerPrefs.HasKey("MusicVolume"))
+            {
+                PlayerPrefs.SetFloat("MusicVolume", 0.8f);
+            }
 
-			musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
+            if (!PlayerPrefs.HasKey("PSXLevel"))
+            {
+                PlayerPrefs.SetFloat("PSXLevel", 0.2f);
+            }
+
+            musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
             psxSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("PSXLevel");
 
             // check full screen

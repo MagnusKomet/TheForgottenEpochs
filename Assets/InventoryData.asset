@@ -12,3 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f37c3e1d080b44ead63186f66e3809, type: 3}
   m_Name: InventoryData
   m_EditorClassIdentifier: 
+  inventoryList:
+  - itemName: Air Crystal
+    quantity: 10
+    spritePath: AirSprite
+    itemDescription: Crystal to create air magic
+  - itemName: Fire Crystal
+    quantity: 19
+    spritePath: FireSprite
+    itemDescription: Crystal to create fire magic
+  - itemName: Water Crystal
+    quantity: 20
+    spritePath: WaterSprite
+    itemDescription: Crystal to create water magic
+  - itemName: Earth Crystal
+    quantity: 37
+    spritePath: EarthSprite
+    itemDescription: Crystal to create earth magic
+  - itemName: Migu Core
+    quantity: 1
+    spritePath: MiguSprite
+    itemDescription: A plush with blue hair, blue tie, hiding in your wifi...

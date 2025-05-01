@@ -358,11 +358,17 @@ namespace PlayerSpace
         [SerializeField]
         private GameObject fireball;
         [SerializeField]
-        private GameObject secondFireball;
+        private GameObject tornado;
+        [SerializeField]
+        private GameObject theWall;
+        [SerializeField]
+        private GameObject bubble;
+        [SerializeField]
+        private GameObject waterRing;
+        [SerializeField]
+        private GameObject fireballConjurer;
         [SerializeField]
         private GameObject windBlade;
-        [SerializeField]
-        private GameObject tornado;
 
         [SerializeField]
         private Transform SpellsSpawnPoint;
@@ -382,8 +388,20 @@ namespace PlayerSpace
                         ShootSpell(tornado);
                         break;
 
-                    case "FFA":
-                        ShootSpell(secondFireball);
+                    case "E":
+                        ShootSpell(theWall);
+                        break;
+
+                    case "W":
+                        ShootSpell(bubble);
+                        break;
+
+                    case "WAWA":
+                        ShootSpell(waterRing);
+                        break;
+
+                    case "FFAFFA":
+                        ShootSpell(fireballConjurer);
                         break;
 
                     case "AAAE":

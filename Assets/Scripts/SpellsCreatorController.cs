@@ -7,11 +7,27 @@ using UnityEngine;
 public class SpellsCreatorController : MonoBehaviour
 {
     [SerializeField]
+    TMP_Text txt_spellName;
+    [SerializeField]
+    TMP_Text txt_spellDescription;
+    [SerializeField]
     TMP_Text txt_combo;
+
+
     [SerializeField]
-    GameObject fireball;
+    private GameObject fireball;
     [SerializeField]
-    GameObject windblade;
+    private GameObject tornado;
+    [SerializeField]
+    private GameObject theWall;
+    [SerializeField]
+    private GameObject bubble;
+    [SerializeField]
+    private GameObject waterRing;
+    [SerializeField]
+    private GameObject fireballConjurer;
+    [SerializeField]
+    private GameObject windBlade;
 
 
     [SerializeField]
@@ -107,13 +123,35 @@ public class SpellsCreatorController : MonoBehaviour
 
         txt_combo.text = combo;
 
-        if (combo == "FFA")
+        switch (combo)
         {
-            lastSpell = Instantiate(fireball, transform.position, transform.rotation);
-        }
-        else if (combo == "AAAE")
-        {
-            lastSpell = Instantiate(windblade, transform.position, transform.rotation);
+            case "F":
+                lastSpell = Instantiate(fireball, transform.position, transform.rotation);
+                break;
+
+            case "A":
+                lastSpell = Instantiate(tornado, transform.position, transform.rotation);
+                break;
+
+            case "E":
+                lastSpell = Instantiate(theWall, transform.position, transform.rotation);
+                break;
+
+            case "W":
+                lastSpell = Instantiate(bubble, transform.position, transform.rotation);
+                break;
+
+            case "WAWA":
+                lastSpell = Instantiate(waterRing, transform.position, transform.rotation);
+                break;
+
+            case "FFAFFA":
+                lastSpell = Instantiate(fireballConjurer, transform.position, transform.rotation);
+                break;
+
+            case "AAAE":
+                lastSpell = Instantiate(windBlade, transform.position, transform.rotation);
+                break;
         }
     }
 

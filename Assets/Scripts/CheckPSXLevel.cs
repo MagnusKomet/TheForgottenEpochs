@@ -18,7 +18,7 @@ public class CheckPSXLevel : MonoBehaviour
 
     public void ResetPSX()
     {
-        PlayerPrefs.SetFloat("PSXLevel",0.2f);
+        PlayerPrefs.SetFloat("PSXLevel",0.3f);
         UpdatePSX();        
     }
 }

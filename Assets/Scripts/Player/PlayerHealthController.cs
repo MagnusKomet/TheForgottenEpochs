@@ -45,6 +45,18 @@ public class PlayerHealthController : EnemyHealthController
 
     }
 
+    public override void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        if (playerHealthBar != null)
+            playerHealthBar.sizeDelta = new Vector2(playerHealthBar.sizeDelta.x, currentHealth);
+    }
+
     public override void Die()
     {
         Instantiate(deathCamera, deathCameraSpawnPoint.position, deathCameraSpawnPoint.rotation);
