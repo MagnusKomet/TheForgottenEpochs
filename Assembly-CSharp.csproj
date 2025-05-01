@@ -69,8 +69,8 @@
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\DialogueContainerSO.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\CylinderMesh.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
-    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Managers\UISettingsManager.cs" />
     <Compile Include="Assets\BubbleR\BlendMode.cs" />
+    <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Managers\UISettingsManager.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\DialogueEventSO.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent2D.cs" />
     <Compile Include="Assets\Scripts\Spells\TheWallController.cs" />

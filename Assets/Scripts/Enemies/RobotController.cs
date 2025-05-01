@@ -58,7 +58,7 @@ public class RobotController : EnemyController
 
         if (!alreadyAttacked)
         {
-            CastFireball(transform.position + transform.forward);
+            ShootSpell(spell);
         }
     }
 

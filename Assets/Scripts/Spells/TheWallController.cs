@@ -15,7 +15,7 @@ public class TheWallController : BasicSpellController
             Invoke("ActivateRigidbody", 5f);
         }
 
-        Destroy(gameObject, 10f);
+        Destroy(whoDies, 10f);
     }
 
     private void ActivateRigidbody()

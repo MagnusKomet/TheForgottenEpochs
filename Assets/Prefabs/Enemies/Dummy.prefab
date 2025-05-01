@@ -123,7 +123,7 @@ MonoBehaviour:
   maxHealth: 25
   currentHealth: 0
   whoDies: {fileID: 8953863879292068232}
-  dropsQuantity: 4
+  dropsQuantity: 10
   dropsPrefabs:
   - {fileID: 8318294484227744504, guid: 3134c19829b2cce42904357d7f420988, type: 3}
   - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}

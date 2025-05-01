@@ -10,12 +10,13 @@ public class BasicSpellController : MonoBehaviour
     public float explosionForce;
     public int damage;
     public string shootFromTag;
+    public GameObject whoDies;
 
     private EnemyHealthController health;
 
     public virtual void Start()
     {
-        Destroy(gameObject, 30f);
+        Destroy(whoDies, 30f);
     }
 
     public void DamageOnHitTrigger(Collider other)

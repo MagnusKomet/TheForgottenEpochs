@@ -1387,7 +1387,8 @@ MonoBehaviour:
   itemName: Migu Core
   quantity: 1
   spritePath: MiguSprite
-  itemDescription: A plush with blue hair, blue tie, hiding in your wifi...
+  itemDescription: It is said that once the world was hers, but a leek wizard persuaded
+    her to disperse into infinite fragments, this one is trying to restore it's power.
 --- !u!1 &8897615008772551777
 GameObject:
   m_ObjectHideFlags: 0

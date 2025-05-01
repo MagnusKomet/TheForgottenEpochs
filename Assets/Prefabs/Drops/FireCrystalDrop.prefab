@@ -144,7 +144,9 @@ MonoBehaviour:
   itemName: Fire Crystal
   quantity: 1
   spritePath: FireSprite
-  itemDescription: Crystal to create fire magic
+  itemDescription: Through the mighty flame of Teyto, the surrounding mana is scorched
+    and transmuted into a crimson crystal, bestowing the wizard with a fragment of
+    her power.
 --- !u!54 &7944568128437278259
 Rigidbody:
   m_ObjectHideFlags: 0

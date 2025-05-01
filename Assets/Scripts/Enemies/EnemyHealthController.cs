@@ -13,7 +13,9 @@ public class EnemyHealthController : MonoBehaviour
     [SerializeField]
     public GameObject whoDies;
     [SerializeField]
-    public int dropsQuantity;
+    public int minDropsQuantity;
+    [SerializeField]
+    public int maxDropsQuantity;
 
     public GameObject[] dropsPrefabs;
     float explosionForce = 10f; 
@@ -65,35 +67,44 @@ public class EnemyHealthController : MonoBehaviour
 
         foreach (GameObject itemPrefab in dropsPrefabs)
         {
-            for (int i = 0; i < dropsQuantity; i++)
+            if (itemPrefab.name == "EarthCrystal" || itemPrefab.name == "MiguCore")
             {
-                // Crear una pequeña variación en la posición inicial
-                Vector3 randomOffset = new Vector3(
-                    Random.Range(-positionVariation, positionVariation),
-                    Random.Range(0, positionVariation), // Asegurar que algunos objetos salgan un poco más alto
-                    Random.Range(-positionVariation, positionVariation)
-                );
-
-                // Instanciar el objeto en la posición del enemigo con la variación
-                GameObject item = Instantiate(itemPrefab, transform.position + randomOffset, Quaternion.identity);
+                GameObject item = Instantiate(itemPrefab, transform.position, Quaternion.identity);
                 item.name = itemPrefab.name;
-
-                // Obtener el Rigidbody del objeto
-                Rigidbody rb = item.GetComponent<Rigidbody>();
-                if (rb != null)
+            }
+            else
+            {
+                for (int i = 0; i < Random.Range(minDropsQuantity, maxDropsQuantity + 1); i++)
                 {
-                    // Aplicar la explosión con AddExplosionForce
-                    rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, 1f, ForceMode.Impulse);
-
-                    // Aplicar una rotación aleatoria para mayor realismo
-                    Vector3 randomTorque = new Vector3(
-                        Random.Range(-10f, 10f),
-                        Random.Range(-10f, 10f),
-                        Random.Range(-10f, 10f)
+                    // Crear una pequeña variación en la posición inicial
+                    Vector3 randomOffset = new Vector3(
+                        Random.Range(-positionVariation, positionVariation),
+                        Random.Range(0, positionVariation), // Asegurar que algunos objetos salgan un poco más alto
+                        Random.Range(-positionVariation, positionVariation)
                     );
-                    rb.AddTorque(randomTorque, ForceMode.Impulse);
+
+                    // Instanciar el objeto en la posición del enemigo con la variación
+                    GameObject item = Instantiate(itemPrefab, transform.position + randomOffset, Quaternion.identity);
+                    item.name = itemPrefab.name;
+
+                    // Obtener el Rigidbody del objeto
+                    Rigidbody rb = item.GetComponent<Rigidbody>();
+                    if (rb != null)
+                    {
+                        // Aplicar la explosión con AddExplosionForce
+                        rb.AddExplosionForce(explosionForce, transform.position, explosionRadius, 1f, ForceMode.Impulse);
+
+                        // Aplicar una rotación aleatoria para mayor realismo
+                        Vector3 randomTorque = new Vector3(
+                            Random.Range(-10f, 10f),
+                            Random.Range(-10f, 10f),
+                            Random.Range(-10f, 10f)
+                        );
+                        rb.AddTorque(randomTorque, ForceMode.Impulse);
+                    }
                 }
             }
+            
 
         }
     }

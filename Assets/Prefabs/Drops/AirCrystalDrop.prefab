@@ -144,7 +144,9 @@ MonoBehaviour:
   itemName: Air Crystal
   quantity: 1
   spritePath: AirSprite
-  itemDescription: Crystal to create air magic
+  itemDescription: You hear the breeze whispering in your ear, as if the wind itself
+    is trying to tell you something, like a forgotten memory stirring in the back
+    of your mind.
 --- !u!54 &6677536736649207377
 Rigidbody:
   m_ObjectHideFlags: 0

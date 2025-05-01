@@ -101,6 +101,7 @@ MonoBehaviour:
   explosionForce: 0
   damage: 50
   shootFromTag: 
+  whoDies: {fileID: 423251788416125878}
   speed: 10
 --- !u!135 &591430684456269347
 SphereCollider:

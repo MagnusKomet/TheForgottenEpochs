@@ -409,7 +409,7 @@ MonoBehaviour:
   theWall: {fileID: 5974098797394965845, guid: ad19dcca479adc74caa24c183a423535, type: 3}
   bubble: {fileID: 423251788416125878, guid: e5d5995d4219e084fbe1a7ec52844ddc, type: 3}
   waterRing: {fileID: 8036561094876638787, guid: 09013ea290eba1d4182d225152e4dd1c, type: 3}
-  fireballConjurer: {fileID: 4164227464312985056, guid: e6c1309dbda1a8b4e905fe58f56095a6, type: 3}
+  fireballConjurer: {fileID: 7438171010587966609, guid: e6c1309dbda1a8b4e905fe58f56095a6, type: 3}
   windBlade: {fileID: 6054753705526747894, guid: e56c8528052e2204bb1fd401795448b8, type: 3}
   SpellsSpawnPoint: {fileID: 316116817463063823}
 --- !u!114 &6488219911713767130

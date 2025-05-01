@@ -13,23 +13,21 @@ MonoBehaviour:
   m_Name: InventoryData
   m_EditorClassIdentifier: 
   inventoryList:
-  - itemName: Air Crystal
-    quantity: 10
-    spritePath: AirSprite
-    itemDescription: Crystal to create air magic
-  - itemName: Fire Crystal
-    quantity: 19
-    spritePath: FireSprite
-    itemDescription: Crystal to create fire magic
-  - itemName: Water Crystal
-    quantity: 20
-    spritePath: WaterSprite
-    itemDescription: Crystal to create water magic
   - itemName: Earth Crystal
-    quantity: 37
+    quantity: 2
     spritePath: EarthSprite
-    itemDescription: Crystal to create earth magic
-  - itemName: Migu Core
+    itemDescription: The first elemental fragment, once known as the Stone of Life,
+      the earth crystal can be found within all living beings, to possess one means
+      you have taken a life.
+  - itemName: Air Crystal
+    quantity: 4
+    spritePath: AirSprite
+    itemDescription: You hear the breeze whispering in your ear, as if the wind itself
+      is trying to tell you something, like a forgotten memory stirring in the back
+      of your mind.
+  - itemName: Fire Crystal
     quantity: 1
-    spritePath: MiguSprite
-    itemDescription: A plush with blue hair, blue tie, hiding in your wifi...
+    spritePath: FireSprite
+    itemDescription: Through the mighty flame of Teyto, the surrounding mana is scorched
+      and transmuted into a crimson crystal, bestowing the wizard with a fragment
+      of her power.

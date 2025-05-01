@@ -65,7 +65,7 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
-  velocity: {x: 0.6111405, y: 0, z: -0.14255995}
+  velocity: {x: -0.7369222, y: 0, z: -0.5258254}
 --- !u!114 &8649345389762647525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,8 +90,8 @@ MonoBehaviour:
   walkPointRange: 5
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
-  fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
-  fireballDamage: 25
+  spell: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
+  spellDamage: 0
   timeBetweenAttacks: 1
   alreadyAttacked: 0
   forcedChaseDuration: 20
@@ -222,9 +222,11 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   whoDies: {fileID: 2000334542312664406}
-  dropsQuantity: 1
+  minDropsQuantity: 10
+  maxDropsQuantity: 20
   dropsPrefabs:
   - {fileID: 8669482330455601325, guid: 19bbee0e9d59c254cbe6541638c40eb4, type: 3}
+  - {fileID: 5648572820905123144, guid: 53b72f13acbcdba47a91d6f7dae8c336, type: 3}
 --- !u!136 &5481100279640025983
 CapsuleCollider:
   m_ObjectHideFlags: 0

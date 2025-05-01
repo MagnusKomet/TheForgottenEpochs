@@ -381,11 +381,11 @@ namespace PlayerSpace
                 switch (combo)
                 {
                     case "F":
-                        ShootSpell(fireball);
+                        ShootSpell(fireball, 50);
                         break;
 
                     case "A":
-                        ShootSpell(tornado);
+                        ShootSpell(tornado,20);
                         break;
 
                     case "E":
@@ -405,7 +405,7 @@ namespace PlayerSpace
                         break;
 
                     case "AAAE":
-                        ShootSpell(windBlade);
+                        ShootSpell(windBlade,50);
                         break;
                 }
             }
@@ -413,7 +413,7 @@ namespace PlayerSpace
             DestroyCombo();
         }
 
-        void ShootSpell(GameObject spell)
+        void ShootSpell(GameObject spell, float speed = 0)
         {
             var shootedSpell = Instantiate(spell, SpellsSpawnPoint.position, SpellsSpawnPoint.rotation);
             Rigidbody rb = shootedSpell.GetComponent<Rigidbody>();
@@ -428,7 +428,7 @@ namespace PlayerSpace
 
             if (rb != null)
             {
-                rb.velocity = cam.transform.forward * 50f;
+                rb.velocity = cam.transform.forward * speed;
             }
         }
 

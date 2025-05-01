@@ -17,7 +17,7 @@ GameObject:
   m_Layer: 8
   m_Name: AirEnemy
   m_TagString: Enemy
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -104,8 +104,8 @@ MonoBehaviour:
   walkPointRange: 5
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
-  fireball: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
-  fireballDamage: 25
+  spell: {fileID: 2673694762706284870, guid: da33f7610ab55234981a51ca3008ae46, type: 3}
+  spellDamage: 25
   timeBetweenAttacks: 5
   alreadyAttacked: 0
   forcedChaseDuration: 5
@@ -153,9 +153,11 @@ MonoBehaviour:
   maxHealth: 50
   currentHealth: 0
   whoDies: {fileID: 765642360027772392}
-  dropsQuantity: 5
+  minDropsQuantity: 5
+  maxDropsQuantity: 10
   dropsPrefabs:
-  - {fileID: 3608898455747402935, guid: 772c83d13d201e440b63ed9942e73e92, type: 3}
+  - {fileID: 8318294484227744504, guid: 3134c19829b2cce42904357d7f420988, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
 --- !u!1 &5497019356550637976
 GameObject:
   m_ObjectHideFlags: 0

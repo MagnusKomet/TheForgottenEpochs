@@ -1079,7 +1079,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730376990630666484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1089,7 +1089,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 77.3}
+  m_SizeDelta: {x: 0, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3410167479467579167
 CanvasRenderer:
@@ -2121,7 +2121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fireball
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 005b2e225ee07ec4fb949a7f2041cec4, type: 2}
   m_sharedMaterial: {fileID: 2056827177825714979, guid: 005b2e225ee07ec4fb949a7f2041cec4, type: 2}
@@ -4156,7 +4156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Summons a explosive ball made of fire
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 005b2e225ee07ec4fb949a7f2041cec4, type: 2}
   m_sharedMaterial: {fileID: 2056827177825714979, guid: 005b2e225ee07ec4fb949a7f2041cec4, type: 2}
@@ -5038,7 +5038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -239, y: 340}
+  m_AnchoredPosition: {x: -239, y: 410}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6278778473862883107
@@ -5217,16 +5217,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcc806db2b2c3d847a5ddf8abfd5a6c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txt_spellName: {fileID: 0}
-  txt_spellDescription: {fileID: 0}
+  txt_spellName: {fileID: 7121812601527288753}
+  txt_spellDescription: {fileID: 6576737997208992746}
   txt_combo: {fileID: 4680986996975857627}
-  fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
-  tornado: {fileID: 2673694762706284870, guid: da33f7610ab55234981a51ca3008ae46, type: 3}
-  theWall: {fileID: 5974098797394965845, guid: ad19dcca479adc74caa24c183a423535, type: 3}
-  bubble: {fileID: 423251788416125878, guid: e5d5995d4219e084fbe1a7ec52844ddc, type: 3}
-  waterRing: {fileID: 8036561094876638787, guid: 09013ea290eba1d4182d225152e4dd1c, type: 3}
-  fireballConjurer: {fileID: 4164227464312985056, guid: e6c1309dbda1a8b4e905fe58f56095a6, type: 3}
-  windBlade: {fileID: 6054753705526747894, guid: e56c8528052e2204bb1fd401795448b8, type: 3}
+  fireball: {fileID: 7681913944535288640, guid: 119978f8c26c91b409612f2d3859b2b3, type: 3}
+  tornado: {fileID: 2673694762706284870, guid: b4f1e3f0baf66cd4eb516bd744ea7567, type: 3}
+  theWall: {fileID: 5974098797394965845, guid: 07047eed5440dd648ae1fbd08db6cf84, type: 3}
+  bubble: {fileID: 423251788416125878, guid: 1eb028c709259b245b94925ea5b4c162, type: 3}
+  waterRing: {fileID: 8036561094876638787, guid: 23d02fb4b8da0604e8a93e04a9cd16a5, type: 3}
+  fireballConjurer: {fileID: 4969626285939500482, guid: 65e4f83af0dc3e945b57b43426519a9c, type: 3}
+  windBlade: {fileID: 6054753705526747894, guid: 0d06508af22187f48acb85428396711c, type: 3}
   fireText: {fileID: 4775158500199580933}
   airText: {fileID: 555058807682973864}
   earthText: {fileID: 5600536706064829753}
@@ -5261,7 +5261,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8839268046552000089}
   m_LocalRotation: {x: -0.0000000019173994, y: 0.00000005960463, z: -0.000000014777283, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:

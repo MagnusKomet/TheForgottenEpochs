@@ -23,8 +23,8 @@ public class EnemyController : MonoBehaviour
     public bool walkPointSet;
 
     [Header("Attacks")]
-    public GameObject fireball;
-    public int fireballDamage;
+    public GameObject spell;
+    public int spellDamage;
     public float timeBetweenAttacks;
     public bool alreadyAttacked;
 
@@ -152,7 +152,7 @@ public class EnemyController : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            CastFireball(transform.position + transform.forward);
+            ShootSpell(spell);
         }
         else
         {
@@ -160,20 +160,21 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void CastFireball(Vector3 spawnPosition)
+    public void ShootSpell(GameObject spell)
     {
-        var ball = Instantiate(fireball, spawnPosition, Quaternion.identity);
+        var shootedSpell = Instantiate(spell, transform.position + transform.forward, Quaternion.identity);
+        Rigidbody rb = shootedSpell.GetComponent<Rigidbody>();
+        BasicSpellController controller = shootedSpell.GetComponent<BasicSpellController>();
+        if (controller != null)
+        {
+            controller.damage = spellDamage;
+            controller.shootFromTag = gameObject.tag;
+        }
 
-        FireballController fireballController = ball.GetComponent<FireballController>();
-        fireballController.damage = fireballDamage;
-        fireballController.shootFromTag = gameObject.tag;
-
-        Rigidbody rb = ball.GetComponent<Rigidbody>();
         if (rb != null)
         {
             rb.velocity = transform.forward * 50f;
         }
-        Destroy(ball, 30f);
 
         alreadyAttacked = true;
         Invoke(nameof(ResetAttack), timeBetweenAttacks);

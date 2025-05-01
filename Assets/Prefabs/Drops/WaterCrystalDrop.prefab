@@ -144,7 +144,9 @@ MonoBehaviour:
   itemName: Water Crystal
   quantity: 1
   spritePath: WaterSprite
-  itemDescription: Crystal to create water magic
+  itemDescription: The ancient scrolls speak of legends that bind the Water Crystal
+    to Migu, the primordial anomaly of water and sound, granting the wizard a fragment
+    of her power.
 --- !u!54 &7895069766743022599
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -84,7 +84,7 @@ namespace SlimUI.ModernMenu{
 
             if (!PlayerPrefs.HasKey("PSXLevel"))
             {
-                PlayerPrefs.SetFloat("PSXLevel", 0.2f);
+                PlayerPrefs.SetFloat("PSXLevel", 0.3f);
             }
 
             musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("MusicVolume");
