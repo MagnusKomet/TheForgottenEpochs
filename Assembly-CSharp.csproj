@@ -69,8 +69,10 @@
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\DialogueContainerSO.cs" />
     <Compile Include="Assets\Packages\Mimic\Scripts\CylinderMesh.cs" />
     <Compile Include="Assets\Scripts\Enemies\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\PSX\CheckPSXLevel.cs" />
     <Compile Include="Assets\BubbleR\BlendMode.cs" />
     <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Managers\UISettingsManager.cs" />
+    <Compile Include="Assets\Scripts\Musem\SpellsCreatorController.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\DialogueEventSO.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\VolumetricComponent2D.cs" />
     <Compile Include="Assets\Scripts\Spells\TheWallController.cs" />
@@ -100,14 +102,13 @@
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\SlashDecal.cs" />
     <Compile Include="Assets\Packages\Free Slash VFX\Demo\Scripts\ElementsShowCase.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\exploders\Exploder2D.cs" />
-    <Compile Include="Assets\Scripts\SpellsCreatorController.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\DialogueGetData.cs" />
     <Compile Include="Assets\Scripts\ApiManager.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryItem.cs" />
     <Compile Include="Assets\Scripts\Enemies\RobotController.cs" />
-    <Compile Include="Assets\Scripts\MimicExhibitController.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\effects\exploderComponents\PseudoVolumetricComponent.cs" />
     <Compile Include="Assets\Scripts\Spells\BasicSpellController.cs" />
+    <Compile Include="Assets\Scripts\Musem\MimicExhibitController.cs" />
     <Compile Include="Assets\Packages\ToastNotificationMessage\ToastNotificationMessage.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Resources\LocalizationEnum.cs" />
     <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\ThemeEditor\ThemedUI.cs" />
@@ -117,7 +118,7 @@
     <Compile Include="Assets\Scripts\SpawnerController.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\GlobalValue\GlobalValueInUI.cs" />
     <Compile Include="Assets\Packages\SlimUI\Modern Menu 1\Scripts\Audio\CheckMusicVolume.cs" />
-    <Compile Include="Assets\Scripts\CheckPSXLevel.cs" />
+    <Compile Include="Assets\Scripts\PSX\ControlPSX.cs" />
     <Compile Include="Assets\Packages\True Explosions\System\Scripts\exploders\SphereExploder.cs" />
     <Compile Include="Assets\MaybePackages\Meet and Talk\Script\Localization\LocalizedTextMeshProText.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryVisualManager.cs" />

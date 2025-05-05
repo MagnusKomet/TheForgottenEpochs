@@ -2364,7 +2364,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -10610,7 +10610,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -10890,12 +10890,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81bc16ca95894c34b836ea33671ae46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 0}
   mainMenu: {fileID: 1453157175051456}
   firstMenu: {fileID: 1453157175051456}
   playMenu: {fileID: 1375944574801644}
   exitMenu: {fileID: 1624946250588194}
   extrasMenu: {fileID: 0}
   theme: 0
+  themeIndex: 0
   themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
   mainCanvas: {fileID: 1375772291185004}
   PanelControls: {fileID: 1232108620229074}
@@ -10905,6 +10907,7 @@ MonoBehaviour:
   PanelMovement: {fileID: 1777028094296564}
   PanelCombat: {fileID: 1709345639811952}
   PanelGeneral: {fileID: 1982754977871352}
+  PanelLogin: {fileID: 0}
   lineGame: {fileID: 1958757254389120}
   lineVideo: {fileID: 1548545047875008}
   lineControls: {fileID: 1542627385519034}
@@ -10912,6 +10915,7 @@ MonoBehaviour:
   lineMovement: {fileID: 1680207364074030}
   lineCombat: {fileID: 1625470146083954}
   lineGeneral: {fileID: 1411767568853040}
+  lineLogin: {fileID: 0}
   waitForInput: 1
   loadingMenu: {fileID: 1303971319507238}
   loadingBar: {fileID: 0}
@@ -12951,7 +12955,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -14157,7 +14161,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &114490409592293910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14216,9 +14220,11 @@ MonoBehaviour:
   difficultyhardcoretextLINE: {fileID: 1769288772645506}
   invertmousetext: {fileID: 1046960263368942}
   musicSlider: {fileID: 1611640247830470}
+  psxSlider: {fileID: 0}
   sensitivityXSlider: {fileID: 1097090015846844}
   sensitivityYSlider: {fileID: 1704898516236934}
   mouseSmoothSlider: {fileID: 1195748219516434}
+  sliderValue: 0
 --- !u!1 &1416812192481594
 GameObject:
   m_ObjectHideFlags: 0

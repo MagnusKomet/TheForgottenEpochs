@@ -17,9 +17,9 @@ public class ApiDataManager : MonoBehaviour
 
     private string userToken;
 
-    private string spellsApiUrl = "https://localhost:44351/api/grimoires/token";
-    private string inventoriesApiUrl = "https://localhost:44351/api/inventories/token";
-    private string exhibitsApiUrl = "https://localhost:44351/api/exhibits/token";
+    private string spellsApiUrl = "http://theforgottenepochsapi.somee.com/API/api/grimoires/token";
+    private string inventoriesApiUrl = "http://theforgottenepochsapi.somee.com/API/api/inventories/token";
+    private string exhibitsApiUrl = "http://theforgottenepochsapi.somee.com/API/api/exhibits/token";
 
     public void Start()
     {
@@ -184,8 +184,7 @@ public class ApiDataManager : MonoBehaviour
 
     #region Exhibits
     public async Task<bool> SaveExhibitsToApi()
-    {
-        
+    {        
         try
         {
             List<Exhibit> localExhibits = LoadAllExhibitsLocally();
@@ -293,7 +292,7 @@ public class ApiDataManager : MonoBehaviour
         var userCredentials = new { Username = username, Password = password };
         string jsonData = JsonConvert.SerializeObject(userCredentials);
 
-        using (UnityWebRequest www = new UnityWebRequest("https://localhost:44351/api/users/login", "POST"))
+        using (UnityWebRequest www = new UnityWebRequest("http://theforgottenepochsapi.somee.com/API/api/users/login", "POST"))
         {
             byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonData);
             www.uploadHandler = new UploadHandlerRaw(bodyRaw);
@@ -341,7 +340,7 @@ public class ApiDataManager : MonoBehaviour
         var userCredentials = new { Username = username, Password = password };
         string jsonData = JsonConvert.SerializeObject(userCredentials);
 
-        using (UnityWebRequest www = new UnityWebRequest("https://localhost:44351/api/users/register", "PUT"))
+        using (UnityWebRequest www = new UnityWebRequest("http://theforgottenepochsapi.somee.com/API/api/users/register", "PUT"))
         {
             byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonData);
             www.uploadHandler = new UploadHandlerRaw(bodyRaw);
@@ -421,7 +420,7 @@ public class ApiDataManager : MonoBehaviour
         {
             if (string.IsNullOrEmpty(userToken))
             {
-                ToastNotification.Show("Please log in to save data.");
+                ToastNotification.Show("Please go to settings and log in to save data.");
             }
             else
             {
@@ -453,7 +452,7 @@ public class ApiDataManager : MonoBehaviour
         {
             if (string.IsNullOrEmpty(userToken))
             {
-                ToastNotification.Show("Please log in to load data.");
+                ToastNotification.Show("Please go to settings and log in to load data.");
             }
             else
             {
