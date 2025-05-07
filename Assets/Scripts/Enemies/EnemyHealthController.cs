@@ -67,7 +67,7 @@ public class EnemyHealthController : MonoBehaviour
 
         foreach (GameObject itemPrefab in dropsPrefabs)
         {
-            if (itemPrefab.name == "EarthCrystal" || itemPrefab.name == "MiguCore")
+            if (itemPrefab.name == "EarthCrystalDrop" || itemPrefab.name == "MiguCore")
             {
                 GameObject item = Instantiate(itemPrefab, transform.position, Quaternion.identity);
                 item.name = itemPrefab.name;

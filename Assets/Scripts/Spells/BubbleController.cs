@@ -13,11 +13,15 @@ public class BubbleController : BasicSpellController
         FindClosestEnemy();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (target != null)
         {
             MoveTowardsTarget();
+        }
+        else
+        {
+            FindClosestEnemy();
         }
     }
 

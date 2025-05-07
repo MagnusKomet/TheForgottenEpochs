@@ -157,7 +157,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   spell: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
-  spellDamage: 0
+  spellDamage: 25
   timeBetweenAttacks: 5
   alreadyAttacked: 0
   forcedChaseDuration: 5

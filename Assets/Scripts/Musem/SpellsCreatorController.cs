@@ -7,7 +7,7 @@ using UnityEngine;
 public class SpellsCreatorController : MonoBehaviour
 {
 
-    private HashSet<string> allSpells = new HashSet<string> { "F", "W", "A", "E", "WAWA", "AAE", "FFAFFA" };
+    private HashSet<string> allSpells = new HashSet<string> { "F", "W", "A", "E", "WAWA", "AAAE", "FFAFFA" };
 
 
     [SerializeField]
