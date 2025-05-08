@@ -205,11 +205,13 @@ namespace SlimUI.ModernMenu{
 			lineKeyBindings.SetActive(false);
 
 			PanelMovement.SetActive(false);
+			/*
 			lineMovement.SetActive(false);
 			PanelCombat.SetActive(false);
 			lineCombat.SetActive(false);
 			PanelGeneral.SetActive(false);
 			lineGeneral.SetActive(false);
+			*/
 
             PanelLogin.SetActive(false);
             lineLogin.SetActive(false);
@@ -254,7 +256,7 @@ namespace SlimUI.ModernMenu{
 			DisablePanels();
 			PanelKeyBindings.SetActive(true);
 			PanelMovement.SetActive(true);
-			lineMovement.SetActive(true);
+			//lineMovement.SetActive(true);
 		}
 
 		public void CombatPanel(){
