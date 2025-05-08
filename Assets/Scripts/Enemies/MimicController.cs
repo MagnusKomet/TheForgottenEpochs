@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 
 namespace MimicSpace
@@ -16,6 +17,8 @@ namespace MimicSpace
         private Vector3 velocity = Vector3.zero;
         public float velocityLerpCoef = 4f;
         private Mimic myMimic;
+
+        public AudioClip deathSound;
 
         public override void Awake()
         {
@@ -42,5 +45,13 @@ namespace MimicSpace
             transform.position = Vector3.Lerp(transform.position, destHeight, velocityLerpCoef * Time.deltaTime);
         }
 
+
+        private void OnDestroy()
+        {
+            if (SceneManager.GetActiveScene().isLoaded)
+            {
+                BasicSpellController.PlayDeathSound(deathSound, transform.position);
+            }
+        }
     }
 }

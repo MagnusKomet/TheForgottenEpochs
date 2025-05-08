@@ -124,6 +124,7 @@ MonoBehaviour:
   explosionForce: 500
   damage: 0
   shootFromTag: 
+  spellDeathSound: {fileID: 8300000, guid: 2c18c08c29c9f2a4486923221c3f509b, type: 3}
   whoDies: {fileID: 7681913944535288640}
   explosion: {fileID: 100000, guid: 5d028565f79e270408884b995abc06ef, type: 3}
   automatic: 0

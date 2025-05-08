@@ -7,6 +7,7 @@ public class FireballController : BasicSpellController
     [SerializeField]
     private GameObject explosion;
 
+
     public bool automatic;
 
     public override void Start()
@@ -26,6 +27,9 @@ public class FireballController : BasicSpellController
         {
             DamageAoeCollider(collision);
             Instantiate(explosion, transform.position, Quaternion.identity);
+
+            PlayDeathSound(spellDeathSound, transform.position);
+
             Destroy(gameObject);
         }
         

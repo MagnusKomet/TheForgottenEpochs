@@ -280,9 +280,7 @@ namespace PlayerSpace
         [Header("Attacking")]
         private float attackSpeed = 0.8f;
 
-
-        public AudioClip swordSwing;
-        public AudioClip hitSound;
+        public AudioClip swing;
 
         bool attacking = false;
         bool readyToAttack = true;
@@ -305,7 +303,7 @@ namespace PlayerSpace
                     ShootSpell();
 
                     audioSource.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
-                    audioSource.PlayOneShot(swordSwing);
+                    audioSource.PlayOneShot(swing);
 
                     if (attackCount == 0)
                     {

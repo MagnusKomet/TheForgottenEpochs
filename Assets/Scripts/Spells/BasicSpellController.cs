@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using SlimUI.ModernMenu;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
 
@@ -10,6 +11,7 @@ public class BasicSpellController : MonoBehaviour
     public float explosionForce;
     public int damage;
     public string shootFromTag;
+    public AudioClip spellDeathSound;
     public GameObject whoDies;
 
     private EnemyHealthController health;
@@ -55,6 +57,23 @@ public class BasicSpellController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public static void PlayDeathSound(AudioClip clip, Vector3 position)
+    {
+        GameObject tmp = new GameObject("TempAudio");
+        tmp.transform.position = position;
+
+        AudioSource aSource = tmp.AddComponent<AudioSource>();
+        aSource.clip = clip;
+        aSource.spatialBlend = 1f; // 3D sound
+        aSource.minDistance = 10f; 
+        aSource.maxDistance = 100f;
+
+        tmp.AddComponent<CheckMusicVolume>();
+
+        aSource.Play();
+        Destroy(tmp, clip.length);
     }
 
     private void OnDrawGizmosSelected()

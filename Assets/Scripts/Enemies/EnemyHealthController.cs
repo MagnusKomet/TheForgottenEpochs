@@ -45,6 +45,7 @@ public class EnemyHealthController : MonoBehaviour
         {
             Die();
         }
+
     }
 
     public virtual void Heal(int amount)

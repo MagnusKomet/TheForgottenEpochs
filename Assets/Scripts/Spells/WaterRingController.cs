@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class WaterRingController : BasicSpellController
 {
-    private float healAmount = 10f;
-    private float damageAmount = 10f;
-    private float interval = 3f;
+    private float interval = 0.5f;
 
     private HashSet<GameObject> objectsInRange = new HashSet<GameObject>();
     private Coroutine healingAndDamagingCoroutine;
@@ -49,12 +47,10 @@ public class WaterRingController : BasicSpellController
 
                 if (obj.CompareTag("Player"))
                 {
-                    Debug.Log("Healing player: " + obj.name);
                     var healthController = obj.GetComponent<PlayerHealthController>();
                     if (healthController != null)
                     {
-                        Debug.Log("Healed: " + obj.name);
-                        healthController.Heal((int)healAmount);
+                        healthController.Heal(damage / 10);
                     }
                 }
                 else if (obj.CompareTag("Enemy"))
@@ -62,7 +58,7 @@ public class WaterRingController : BasicSpellController
                     var healthController = obj.GetComponent<EnemyHealthController>();
                     if (healthController != null)
                     {
-                        healthController.TakeDamage((int)damageAmount);
+                        healthController.TakeDamage(damage / 10);
                     }
                 }
             }

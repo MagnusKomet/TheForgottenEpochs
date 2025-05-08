@@ -62,4 +62,9 @@ public class BubbleController : BasicSpellController
         }
 
     }
+
+    private void OnDestroy()
+    {
+        PlayDeathSound(spellDeathSound, transform.position);
+    }
 }

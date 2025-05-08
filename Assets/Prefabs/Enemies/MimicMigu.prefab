@@ -65,7 +65,7 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
-  velocity: {x: -0.7369222, y: 0, z: -0.5258254}
+  velocity: {x: -0.12308002, y: 0, z: 0.054885022}
 --- !u!114 &8649345389762647525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,7 +91,7 @@ MonoBehaviour:
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
   spell: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
-  spellDamage: 0
+  spellDamage: 25
   timeBetweenAttacks: 1
   alreadyAttacked: 0
   forcedChaseDuration: 20
@@ -100,6 +100,7 @@ MonoBehaviour:
   height: 1.6
   speed: 5
   velocityLerpCoef: 4
+  deathSound: {fileID: 8300000, guid: d85b5ff363a9d7949a67c0cc5888c09f, type: 3}
 --- !u!195 &8073393217677310552
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -224,6 +225,7 @@ MonoBehaviour:
   whoDies: {fileID: 2000334542312664406}
   minDropsQuantity: 10
   maxDropsQuantity: 20
+  damageSound: {fileID: 8300000, guid: 86079e46adae07146a164ea40f4bfcef, type: 3}
   dropsPrefabs:
   - {fileID: 8669482330455601325, guid: 19bbee0e9d59c254cbe6541638c40eb4, type: 3}
   - {fileID: 5648572820905123144, guid: 53b72f13acbcdba47a91d6f7dae8c336, type: 3}

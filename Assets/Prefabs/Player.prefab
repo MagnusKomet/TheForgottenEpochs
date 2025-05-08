@@ -402,8 +402,7 @@ MonoBehaviour:
   cam: {fileID: 1593019297686687297}
   sensitivity: 30
   playerReach: 3
-  swordSwing: {fileID: 8300000, guid: 7923190c5e80b4d4d9396acc5d0b48cf, type: 3}
-  hitSound: {fileID: 8300000, guid: 11245d3945c564b45a1bafad5ecb70e5, type: 3}
+  swing: {fileID: 8300000, guid: 7923190c5e80b4d4d9396acc5d0b48cf, type: 3}
   fireball: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
   tornado: {fileID: 2673694762706284870, guid: da33f7610ab55234981a51ca3008ae46, type: 3}
   theWall: {fileID: 5974098797394965845, guid: ad19dcca479adc74caa24c183a423535, type: 3}
@@ -427,7 +426,8 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   whoDies: {fileID: 6816843259406738505}
-  dropsQuantity: 0
+  minDropsQuantity: 0
+  maxDropsQuantity: 0
   dropsPrefabs: []
   deathCamera: {fileID: 2864178902019536406, guid: 3a7d49491fad71c46a2277beba14b887, type: 3}
   deathCameraSpawnPoint: {fileID: 8783884431233236634}
