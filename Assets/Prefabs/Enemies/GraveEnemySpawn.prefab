@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6432158032333281275}
   - component: {fileID: 9031320507080859110}
   - component: {fileID: 8118380739554689252}
+  - component: {fileID: 5738036454397891961}
   m_Layer: 0
   m_Name: GraveEnemySpawn
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1300105262372421064}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.49848932, z: -0, w: 0.86689585}
+  m_LocalRotation: {x: 0, y: -0.49848777, z: 0, w: 0.86689675}
   m_LocalPosition: {x: 1.782106, y: -3.33, z: -48.93853}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -99,3 +100,26 @@ MonoBehaviour:
   objectToSpawn: {fileID: 4620978639673703574, guid: d22050c163c45d3408c621d0df83ed66, type: 3}
   minTime: 15
   maxTime: 30
+  nextSpawnTime: 0
+--- !u!64 &5738036454397891961
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300105262372421064}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8252084882743204326, guid: 0eeeacd6a4a2f9e46a8c6864877cff50, type: 3}

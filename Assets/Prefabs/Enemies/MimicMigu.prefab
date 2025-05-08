@@ -65,7 +65,11 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
+<<<<<<< Updated upstream
   velocity: {x: -0.12308002, y: 0, z: 0.054885022}
+=======
+  velocity: {x: 0.063212745, y: 0, z: 0.9024194}
+>>>>>>> Stashed changes
 --- !u!114 &8649345389762647525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,8 +84,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   agent: {fileID: 8073393217677310552}
-  sightRange: 30
-  attackRange: 12
+  sightRange: 45
+  attackRange: 30
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
@@ -90,8 +94,13 @@ MonoBehaviour:
   walkPointRange: 5
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
+<<<<<<< Updated upstream
   spell: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
   spellDamage: 25
+=======
+  spell: {fileID: 423251788416125878, guid: e5d5995d4219e084fbe1a7ec52844ddc, type: 3}
+  spellDamage: 15
+>>>>>>> Stashed changes
   timeBetweenAttacks: 1
   alreadyAttacked: 0
   forcedChaseDuration: 20
