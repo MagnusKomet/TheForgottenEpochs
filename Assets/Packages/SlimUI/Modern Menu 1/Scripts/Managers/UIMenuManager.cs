@@ -88,8 +88,20 @@ namespace SlimUI.ModernMenu{
         [Tooltip("The GameObject holding the Audio Source component for the SWOOSH SOUND when switching to the Settings Screen")]
         public AudioSource swooshSound;
 
-		void Start(){
-			CameraObject = transform.GetComponent<Animator>();
+        InventoryDataController inventory;
+
+        void Start(){
+
+            try
+            {
+                inventory = InventoryVisualManager.Instance.inventoryData;
+            }
+            catch
+            {
+                Debug.Assert(inventory == null, "UIMenu no encuentra el InventoryVisualManager");
+            }
+
+            CameraObject = transform.GetComponent<Animator>();
 
 			playMenu.SetActive(false);
 			exitMenu.SetActive(false);
@@ -166,6 +178,9 @@ namespace SlimUI.ModernMenu{
             PlayerPrefs.DeleteKey("Exhibit4");
             PlayerPrefs.DeleteKey("Exhibit5");
             PlayerPrefs.DeleteKey("Exhibit6");
+
+            inventory.AddItemData(new InventoryItem("Earth Crystal", 1, "EarthSprite", "The first elemental fragment, once known as the Stone of Life, the earth crystal can be found within all living beings, to possess one means you have taken a life."));
+
             SceneManager.LoadScene(scene);
         }
 

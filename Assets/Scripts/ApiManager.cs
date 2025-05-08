@@ -16,16 +16,34 @@ public class ApiDataManager : MonoBehaviour
     public TMP_InputField passwordInput;
 
     private string userToken;
-
+    /*
+    //Test
+    private string spellsApiUrl = "https://localhost:44351/api/grimoires/token";
+    private string inventoriesApiUrl = "https://localhost:44351/api/inventories/token";
+    private string exhibitsApiUrl = "https://localhost:44351/api/exhibits/token";
+    */
+    
+    //Final
     private string spellsApiUrl = "http://theforgottenepochsapi.somee.com/API/api/grimoires/token";
     private string inventoriesApiUrl = "http://theforgottenepochsapi.somee.com/API/api/inventories/token";
     private string exhibitsApiUrl = "http://theforgottenepochsapi.somee.com/API/api/exhibits/token";
+
+    InventoryDataController inventoryDataController;
 
     public void Start()
     {
         if (IsTokenValid())
         {
             userToken = PlayerPrefs.GetString("SecureToken");
+        }
+
+        try
+        {
+            inventoryDataController = InventoryVisualManager.Instance.inventoryData;
+        }
+        catch
+        {
+            Debug.Assert(inventoryDataController == null, "ApiManager no encuentra el InventoryVisualManager");
         }
     }
 
@@ -149,6 +167,7 @@ public class ApiDataManager : MonoBehaviour
         string json = JsonUtility.ToJson(new ItemSerializableList<InventoryItem>(inventory));
         PlayerPrefs.SetString("InventoryData", json);
         PlayerPrefs.Save();
+        inventoryDataController.LoadData();
     }
 
     private List<InventoryItem> LoadInventoryLocally()
