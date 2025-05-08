@@ -500,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7710601441031299290, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.7
+      value: -17.64
       objectReference: {fileID: 0}
     - target: {fileID: 7710601441031299290, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: m_LocalPosition.y
@@ -508,7 +508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7710601441031299290, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -53.9
+      value: -45.6
       objectReference: {fileID: 0}
     - target: {fileID: 7710601441031299290, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -540,19 +540,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8532568249808126427, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: velocity.x
-<<<<<<< Updated upstream
       value: 0.013209864
       objectReference: {fileID: 0}
     - target: {fileID: 8532568249808126427, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
       propertyPath: velocity.z
       value: -0.45538023
-=======
-      value: 0.61390406
-      objectReference: {fileID: 0}
-    - target: {fileID: 8532568249808126427, guid: 4e7d697573920a84a8e4598f1d968e68, type: 3}
-      propertyPath: velocity.z
-      value: 0.765036
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1298,6 +1290,10 @@ PrefabInstance:
     - target: {fileID: 1300105262372421064, guid: 7ad0aa1f08b44404cb9a4d14efb6446e, type: 3}
       propertyPath: m_Name
       value: GraveEnemySpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300105262372421064, guid: 7ad0aa1f08b44404cb9a4d14efb6446e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3751819420775390406, guid: 7ad0aa1f08b44404cb9a4d14efb6446e, type: 3}
       propertyPath: m_LocalPosition.x

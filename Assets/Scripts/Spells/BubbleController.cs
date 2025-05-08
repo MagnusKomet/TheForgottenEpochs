@@ -1,30 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class BubbleController : BasicSpellController
 {
     public float speed = 5f;
     private Transform target;
-    GameObject[] enemies;
 
     public override void Start()
     {
         Destroy(gameObject, 30f);
         FindClosestEnemy();
-        if(shootFromTag == "Mimic")
-        {
-            target = GameObject.FindGameObjectWithTag("Player").transform;
-        }
-        else
-        {
-            if(GameObject.FindGameObjectWithTag("Mimic"))
-            {
-                Destroy(gameObject, 0.5f);
-            }
-        }
     }
 
     private void FixedUpdate()
@@ -37,13 +23,11 @@ public class BubbleController : BasicSpellController
         {
             FindClosestEnemy();
         }
-
     }
 
     private void FindClosestEnemy()
     {
-        enemies = GameObject.FindGameObjectsWithTag("Enemy");
-
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         float closestDistance = Mathf.Infinity;
         GameObject closestEnemy = null;
 
@@ -75,7 +59,6 @@ public class BubbleController : BasicSpellController
         {
             DamageOnHitTrigger(other);
             Destroy(gameObject);
-
         }
 
     }
