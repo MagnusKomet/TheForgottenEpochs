@@ -65,7 +65,7 @@ MonoBehaviour:
   minGrowCoef: 4.5
   maxGrowCoef: 6.5
   newLegCooldown: 0.3
-  velocity: {x: -0.17621204, y: 0, z: 0.2985689}
+  velocity: {x: 0.80520415, y: 0, z: -0.064962365}
 --- !u!114 &8649345389762647525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
   walkPointRange: 5
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
-  spell: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}
+  spell: {fileID: 423251788416125878, guid: e5d5995d4219e084fbe1a7ec52844ddc, type: 3}
   spellDamage: 15
   timeBetweenAttacks: 1
   alreadyAttacked: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3fdc9c3b400cef4596e00e27ee20fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 300
   currentHealth: 0
   whoDies: {fileID: 2000334542312664406}
   minDropsQuantity: 10

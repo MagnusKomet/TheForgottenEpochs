@@ -94,8 +94,6 @@ GameObject:
   - component: {fileID: 7771743199517193637}
   - component: {fileID: 6343586404155944075}
   - component: {fileID: 3488955599768036244}
-  - component: {fileID: 7407893341601457624}
-  - component: {fileID: 3654330487618313206}
   m_Layer: 8
   m_Name: MachineGunRobot_Base
   m_TagString: Untagged
@@ -171,45 +169,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7407893341601457624
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888937535021356621}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: ad8d6a043ea202340b30ec4d6a6a507f, type: 3}
---- !u!114 &3654330487618313206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888937535021356621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3fdc9c3b400cef4596e00e27ee20fda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 100
-  whoDies: {fileID: 2488204704311592716}
-  dropsQuantity: 0
-  dropsPrefabs: []
 --- !u!1 &2488204704311592716
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,9 +180,11 @@ GameObject:
   - component: {fileID: 6391386871056860054}
   - component: {fileID: 1904199755985677680}
   - component: {fileID: 3809888466362595771}
+  - component: {fileID: 6380182222671915079}
+  - component: {fileID: 3805538049266558557}
   m_Layer: 8
   m_Name: Robot
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -260,8 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   agent: {fileID: 3809888466362595771}
-  sightRange: 20
-  attackRange: 12
+  sightRange: 35
+  attackRange: 25
   whatIsGround:
     serializedVersion: 2
     m_Bits: 128
@@ -270,8 +231,8 @@ MonoBehaviour:
   walkPointRange: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointSet: 0
-  fireball: {fileID: 7681913944535288640, guid: 4d6a7b470ae7c6e449ad3de51649cb84, type: 3}
-  fireballDamage: 5
+  spell: {fileID: 6054753705526747894, guid: e56c8528052e2204bb1fd401795448b8, type: 3}
+  spellDamage: 5
   timeBetweenAttacks: 0.5
   alreadyAttacked: 0
   forcedChaseDuration: 15
@@ -302,6 +263,56 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &6380182222671915079
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2488204704311592716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0.3}
+--- !u!114 &3805538049266558557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2488204704311592716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fdc9c3b400cef4596e00e27ee20fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  currentHealth: 0
+  whoDies: {fileID: 2488204704311592716}
+  minDropsQuantity: 1
+  maxDropsQuantity: 3
+  dropsPrefabs:
+  - {fileID: 3608898455747402935, guid: 772c83d13d201e440b63ed9942e73e92, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
+  - {fileID: 7125276540847771423, guid: bd0aafc0248555c4a84e923932f466a0, type: 3}
 --- !u!1 &5572980803619384476
 GameObject:
   m_ObjectHideFlags: 0

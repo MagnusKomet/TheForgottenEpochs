@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 1523233148986701349, guid: 35e3f62b59f1f5d4c9afbdbd979264c9, type: 3}
-  minTime: 20
-  maxTime: 60
+  minTime: 40
+  maxTime: 80
   nextSpawnTime: 0
+  justOneSpawn: 0

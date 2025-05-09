@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 7069907997347837347}
   - component: {fileID: 740984359323020755}
   - component: {fileID: 6474724426206187642}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2206513225606009882}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MAIN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 4521339654387471431}
   - component: {fileID: 6563315804586550778}
   - component: {fileID: 1106915753565206147}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 7347975191902721831}
   - component: {fileID: 3740403099086988253}
   - component: {fileID: 4182459423840779110}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 5338805323432836896}
   - component: {fileID: 1183192381031959545}
   - component: {fileID: 6324802454495119157}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1645,7 +1645,7 @@ GameObject:
   - component: {fileID: 4777877761257939414}
   - component: {fileID: 5047076290788420651}
   - component: {fileID: 7725401246591165729}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Txt_SelectMimic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1910,7 +1910,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8054652151225040059}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MimicSelector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2245,7 +2245,7 @@ GameObject:
   - component: {fileID: 5356390883763875529}
   - component: {fileID: 7424804847323308012}
   - component: {fileID: 8986617590182169836}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2318,7 +2318,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6227904380487342850}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: MimicInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2356,7 +2356,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6737142521944977052}
   - component: {fileID: 6077716324787621060}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Grid Layout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2419,7 +2419,7 @@ GameObject:
   - component: {fileID: 1265206867684570429}
   - component: {fileID: 5791510888253416277}
   - component: {fileID: 3573960493680531953}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Corner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2510,7 +2510,7 @@ GameObject:
   - component: {fileID: 4939971527950535772}
   - component: {fileID: 8537363567313001273}
   - component: {fileID: 5357674335371122320}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canv_Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2615,7 +2615,7 @@ GameObject:
   - component: {fileID: 1317722057705516451}
   - component: {fileID: 5683368144465964639}
   - component: {fileID: 7769595142385736625}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Btn_MimicSelector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2793,7 +2793,7 @@ GameObject:
   - component: {fileID: 4254424022000137485}
   - component: {fileID: 6857103200144174023}
   - component: {fileID: 6714497460619617768}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Txt_MimicName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3178,7 +3178,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MimicExhibitController, Assembly-CSharp
-        m_MethodName: ActivatePanel
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

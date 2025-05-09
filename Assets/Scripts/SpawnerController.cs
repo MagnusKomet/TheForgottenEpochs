@@ -8,20 +8,26 @@ public class SpawnerController : MonoBehaviour
     public float minTime = 15f;
     public float maxTime = 30f;
     public float nextSpawnTime;
+    public bool justOneSpawn = true;
+    GameObject lastSpawnedObject;
 
     // Start is called before the first frame update
     public void Start()
     {
+        SpawnObject();
         SetNextSpawnTime();
     }
 
     // Update is called once per frame
     public void Update()
     {
-        if (Time.time >= nextSpawnTime)
+        if (Time.time >= nextSpawnTime && lastSpawnedObject == null || Time.time >= nextSpawnTime * 3 && lastSpawnedObject != null)
         {
-            SpawnObject();
-            SetNextSpawnTime();
+            if (lastSpawnedObject == null || !justOneSpawn)
+            {
+                SpawnObject();
+                SetNextSpawnTime();
+            }
         }
     }
 
@@ -32,6 +38,6 @@ public class SpawnerController : MonoBehaviour
 
     public virtual void SpawnObject()
     {
-        Instantiate(objectToSpawn, transform.position, transform.rotation);
+        lastSpawnedObject = Instantiate(objectToSpawn, transform.position, transform.rotation);
     }
 }

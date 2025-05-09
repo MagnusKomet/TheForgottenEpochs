@@ -16,6 +16,7 @@ public class RobotController : EnemyController
 
     public void Start()
     {
+        pathParent = GameObject.Find("PathParent").transform;
         // Inicialitza l'índex en el primer punt del camí i assigna el primer punt com a targetPoint
         index = 0;
         targetPoint = pathParent.GetChild(index);
@@ -70,7 +71,7 @@ public class RobotController : EnemyController
 
 
         // Comprova si l'objecte ha arribat al punt objectiu i si és així, canvia el punt objectiu al següent
-        if (Vector3.Distance(transform.position, targetPoint.position) < 1f)
+        if (Vector3.Distance(transform.position, targetPoint.position) < 2f)
         {
             index++;
             index %= pathParent.childCount;

@@ -76,9 +76,9 @@ public class EnemyController : MonoBehaviour
         else
         {
 
-            if (!playerInSightRange && !playerInAttackRange) Patroling();
-            if (playerInSightRange && !playerInAttackRange) ChasePlayer();
             if (playerInAttackRange && playerInSightRange) AttackPlayer();
+            if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+            if (!playerInSightRange && !playerInAttackRange) Patroling();
         }
     }
 

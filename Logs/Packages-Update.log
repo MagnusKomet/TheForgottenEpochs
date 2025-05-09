@@ -83,3 +83,12 @@ Update Mode: mergeDefaultDependencies
 
 The following packages were added:
   com.unity.probuilder@5.2.3
+
+=== Thu May  8 23:08:56 2025
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.postprocessing from version 3.2.2 to 3.4.0
+  com.unity.probuilder from version 5.0.6 to 5.2.3

@@ -400,7 +400,7 @@ MonoBehaviour:
   jumpHeight: 2.5
   _PlayerVelocity: {x: 0, y: 0, z: 0}
   cam: {fileID: 1593019297686687297}
-  sensitivity: 30
+  sensitivity: 15
   playerReach: 3
   swing: {fileID: 8300000, guid: 7923190c5e80b4d4d9396acc5d0b48cf, type: 3}
   fireball: {fileID: 7681913944535288640, guid: ca6af057079fac541aedc49106a29517, type: 3}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine.Windows;
 
 namespace PlayerSpace
@@ -28,7 +29,11 @@ namespace PlayerSpace
         GameObject playerModel;
         public bool isSpellMenuActive = false;
         private bool isMainMenuActive = false;
-        public GameObject PlayerHealthBar;
+        public GameObject playerHealthBar;
+
+        public Image itemImage;
+        public TextMeshProUGUI itemDescriptionTxt;
+        public TextMeshProUGUI itemDescriptionName;
 
         private void Awake()
         {
@@ -93,7 +98,12 @@ namespace PlayerSpace
                 slot.selectedShader.SetActive(false);
                 slot.thisItemSelected = false;
             }
+
+            itemDescriptionTxt.text = "";
+            itemDescriptionName.text = "";
+            itemImage.sprite = Resources.Load<Sprite>("emptySprite");
         }
+
         private void OnSceneLoaded(Scene current, LoadSceneMode sceneMode)
         {
             playerModel = GameObject.Find("CharacterModel");
@@ -105,7 +115,7 @@ namespace PlayerSpace
             }
             else if (current.name == "MuseoScene")
             {
-                PlayerHealthBar.SetActive(false);
+                playerHealthBar.SetActive(false);
             }
         }
 
@@ -120,7 +130,7 @@ namespace PlayerSpace
             }
             else if (current.name == "MuseoScene")
             {
-                PlayerHealthBar.SetActive(true);
+                playerHealthBar.SetActive(true);
             }
         }
 

@@ -23,7 +23,10 @@ namespace MimicSpace
         public override void Awake()
         {
             myMimic = GetComponent<Mimic>();
-            player = GameObject.Find("Player").transform;
+            if (GameObject.Find("Player"))
+            {
+                player = GameObject.Find("Player").transform;
+            }
             agent = GetComponent<NavMeshAgent>();
         }
 

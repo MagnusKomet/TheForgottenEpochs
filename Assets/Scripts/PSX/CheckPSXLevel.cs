@@ -7,6 +7,10 @@ public class CheckPSXLevel : MonoBehaviour
 {
     public void Start()
     {
+        if(!PlayerPrefs.HasKey("PSXLevel"))
+        {
+            PlayerPrefs.SetFloat("PSXLevel", 0.3f);
+        }
         GetComponent<PSXPostProcessEffect>()._PixelationFactor = PlayerPrefs.GetFloat("PSXLevel");
     }
 
