@@ -5111,6 +5111,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.108
       objectReference: {fileID: 0}
+    - target: {fileID: 8549778613116912511, guid: 57ac2dfa986d31040b7bdbfe431fdecb, type: 3}
+      propertyPath: m_text
+      value: 'The spells from Forgotten Epochs:
+
+
+        F, W, A, E
+
+        WAWA,
+        AAAE, FFAFFA'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

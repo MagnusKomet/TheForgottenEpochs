@@ -214,10 +214,10 @@ namespace SlimUI.ModernMenu{
 			Screen.fullScreen = !Screen.fullScreen;
 
 			if(Screen.fullScreen == true){
-				fullscreentext.GetComponent<TMP_Text>().text = "on";
+				fullscreentext.GetComponent<TMP_Text>().text = "off";
 			}
 			else if(Screen.fullScreen == false){
-				fullscreentext.GetComponent<TMP_Text>().text = "off";
+				fullscreentext.GetComponent<TMP_Text>().text = "on";
 			}
 		}
 

@@ -3,117 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\enemies\\enemyhealthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemyhealthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\documents\\github\\theforgottenepochs\\assets\\scripts\\spells\\windbladecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\windbladecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\psx\\checkpsxlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\psx\\checkpsxlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\psx\\controlpsx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\psx\\controlpsx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\enemies\\mimiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\mimiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\musem\\spellscreatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\musem\\spellscreatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\enemies\\robotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\robotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\enemies\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\documents\\github\\theforgottenepochs\\assets\\scripts\\spawnercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\inventory\\inventoryvisualmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventoryvisualmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\apimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\inventory\\itemslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\itemslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\documents\\github\\theforgottenepochs\\assets\\scripts\\spells\\basicspellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\basicspellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\inventory\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\inventory\\dropitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\dropitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|c:\\users\\ernes\\documents\\github\\theforgottenepochs\\assets\\packages\\slimui\\modern menu 1\\scripts\\managers\\uimenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\packages\\slimui\\modern menu 1\\scripts\\managers\\uimenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\bubblecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\bubblecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\inventory\\inventorydatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventorydatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\basicspellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\basicspellcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\waterringcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\waterringcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\fireballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\fireballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\thewallcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\thewallcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\windbladecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\windbladecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\spells\\tornadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spells\\tornadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\player\\playerhealthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerhealthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\packages\\psxshaderkit\\scripts\\psxpostprocesseffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\packages\\psxshaderkit\\scripts\\psxpostprocesseffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\packages\\toastnotificationmessage\\toastnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\packages\\toastnotificationmessage\\toastnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\MimicExhibitController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\SpellsCreatorController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\CheckPSXLevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\assets\\scripts\\enemies\\robotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C53F085B-79A1-0D3B-0B44-504C6400CBAC}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\robotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -123,11 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "BasicSpellController.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\BasicSpellController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\BasicSpellController.cs",
+              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\BasicSpellController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spells\\BasicSpellController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T09:32:34.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WindBladeController.cs",
+              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\WindBladeController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\WindBladeController.cs",
+              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\WindBladeController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Spells\\WindBladeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T09:32:27.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RobotController.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\RobotController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\RobotController.cs",
@@ -140,31 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "WaterRingController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\WaterRingController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\WaterRingController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\WaterRingController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\WaterRingController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T18:48:14.878Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BubbleController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\BubbleController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\BubbleController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\BubbleController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\BubbleController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwBgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T19:24:57.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "InventoryItem.cs",
               "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\InventoryItem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\InventoryItem.cs",
@@ -174,319 +79,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T13:57:25.555Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EnemyHealthController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemyHealthController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAcwDwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T19:02:49.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "InventoryVisualManager.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\InventoryVisualManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\InventoryVisualManager.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\InventoryVisualManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\InventoryVisualManager.cs",
-              "ViewState": "AgIAALgAAAAAAAAAAADwv3UAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T17:40:14.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SpellsCreatorController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Musem\\SpellsCreatorController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Musem\\SpellsCreatorController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Musem\\SpellsCreatorController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Musem\\SpellsCreatorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T14:52:48.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EnemyController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\EnemyController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\EnemyController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\EnemyController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAmwE4AAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:38:36.16Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MimicController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\MimicController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\MimicController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Enemies\\MimicController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Enemies\\MimicController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:50:26.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CheckPSXLevel.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\PSX\\CheckPSXLevel.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PSX\\CheckPSXLevel.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\PSX\\CheckPSXLevel.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PSX\\CheckPSXLevel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T15:01:16.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ControlPSX.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\PSX\\ControlPSX.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PSX\\ControlPSX.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\PSX\\ControlPSX.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PSX\\ControlPSX.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAASwCUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T14:36:02.399Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwv84AAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:08:56.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DropItem.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\DropItem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\DropItem.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\DropItem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\DropItem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T13:58:47.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TornadoController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\TornadoController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\TornadoController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\TornadoController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\TornadoController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T13:38:45.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SpawnerController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\SpawnerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnerController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\SpawnerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SpawnerController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBcAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T00:25:41.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UIMenuManager.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
-              "RelativeToolTip": "Assets\\Packages\\SlimUI\\Modern Menu 1\\Scripts\\Managers\\UIMenuManager.cs",
-              "ViewState": "AgIAAPQAAAAAAAAAAAAwwAIBAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:15:51.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ItemSlot.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\ItemSlot.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\ItemSlot.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\ItemSlot.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\ItemSlot.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwFMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T14:10:37.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ApiManager.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ApiManager.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\ApiManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ApiManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T21:48:42.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "InventoryDataController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\InventoryDataController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory\\InventoryDataController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Inventory\\InventoryDataController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Inventory\\InventoryDataController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T16:55:25.559Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TheWallController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\TheWallController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\TheWallController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\TheWallController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\TheWallController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T18:38:05.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BasicSpellController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\BasicSpellController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\BasicSpellController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\BasicSpellController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\BasicSpellController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAwwEgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T22:59:41.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FireballController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\FireballController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\FireballController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\FireballController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\FireballController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T14:56:54.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "WindBladeController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\WindBladeController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Spells\\WindBladeController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Spells\\WindBladeController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Spells\\WindBladeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T10:00:35.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PlayerHealthController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Player\\PlayerHealthController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerHealthController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Scripts\\Player\\PlayerHealthController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerHealthController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAawCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T02:56:48.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "SpellsCreatorController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\SpellsCreatorController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\SpellsCreatorController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\SpellsCreatorController.cs",
-              "RelativeToolTip": "..\\..\\..\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\SpellsCreatorController.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAowKsAAAC3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T22:59:51.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "MimicExhibitController.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\MimicExhibitController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\MimicExhibitController.cs",
-              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\MimicExhibitController.cs",
-              "RelativeToolTip": "..\\..\\..\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\MimicExhibitController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAgwHUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T17:43:33.465Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CheckPSXLevel.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\CheckPSXLevel.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\CheckPSXLevel.cs",
-              "ToolTip": "C:\\Users\\ernes\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\CheckPSXLevel.cs",
-              "RelativeToolTip": "..\\..\\..\\Desktop\\Insti\\Projecte\\TheForgottenEpochs\\Assets\\Scripts\\CheckPSXLevel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T15:06:07.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PSXPostProcessEffect.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\PSXShaderKit\\Scripts\\PSXPostProcessEffect.cs",
-              "RelativeDocumentMoniker": "Assets\\Packages\\PSXShaderKit\\Scripts\\PSXPostProcessEffect.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\PSXShaderKit\\Scripts\\PSXPostProcessEffect.cs",
-              "RelativeToolTip": "Assets\\Packages\\PSXShaderKit\\Scripts\\PSXPostProcessEffect.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA/wBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T15:07:47.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ToastNotification.cs",
-              "DocumentMoniker": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\ToastNotificationMessage\\ToastNotification.cs",
-              "RelativeDocumentMoniker": "Assets\\Packages\\ToastNotificationMessage\\ToastNotification.cs",
-              "ToolTip": "C:\\Users\\ernes\\Documents\\GitHub\\TheForgottenEpochs\\Assets\\Packages\\ToastNotificationMessage\\ToastNotification.cs",
-              "RelativeToolTip": "Assets\\Packages\\ToastNotificationMessage\\ToastNotification.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAADwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T23:08:34.724Z"
             }
           ]
         }
